@@ -49,13 +49,13 @@ body {
 
 .container-fluid {
 	padding: 0px;
-	background-color: #eea236;
+	/*background-color: #eea236;*/
 }
 
 #header {
 	/*background-color: #F00;*/
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	background-image: url('../img/header_backgroud.jpg');
 	/*background-size:100% 100%;*/
 	background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body {
 	background-color: #000000;
 	border: solid 1px #000000;
 	height: 60px;
-	margin-top: 200px;
+	margin-top: 300px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	opacity: 0.8;
