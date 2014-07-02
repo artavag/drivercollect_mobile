@@ -88,15 +88,3 @@ body {
 	/*margin-left: auto;*/
 	/*margin-right: auto;*/
 }
-
-#search-box {
-	background-color: #000000;
-	border: solid 1px #000000;
-	height: 60px;
-	margin-top: 200px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	opacity: 0.8;
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
-}
