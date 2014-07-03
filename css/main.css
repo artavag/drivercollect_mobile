@@ -85,20 +85,21 @@ body {
 	background-color: #eeeeee;
 	background-image: url('../img/happy_footer.png');
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 100%;
 	width: 100%;
 	padding: 10px;
-	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);
-	box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
 	/*position: absolute;*/
 	/*bottom: 0%;*/
+	height: 300px;
 }
 
 #infos {
 	height: 100px;
 	background-color: #eeeeee;
-	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);
-	box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
 }
 
 #search-box {
