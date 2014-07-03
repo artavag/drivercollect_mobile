@@ -82,13 +82,23 @@ body {
 }
 
 #footer {
-	background-color: #000000;
+	background-color: #eeeeee;
+	background-image: url('../img/happy_footer.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	width: 100%;
 	padding: 10px;
 	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);
 	box-shadow: 0 0 5px 0 rgba(0,0,0,1);
 	/*position: absolute;*/
 	/*bottom: 0%;*/
+}
+
+#infos {
+	height: 100px;
+	background-color: #eeeeee;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,1);
 }
 
 #search-box {
@@ -142,10 +152,10 @@ body {
 }
 
 .location-input {
-	/*width: 30%;*/
+	width: 250px;
 	/*display: inline-block;*/
 	/*opacity: 1;*/
-	padding: 0px 40px;
+	/*padding: 0px 40px;*/
 }
 
 
