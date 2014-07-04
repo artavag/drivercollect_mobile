@@ -39,25 +39,30 @@
 				<div id="header" class="col-lg-10">
 
 					<div class="row">
-						<div class="col-lg-12">
-							<ul class="mynavbar my-text-shadow">
-								<li class="glyphicon glyphicon-home"></li>
-								<li>Login</li>
-								<li>Register</li>
-								<li>Contact</li>
-								<li id="polyglotLanguageSwitcher" style="margin-left: 20px">
-									<a id="en" class="current active" href="#" style="text-shadow: none; height: 30px; border-radius: 50px; display: block; overflow: hidden">English<span class="trigger">»</span></a>
-									<!--<ul class="dropdown" style="display: block; height: 30px">-->
-									<!--<li><a id="fr" href="#">Français</a></li>-->
-									<!--<li><a id="de" href="#">Deutsch</a></li>-->
-									<!--<li><a id="it" href="#">Italiano</a></li>-->
-									<!--<li><a id="es" href="#">Español</a></li>-->
-									<!--</ul>-->
-								</li>
-							</ul>
-
-
-
+						<!--<div class="main-nav clearfix">-->
+						<div class="main-nav clearfix">
+							<div class="col-lg-12">
+								<ul class="mynavbar">
+									<li class="glyphicon glyphicon-home"></li>
+									<li>Login</li>
+									<li>Register</li>
+									<li>Contact</li>
+									<li>My rides</li>
+									<li>My profile</li>
+									<li>My account</li>
+									<li>FAQs</li>
+									<li>Support</li>
+									<li id="polyglotLanguageSwitcher" style="margin-left: 20px">
+										<a id="en" class="current active" href="#" style="text-shadow: none; height: 28px; border-radius: 50px; display: block; overflow: hidden">English<span class="trigger">»</span></a>
+										<!--<ul class="dropdown" style="display: block; height: 30px">-->
+										<!--<li><a id="fr" href="#">Français</a></li>-->
+										<!--<li><a id="de" href="#">Deutsch</a></li>-->
+										<!--<li><a id="it" href="#">Italiano</a></li>-->
+										<!--<li><a id="es" href="#">Español</a></li>-->
+										<!--</ul>-->
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 
@@ -68,7 +73,12 @@
 					</div>
 
 					<div class="row">
-						<div id="search-box" class="col-lg-8 col-lg-offset-2">
+						<div id="search-box" class="col-lg-8 col-lg-offset-2" >
+
+							<div class="clearfix">
+								<span style="color: #dcdcdc; float: left">Lorem ipsum dolor sit ame</span>
+								<span style="color: #dcdcdc; float: right" id="refine_search">Refine search <span class="glyphicon glyphicon-chevron-down"></span></span>
+							</div>
 							<form role="form" style="margin-top: 1em">
 								<div class="row">
 									<!--<div class="location-input">-->
@@ -101,29 +111,84 @@
 										</div>
 									</div>
 
-									<button type="submit" class="col-lg-1 btn btn-default">Save</button>
+									<button type="submit" class="col-lg-1 btn btn-success">Save</button>
+								</div>
+
+								<div id="additional_options" style="display: none">
+									<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #000; border-bottom: 1px solid #666;">
+
+									<div class="clearfix" style="margin-top: 6px">
+										<div class="" style="color: #eeeeee; font-weight: normal">
+											<label>Multiple request:&nbsp;</label><input type="checkbox">
+											<tr class="ride-repetition" style="outline: none;">
+												<td>Repeat on:</td>
+												<td colspan="2">
+													<label for="1" style="min-width: 40px; margin:0px"><input type="checkbox" id="1" name="weekdays[]" value="1">M</label>
+													<label for="2" style="min-width: 40px; margin:0px"><input type="checkbox" id="2" name="weekdays[]" value="2">T</label>
+													<label for="3" style="min-width: 40px; margin:0px"><input type="checkbox" id="3" name="weekdays[]" value="3">W</label>
+													<label for="4" style="min-width: 40px; margin:0px"><input type="checkbox" id="4" name="weekdays[]" value="4">T</label>
+													<label for="5" style="min-width: 40px; margin:0px"><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">F</label>
+													<label for="6" style="min-width: 40px; margin:0px"><input type="checkbox" id="6" name="weekdays[]" value="6">S</label>
+													<label for="7" style="min-width: 40px; margin:0px"><input type="checkbox" id="7" name="weekdays[]" value="7">S</label>
+												</td>
+											</tr>
+											<tr class="occurrences">
+												<td><label>Number of occurrences:</label></td>
+												<td colspan="2"><select name="occurrences" class="input-contact" style="width:60px">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select></td>
+											</tr>
+										</div>
+									</div>
+
+									<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #000; border-bottom: 1px solid #666;">
+
+									<div class="clearfix" style="margin-top: 6px; font-weight: normal; color: #eeeeee">
+										<tr class="toggle-visibility" style="display: table-row;">
+											<td style="vertical-align: top"><label class="table_row_label">Additional passengers:</label></td>
+											<td style="vertical-align: top"><input class="input-contact" type="text" id="num_passengers" name="num_passengers" value="0" maxlength="2" style="width: 60px; margin-right: 15px"></td>
+										</tr>
+
+										<tr class="toggle-visibility" style="display: table-row;">
+											<td style="vertical-align: top"><label class="table_row_label">Number luggages:	</label></td>
+											<td style="vertical-align: top"><input class="input-contact" type="text" id="num_passengers" name="num_passengers" value="0" maxlength="2" style="width: 60px; margin-right: 15px"></td>
+										</tr>
+
+										<tr>
+											<label class="">Smoking: </label>&nbsp;
+											<input type="radio" id="smoking_prefer_y" name="smoking_prefer" value="Y"> Yes
+											<input type="radio" id="smoking_prefer_i" name="smoking_prefer" value="I" checked=""> Indifferent
+											<input type="radio" id="smoking_prefer_n" name="smoking_prefer" value="N"> Strictly not
+										</tr>
+									</div>
+
+
+									<div class="clearfix" style="margin-top: 6px; font-weight: normal; color: #eeeeee">
+										<tr class="toggle-visibility" style="display: table-row;">
+											<textarea name="request_comment" class="input-contact" style="width: 100%; height: 45px" placeholder="Comments"></textarea>
+										</tr>
+									</div>
+
 								</div>
 							</form>
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="col-lg-2 col-lg-offset-5" style="margin-top: 30px">
-							<button type="button" class="col-lg-12 btn btn-info">Additional Details</button>
-						</div>
-					</div>
 
-					<div class="row">
-						<div class="col-lg-12">
-							<ul class="mynavbar">
-								<li>Rides</li>
-								<li>Profile</li>
-								<li>Account</li>
-								<li>FAQs</li>
-								<li>Support</li>
-							</ul>
-						</div>
-					</div>
+					<!--<div class="row">-->
+						<!--<div class="col-lg-12">-->
+							<!--<ul class="mynavbar">-->
+								<!--<li>Rides</li>-->
+								<!--<li>Profile</li>-->
+								<!--<li>Account</li>-->
+								<!--<li>FAQs</li>-->
+								<!--<li>Support</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
 
 				</div>
 			</div>
@@ -227,7 +292,7 @@
 					</div>
 				</div>
 
-				<hr>
+				<hr class="col-lg-8 col-lg-offset-2">
 
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2" style="margin-bottom: 50px">
@@ -268,6 +333,11 @@
 			showMeridian: false,
 			showSeconds: false,
 			defaultTime: false
+		});
+
+		$('#refine_search').on('click', function(){
+			$('#additional_options').toggle();
+			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
 		});
 
 //		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({

@@ -104,12 +104,16 @@ body {
 
 #search-box {
 	background-color: #000000;
-	border: solid 1px #000000;
-	height: 60px;
+	border: solid 1px #333;
+	/*height: 80px;*/
 	margin-top: 4em;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 5px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,1);
+	box-shadow: 0 0 3px 0 rgba(0,0,0,1);
 
 	/*opacity: 0.8;*/
 	 /*margin-left: auto;*/
@@ -128,16 +132,27 @@ body {
 	}
 }
 
+.main-nav {
+	height: 40px; margin-left: -15px;
+	margin-right: -15px;
+	/*background-color: rgba(0,0,0,0.7);*/
+	/*border-bottom: solid 1px #000;*/
+
+	/*background-image: url('../img/backgroud_top.gif');*/
+	/*background-repeat: repeat-x;*/
+	/*background-position: 0% 100%;*/
+}
+
 .mynavbar {
 	list-style: none;
-	color: #ffffff;
+	color: #eeeeee;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.2em;
-	font-weight: lighter;
+	font-size: 1.1em;
+	font-weight: 300;
 	float: right;
 	clear: both;
 	display: inline-block;
-	margin: 20px 0px 0px 0px;
+	margin: 8px 0px 0px 0px;
 	padding: 0;
 }
 
@@ -190,4 +205,8 @@ td.separator {
 
 .my-text-shadow {
 	text-shadow: 1px 1px 1px #878787;
+}
+
+#refine_search {
+	cursor: pointer;
 }
