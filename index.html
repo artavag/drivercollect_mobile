@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
 	</head>
@@ -30,6 +31,7 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/bootstrap-datepicker.js"></script>
 		<script src="js/bootstrap-timepicker.js"></script>
+		<script src="js/jquery.polyglot.language.switcher.js"></script>
 		<script src="js/main.js"></script>
 
 		<div class="container-fluid" >
@@ -38,18 +40,30 @@
 
 					<div class="row">
 						<div class="col-lg-12">
-							<ul class="mynavbar">
+							<ul class="mynavbar my-text-shadow">
+								<li class="glyphicon glyphicon-home"></li>
 								<li>Login</li>
 								<li>Register</li>
 								<li>Contact</li>
-								<li>Home</li>
+								<li id="polyglotLanguageSwitcher" style="margin-left: 20px">
+									<a id="en" class="current active" href="#" style="text-shadow: none; height: 30px; border-radius: 50px; display: block; overflow: hidden">English<span class="trigger">»</span></a>
+									<!--<ul class="dropdown" style="display: block; height: 30px">-->
+									<!--<li><a id="fr" href="#">Français</a></li>-->
+									<!--<li><a id="de" href="#">Deutsch</a></li>-->
+									<!--<li><a id="it" href="#">Italiano</a></li>-->
+									<!--<li><a id="es" href="#">Español</a></li>-->
+									<!--</ul>-->
+								</li>
 							</ul>
+
+
+
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 1.5em">
 						<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-							<h1 class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+							<h1 class="text-big my-text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
 						</div>
 					</div>
 
@@ -92,67 +106,120 @@
 							</form>
 						</div>
 					</div>
+
+					<div class="row">
+						<div class="col-lg-2 col-lg-offset-5" style="margin-top: 30px">
+							<button type="button" class="col-lg-12 btn btn-info">Additional Details</button>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="mynavbar">
+								<li>Rides</li>
+								<li>Profile</li>
+								<li>Account</li>
+								<li>FAQs</li>
+								<li>Support</li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
 
 			<div id="content">
-
 				<div class="row">
 					<h1 class="text-big" style="color: #000000">Latest rides</h1>
 					<br>
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 col-lg-offset-3">
+					<div class="col-lg-8 col-lg-offset-2">
 						<div class="table-responsive">
 							<table class="table">
-								<tr>
-									<th>From</th>
-									<th>To</th>
-									<th>Date</th>
-									<th>Cost</th>
-									<th>User</th>
+								<tr style="font-family: 'Source Sans Pro', sans-serif; font-weight: 300">
+									<th>FROM</th>
+									<th>TO</th>
+									<th style="min-width: 130px">DATE</th>
+									<th style="min-width: 80px">COST</th>
+									<th style="min-width: 150px">USER</th>
 								</tr>
 
 								<tr>
-									<td>Bremen</td>
-									<td>Hamburg</td>
+									<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+									<td>Regent Street, Westminster, St. James's, City of Westminster, London, Greater London, England, SW1, United Kingdom</td>
 									<td>28.05.2014 10:30</td>
-									<td>19.5 $</td>
-									<td><img src="img/001.jpg" width="40px" height="40px"></img></td>
+									<td>280.55 $</td>
+									<td>
+										<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
+										<span style="float: left; margin-top: -3px">
+											<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
+											<!--<span class="clearfix" style="color: #663C02">Random N.</span>-->
+											<div style="color: #EEA236; margin-top: -5px; font-size: 18px; font-family: Tahoma, Geneva, Arial, sans-serif">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+										</span>
+									</td>
 								</tr>
 
 								<tr>
-									<td>Bremen</td>
-									<td>Hamburg</td>
+									<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+									<td>Rege, Budakeszi út, Lipótmező, Budapest, Budapesti kistérség, Budapest, Közép-Magyarország, 1021, Magyarország	</td>
 									<td>28.05.2014 10:30</td>
-									<td>19.5 $</td>
-									<td><img src="img/001.jpg" width="40px" height="40px"></img></td>
+									<td>280.55 $</td>
+									<td>
+										<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
+										<span style="float: left; margin-top: -3px">
+											<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
+											<!--<span class="clearfix" style="color: #663C02">Random N.</span>-->
+											<div style="color: #EEA236; margin-top: -5px; font-size: 18px; font-family: Tahoma, Geneva, Arial, sans-serif">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+										</span>
+									</td>
 								</tr>
 
 								<tr>
-									<td>Bremen</td>
-									<td>Hamburg</td>
+									<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+									<td>Regent Street, Westminster, St. James's, City of Westminster, London, Greater London, England, SW1, United Kingdom</td>
 									<td>28.05.2014 10:30</td>
-									<td>19.5 $</td>
-									<td><img src="img/001.jpg" width="40px" height="40px"></img></td>
+									<td>280.55 $</td>
+									<td>
+										<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
+										<span style="float: left; margin-top: -3px">
+											<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
+											<!--<span class="clearfix" style="color: #663C02">Random N.</span>-->
+											<div style="color: #EEA236; margin-top: -5px; font-size: 18px; font-family: Tahoma, Geneva, Arial, sans-serif">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+										</span>
+									</td>
 								</tr>
 
 								<tr>
-									<td>Bremen</td>
-									<td>Hamburg</td>
+									<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+									<td>Regent Street, Westminster, St. James's, City of Westminster, London, Greater London, England, SW1, United Kingdom</td>
 									<td>28.05.2014 10:30</td>
-									<td>19.5 $</td>
-									<td><img src="img/001.jpg" width="40px" height="40px"></img></td>
+									<td>280.55 $</td>
+									<td>
+										<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
+										<span style="float: left; margin-top: -3px">
+											<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
+											<!--<span class="clearfix" style="color: #663C02">Random N.</span>-->
+											<div style="color: #EEA236; margin-top: -5px; font-size: 18px; font-family: Tahoma, Geneva, Arial, sans-serif">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+										</span>
+									</td>
 								</tr>
 
 								<tr>
-									<td>Bremen</td>
-									<td>Hamburg</td>
+									<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+									<td>Regent Street, Westminster, St. James's, City of Westminster, London, Greater London, England, SW1, United Kingdom</td>
 									<td>28.05.2014 10:30</td>
-									<td>19.5 $</td>
-									<td><img src="img/001.jpg" width="40px" height="40px"></img></td>
+									<td>280.55 $</td>
+									<td>
+										<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
+										<span style="float: left; margin-top: -3px">
+											<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
+											<!--<span class="clearfix" style="color: #663C02">Random N.</span>-->
+											<div style="color: #EEA236; margin-top: -5px; font-size: 18px; font-family: Tahoma, Geneva, Arial, sans-serif">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+										</span>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -160,42 +227,73 @@
 					</div>
 				</div>
 
-				<!--<div class="row">-->
-					<!--<div id="infos">-->
-						<!--<div class="col-lg-12 col-md-12">-->
+				<hr>
 
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2" style="margin-bottom: 50px">
+						<div>
+							<div class="pull-left" style="float: left; width: 300px"><img src="img/paypal_options2.gif" width="254"></div>
+							<p class="pull-left" style="float: right; width: 500px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-
-
 
 
 			<div id="footer">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 text-footer">
+					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
 						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
 						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
 						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('#datepicker').datepicker();
-	});
 
-	$('#timepicker').timepicker({
-		minuteStep: 5,
-		showInputs: false,
-		disableFocus: true,
-		showMeridian: false,
-		showSeconds: false,
-		defaultTime: false
+
+	jQuery(document).ready(function($) {
+
+		$('#datepicker').datepicker();
+
+		$('#timepicker').timepicker({
+			minuteStep: 5,
+			showInputs: false,
+			disableFocus: true,
+			showMeridian: false,
+			showSeconds: false,
+			defaultTime: false
+		});
+
+//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+//			effect: 'fade',
+//			testMode: true,
+//			onChange: function(evt)
+//			{
+//				switch (evt.selectedItem)
+//				{
+//					case 'id':
+//						window.location.href = '#';
+//						break;
+//					case 'br':
+//						window.location.href = '#';
+//						break;
+//					case 'en':
+//						window.location.href = '#';
+//						break;
+//					case 'es':
+//						window.location.href = '#';
+//						break;
+//					case 'am':
+//						window.location.href = '#';
+//						break;
+//				}
+//			}
+//		});
 	});
 </script>
