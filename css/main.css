@@ -353,3 +353,7 @@ td.separator {
 	color: #d92646;
 	font-weight: 400;
 }
+
+label.control-label{
+	font-weight: 400;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+	<link rel="stylesheet" href="css/polyglot-language-switcher.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-timepicker.js"></script>
+<script src="js/jquery.polyglot.language.switcher.js"></script>
+<script src="js/main.js"></script>
+
+<div class="container-fluid" >
+	<div class="row">
+		<div id="header2" class="col-lg-12">
+
+			<div class="row">
+				<!--<div class="main-nav clearfix">-->
+				<div class="main-nav2 clearfix">
+					<div class="col-lg-8 col-lg-offset-2">
+						<ul class="mynavbar2">
+							<li><a href="index.html" class="glyphicon glyphicon-home"></a></li>
+							<li>Login</li>
+							<li>Register</li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="rides.html">My rides</a></li>
+							<li><a href="myprofile.html">My profile</a></li>
+							<li>My account</li>
+							<li><a href="faq.html">FAQs</a></li>
+							<li>Support</li>
+							<li id="polyglotLanguageSwitcher" style="margin-left: 20px">
+								<a id="en" class="current active" href="#" style="text-shadow: none; height: 28px; border-radius: 50px; display: block; overflow: hidden">English<span class="trigger">»</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content" style="padding-bottom: 50px">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-1 pull-left">
+				<div class="leftmenu">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+						<li><a href="faq.html">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-8 pull-left">
+
+				<div class="row">
+					<div class="" style="padding-left: 0px; margin-bottom: 40px">
+						<h1 class="text-big2">Contact Us</h1>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-lg-8">
+						<form class="form-horizontal" role="form">
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="inputPassword3" placeholder="Email">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Title</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputPassword4" placeholder="Title">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-2">
+									<button type="submit" class="btn btn-danger">Send email</button>
+								</div>
+							</div>
+
+
+						</form>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
+				Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
+				<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
+				<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+	jQuery(document).ready(function($) {
+
+		$('#datepicker').datepicker();
+
+		$('#timepicker').timepicker({
+			minuteStep: 5,
+			showInputs: false,
+			disableFocus: true,
+			showMeridian: false,
+			showSeconds: false,
+			defaultTime: false
+		});
+
+		$('#refine_search').on('click', function(){
+			$('#additional_options').toggle();
+			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
+		});
+
+//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+//			effect: 'fade',
+//			testMode: true,
+//			onChange: function(evt)
+//			{
+//				switch (evt.selectedItem)
+//				{
+//					case 'id':
+//						window.location.href = '#';
+//						break;
+//					case 'br':
+//						window.location.href = '#';
+//						break;
+//					case 'en':
+//						window.location.href = '#';
+//						break;
+//					case 'es':
+//						window.location.href = '#';
+//						break;
+//					case 'am':
+//						window.location.href = '#';
+//						break;
+//				}
+//			}
+//		});
+	});
+</script>
