@@ -221,8 +221,8 @@ body {
 	float: left;
 	clear: both;
 	display: inline-block;
-	margin: 24px 0px 0px 0px;
-	padding: 0;
+	padding: 24px 0px 0px 0px;
+	height: 60px;
 }
 
 .mynavbar2 li {
