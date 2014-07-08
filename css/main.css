@@ -178,6 +178,7 @@ body {
 	/*background-position: 0% 100%;*/
 	/*-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
 	/*box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
+	/*border-top: solid 1px #C24C4C;*/
 }
 
 .main-nav li a, .main-nav li a:visited {
@@ -241,6 +242,14 @@ body {
 	float: left;
 	display: block;
 	margin-left: 20px;
+}
+
+.login-register {
+	padding:  2px 5px 2px 5px;
+	background-color: #D9534F;
+	border-radius: 3px;
+	font-size: 14px;
+	border-bottom: solid 1px #B33530;
 }
 
 .location-input {
