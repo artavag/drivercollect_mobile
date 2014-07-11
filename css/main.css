@@ -186,6 +186,12 @@ body {
 	color: #eeeeee;
 }
 
+.main-nav li a:hover, .main-nav li a:active {
+	text-decoration: none;
+	color: #E37C78;
+	border-bottom: dotted 1px #E37C78;
+}
+
 .main-nav2 {
 	height: 80px;
 	margin-left: -15px;
@@ -233,7 +239,7 @@ body {
 	/*float: left;*/
 	/*clear: both;*/
 	/*display: inline-block;*/
-	padding: 28px 0px 0px 0px;
+	padding: 40px 0px 0px 0px;
 	margin-left: 20px;
 	/*height: 60px;*/
 }
@@ -244,12 +250,66 @@ body {
 	margin-left: 20px;
 }
 
+.mynavbar3 {
+	list-style: none;
+	color: #cccccc;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	font-style: normal;
+	font-weight: 300;
+	/*float: left;*/
+	/*clear: both;*/
+	/*display: inline-block;*/
+	/*padding: 40px 0px 0px 0px;*/
+	margin-left: 20px;
+	margin-right: 274px;
+	margin-top: -65px;
+	/*clear: both;*/
+	/*height: 60px;*/
+}
+
+.mynavbar3 li {
+	float: left;
+	display: block;
+	padding: 2px 3px;
+}
+
+.mynavbar3 li p{
+	margin-right: 10px;
+	/*margin-left: 20px;*/
+}
+
+.mynavbar3 li span{
+	color: #ffffff;
+	font-weight: 300;
+	/*margin-left: 20px;*/
+}
+
+.mynavbar3 li a, .mynavbar3 li a:visited {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+.mynavbar3 li a:hover, .mynavbar3 li a:active {
+	text-decoration: none;
+	color: #E37C78;
+	border-bottom: dotted 1px #E37C78;
+}
+
 .login-register {
-	padding:  2px 5px 2px 5px;
+	/*color: #000000;*/
+	color: #ffffff;
+	font-weight: 400;
+	/*text-shadow: 0 1px 0 #F7A2A1;*/
+	padding:  3px 8px 3px 8px;
 	background-color: #D9534F;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-size: 14px;
-	border-bottom: solid 1px #B33530;
+	border: solid 1px #F26F6D;
+	/*border-bottom: solid 1px #E76563;*/
+	/*background-image: url('../img/backgroun-btn1.png');*/
+	/*background-repeat: repeat-x;*/
+	/*background-position: 0px 0px;*/
 }
 
 .location-input {
