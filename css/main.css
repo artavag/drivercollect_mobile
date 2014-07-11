@@ -429,12 +429,30 @@ td.separator {
 	font-size: 12px;
 }
 
-.font-12 th{
+table .font-12 th {
 	font-size: 12px;
-	color: #d92646;
+	/*color: #d92646;*/
+	color: #ffffff;
 	font-weight: 400;
+	border: none;
+	/*border-top: solid 5px #c9302c;*/
 }
 
+/*.table .table-bordered .table-hover>thead>tr.font-12>th {*/
+table.table tr.font-12 > th {
+	/*padding-top: 20px;*/
+	/*padding-bottom: 20px;*/
+	/*border-top: solid 5px #E66561;*/
+	padding: 30px 8px 8px 8px;
+	vertical-align: bottom;
+	background-color: #C45C5C;
+	border: none;
+}
+
+
+.table>tbody> tr > td {
+	border: none;
+}
 
 label.control-label{
 	font-weight: 400;
