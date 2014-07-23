@@ -98,27 +98,32 @@
 						<div class="col-lg-10 pull-left" style="padding-left: 0px; padding-right: 0px">
 
 							<div class="row">
-								<div class="" style="padding-left: 0px; margin-bottom: -10px">
-									<h1 class="text-big2" style="font-weight: 100">Open requests</h1>
+								<div class="table-header clearfix" style="">
+									<h1 class="text-big2 pull-left" style="">Open requests</h1>
+
+									<!--<div class="row" style="margin-bottom: 10px">-->
+										<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
+											<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
+											<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
+											<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
+											<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
+										</div>
+									<!--</div>-->
+
 								</div>
+
 							</div>
 
 							<div class="row">
 
 								<div class="table-responsive">
-									<div class="row" style="margin-bottom: 10px">
-										<div>
-											<div class="btn btn-info btn-sm pull-right">New requst</div>
-											<div class="btn btn-danger btn-sm pull-right" style="margin-right: 10px">Delete</div>
-										</div>
-									</div>
 
 									<!--<table class="table table-hover" style="font-family: Tahoma, Geneva, Arial, sans-serif; margin-bottom: 100px">-->
-									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="border: none; border-bottom: 5px solid #dddddd; border-spacing: 0px; border-collapse: collapse; font-weight: 400; margin-bottom: 100px;">
+									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="">
 
 										<!--<tr class="font-12" style="border: solid 1px #cccccc; background-color: #eeeeee; border-radius: 3px;">-->
 										<tr class="font-12 inlined" >
-											<th style="width: 20px;"><input type="checkbox"></th>
+											<th style="width: 20px;" class=""><input type="checkbox"></th>
 											<th>FROM LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 											<th>TO LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 
@@ -178,7 +183,24 @@
 										</tr>
 
 									</table>
+
+									<div class="table-footer clearfix">
+										<span class="table-footer-text pull-left">12 result from 120</span>
+
+										<ul class="pagination pagination-sm pull-right" style="margin-right: 16px">
+											<li class="disabled"><a href="#">«</a></li>
+											<li class="active"><a href="#"  style="background-color: #EB635E; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">»</a></li>
+										</ul>
+									</div>
 								</div>
+
+
+
 							</div>
 						</div>
 

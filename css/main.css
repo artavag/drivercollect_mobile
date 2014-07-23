@@ -25,6 +25,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 300;
+	/*background-color: #F9F9F9;*/
 }
 
 ul {
@@ -308,6 +309,7 @@ body {
 	/*text-shadow: 0 1px 0 #F7A2A1;*/
 	padding:  3px 8px 3px 8px;
 	background-color: #D9534F;
+	/*background-color: #D95342;*/
 	border-radius: 5px;
 	font-size: 14px;
 	border: solid 1px #F26F6D;
@@ -337,14 +339,17 @@ body {
 
 .text-big2 {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-weight: 300;
+	font-size: 20px;
 	text-align: left;
 	/*text-align: center;*/
-	color: #000000;
+	/*color: #000000;*/
 	font-style: normal;
-	margin-top: 1em;
-	margin-bottom: 0em;
+	/*margin-top: 1em;*/
+	/*margin-bottom: 0em;*/
 	/*text-shadow: 0 1px 1px #BDBDBD;*/
+	margin: 0;
+	padding: 16px 16px;
 }
 
 .text-footer {
@@ -393,7 +398,9 @@ td.separator {
 .leftmenu {
 	font-size: 14px;
 	margin-top: 35px;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	border-bottom: none;
+
 	/*background-color: #FBFBFB;*/
 	/*border: solid 1px #E6E6E6;*/
 	/*-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
@@ -401,28 +408,65 @@ td.separator {
 	/*border-radius: 5px;*/
 }
 
-.leftmenu {
-	border-bottom: none;
-}
-
 .leftmenu li{
 	/*border-bottom: solid 1px #E9E9E9;*/
 	/*padding: 10px 10px;*/
 	background-image: url("../img/arrow_menu.gif");
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
-
+	background-position: 95% 50%;
 	margin: 0;
+	margin-bottom: 2px;
+	border: solid 1px #E2E3E3;
+	border-radius: 3px;
+	background-color: #ffffff;
 }
 
 .leftmenu li a, .leftmenu li a:visited {
 	display: block;
-	padding: 5px 5px 5px 20px;
+	padding: 5px 5px 5px 15px;
 }
 
 .leftmenu li a:hover, .leftmenu li a:active {
 	color: #d92646;
 	text-decoration: none;
+}
+
+.table-header {
+	/*background-color: #E66454;*/
+	background-color: #EB635E;
+	/*border-color: #ca4433!important;*/
+	color: #fff;
+	/*position: relative;*/
+	border: 1px solid #ca4433!important;
+	margin-bottom: -1px;
+	/*padding: 10px 15px;*/
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	margin-top: 36px;
+}
+
+.table-footer {
+	background-color: #FAFAFA;
+	/*border-color: #ca4433!important;*/
+	/*color: #fff;*/
+	/*position: relative;*/
+	border: 1px solid #E4E4E4 !important;
+	margin-bottom: 50px;
+	/*padding: 10px 15px;*/
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.table-footer-text {
+	font-size: 14px;
+	padding: 22px 16px;
+	display: block;
+	border-bottom: solid 1px #ffffff;
+}
+
+ul.pagination li {
+	margin-left: 0px;
+	display: inline-block;
 }
 
 .menu-left-active {
@@ -439,6 +483,7 @@ table .font-12 th {
 	/*color: #d92646;*/
 	color: #ffffff;
 	font-weight: 400;
+	/*background-color: #ffffff;*/
 	/*border: none;*/
 	/*border-top: solid 5px #c9302c;*/
 }
@@ -448,28 +493,37 @@ table.table tr.font-12 > th {
 	/*padding-top: 20px;*/
 	/*padding-bottom: 20px;*/
 	/*border-top: solid 5px #E66561;*/
-	padding: 20px 8px 20px 8px;
+	/*padding: 20px 8px 20px 8px;*/
 	/*vertical-align: bottom;*/
 	/*background-color: #308ECB;*/
 	background-color: #D9534F;
-	border: none;
-	/*border-bottom: solid 5px #dddddd;*/
+	/*background-color: #D95342;*/
+	/*border: none;*/
+	/*border-top: solid 1px #CA4433;*/
+	/*border-bottom: solid 1px #CA4433;*/
+	border: solid 1px #CA4433;
 }
 
 .table>tbody> tr > td.action-buttons {
 	/*width: 20px;*/
-	padding: 8px 2px;
+	padding: 8px 4px 8px 0px;
 }
 
 .table>tbody> tr > td {
 	/*border-top: solid 5px #dddddd;*/
 	/*border-top: solid 5px #f5f5f5;*/
-	border-top: solid 5px #dddddd;
+	/*border-top: solid 5px #dddddd;*/
+	background-color: #ffffff;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	color: #333333;
 }
 
 .table>tbody> tr > td .glyphicon {
 	color: #ffffff;
 	background-color: #D9534F;
+	/*background-color: #E66454;*/
+
 	/*border: solid 1px #D43F3A;*/
 
 	/*color: #666666;*/
@@ -480,11 +534,22 @@ table.table tr.font-12 > th {
 	padding: 5px;
 }
 
-label.control-label{
+table.table {
+	border-radius: 10px;
+	border-left: 1px solid #E4E4E4;
+	border-right: 1px solid #E4E4E4;
+	/*border-bottom: 5px solid #dddddd;*/
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+label.control-label {
 	font-weight: 400;
 }
 
-label.radio-inline, .checkbox label{
+label.radio-inline, .checkbox label {
 	font-weight: 300;
 }
 
