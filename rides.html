@@ -98,18 +98,20 @@
 						<div class="col-lg-10 pull-left" style="padding-left: 0px; padding-right: 0px">
 
 							<div class="row">
-								<div class="table-header clearfix" style="">
-									<h1 class="text-big2 pull-left" style="">Open requests</h1>
+								<div class="table-header ">
+									<!--<div style="border-top: solid 1px #F57873; border-radius: 3px" class="clearfix">-->
+									<div class="clearfix">
+										<h1 class="text-big2 pull-left" style="">Open requests</h1>
 
-									<!--<div class="row" style="margin-bottom: 10px">-->
-										<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
-											<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
-											<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
-											<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
-											<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
-										</div>
-									<!--</div>-->
-
+										<!--<div class="row" style="margin-bottom: 10px">-->
+											<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
+												<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
+												<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
+												<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
+												<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
+											</div>
+										<!--</div>-->
+									</div>
 								</div>
 
 							</div>
@@ -122,24 +124,25 @@
 									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="">
 
 										<!--<tr class="font-12" style="border: solid 1px #cccccc; background-color: #eeeeee; border-radius: 3px;">-->
-										<tr class="font-12 inlined" >
-											<th style="width: 20px;" class=""><input type="checkbox"></th>
+										<tr class="font-12 " >
+											<th style="" class=""><input type="checkbox"></th>
 											<th>FROM LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 											<th>TO LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 
 											<th style="min-width: 110px">FROM TIME <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
-											<th style="min-width: 100px">TO TIME <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
+											<th style="min-width: 90px">TO TIME <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 
 											<!--<th style="min-width: 140px">REQUESTED <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>-->
 
-											<th style="min-width: 80px">COST <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
-											<th style="min-width: 90px">DIST. <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
+											<th style="min-width: 70px">COST <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
+											<th style="min-width: 70px">DIST. <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
 											<th colspan="3">ACTIONS</th>
 										</tr>
 
 										<!--<tr style="background-color: #F8F8F8">-->
 										<tr>
 											<td><input type="checkbox"></td>
+											<!--<td><label class='hasborder'><input type='checkbox' /></label></td>-->
 											<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
 											<td>Regent Street, Westminster, St. James's, City of Westminster, London, Greater London, England, SW1, United Kingdom</td>
 											<td>28.05.2014 <br>10:30</td>
@@ -184,18 +187,20 @@
 
 									</table>
 
-									<div class="table-footer clearfix">
-										<span class="table-footer-text pull-left">12 result from 120</span>
+									<div class="table-footer ">
+										<div class="clearfix" style="border-bottom: solid 1px #ffffff;">
+											<span class="table-footer-text pull-left">12 result from 120</span>
 
-										<ul class="pagination pagination-sm pull-right" style="margin-right: 16px">
-											<li class="disabled"><a href="#">«</a></li>
-											<li class="active"><a href="#"  style="background-color: #EB635E; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-											<li><a href="#">»</a></li>
-										</ul>
+											<ul class="pagination pagination-sm pull-right" style="margin-right: 16px; ">
+												<li class="disabled"><a href="#" style="color: red">«</a></li>
+												<li class="active"><a href="#"  style="background-color: #EB635E; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
+												<li><a href="#" style="color: red">2</a></li>
+												<li><a href="#" style="color: red">3</a></li>
+												<li><a href="#" style="color: red">4</a></li>
+												<li><a href="#" style="color: red">5</a></li>
+												<li><a href="#" style="color: red">»</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 

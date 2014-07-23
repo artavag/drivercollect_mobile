@@ -446,11 +446,11 @@ td.separator {
 }
 
 .table-footer {
-	background-color: #FAFAFA;
+	background-color: #F5F5F5;
 	/*border-color: #ca4433!important;*/
 	/*color: #fff;*/
 	/*position: relative;*/
-	border: 1px solid #E4E4E4 !important;
+	border: 1px solid #E4E4E4 ;
 	margin-bottom: 50px;
 	/*padding: 10px 15px;*/
 	border-bottom-right-radius: 3px;
@@ -459,15 +459,21 @@ td.separator {
 
 .table-footer-text {
 	font-size: 14px;
-	padding: 22px 16px;
+	padding: 18px 16px;
 	display: block;
-	border-bottom: solid 1px #ffffff;
+	margin: 0;
+	/*border-bottom: solid 1px #ffffff;*/
 }
 
 ul.pagination li {
 	margin-left: 0px;
 	display: inline-block;
 }
+
+.pagination {
+	margin: 14px 0;
+}
+
 
 .menu-left-active {
 	color: #d92646;
@@ -502,6 +508,17 @@ table.table tr.font-12 > th {
 	/*border-top: solid 1px #CA4433;*/
 	/*border-bottom: solid 1px #CA4433;*/
 	border: solid 1px #CA4433;
+	/*border-top: solid 1px #CA4433;*/
+	border-bottom: solid 1px #AD2A26;
+	padding: 6px;
+}
+
+table.table tr {
+
+}
+
+table.table tr td:first-child {
+	/*border-right: solid 1px #dddddd;*/
 }
 
 .table>tbody> tr > td.action-buttons {
@@ -517,11 +534,13 @@ table.table tr.font-12 > th {
 	font-family: Tahoma, Geneva, Arial, sans-serif;
 	font-size: 13px;
 	color: #333333;
+	padding: 6px;
 }
 
 .table>tbody> tr > td .glyphicon {
 	color: #ffffff;
-	background-color: #D9534F;
+	/*background-color: #D9534F;*/
+	background-color: #F57873;
 	/*background-color: #E66454;*/
 
 	/*border: solid 1px #D43F3A;*/
@@ -530,8 +549,8 @@ table.table tr.font-12 > th {
 	/*background-color: #F1F1F1;*/
 	/*border: solid 1px #dddddd;*/
 
-	border-radius: 3px;
-	padding: 5px;
+	border-radius: 2px;
+	padding: 4px;
 }
 
 table.table {
@@ -572,4 +591,17 @@ label.radio-inline, .checkbox label {
 .padding-left-right {
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+input[type=checkbox] {
+	width: 16px;
+	height: 16px;
+	/*border: 1px solid #1e5180;*/
+	outline: none;
+	background-color: red;
+	color: red;
+}
+
+.hasborder {
+	border:1px solid #F00;
 }
