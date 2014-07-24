@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!--<link rel="stylesheet" href="css/normalize.css">-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/bootstrap-timepicker.js"></script>
+		<script src="js/jquery.polyglot.language.switcher.js"></script>
+		<script src="js/main.js"></script>
+
+		<div class="container-fluid" >
+			<div class="row">
+				<div id="header2" class="col-lg-12">
+
+					<div class="row">
+						<div class="main-nav clearfix">
+
+							<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+
+								<div class="col-lg-6 pull-right" style="padding-right: 0px">
+									<ul class="mynavbar3 pull-right">
+										<li><p>Welcome <span>guest!</span></p></li>
+										<li><a href="#">Login</a></li>
+										<li>|</li>
+										<li><a href="#">Register</a></li>
+									</ul>
+								</div>
+
+								<div class="col-lg-2" style="padding-top: 14px;">
+									<img src="img/logo3.png">
+								</div>
+
+								<ul class="mynavbar2 pull-left">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="rides.html">My rides</a></li>
+									<li><a href="myprofile.html">My profile</a></li>
+									<li>My account</li>
+									<!--<li><a href="faq.html">FAQs</a></li>-->
+									<li><a href="faq.html">Support</a></li>
+									<!--<li>Support</li>-->
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+
+								<div class="pull-right" style="padding-top: 18px;">
+									<img src="img/switcher.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="content">
+				<div class="row">
+
+					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+
+						<div class="col-lg-2 pull-left">
+							<div class="leftmenu" style="padding-left: 0px">
+								<ul>
+									<li><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+									<li><a href="rides.html">Open requests</a></li>
+									<li><a href="#">Active deals</a></li>
+									<li><a href="#">Closed requests</a></li>
+									<li><a href="#">Closed deals</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-10 pull-left" style="padding-left: 0px; padding-right: 0px">
+
+							<div class="row">
+								<div class="table-header">
+									<!--<div style="border-top: solid 1px #F57873; border-radius: 3px" class="clearfix">-->
+									<div class="clearfix">
+										<h1 class="text-big2 pull-left" style="">Locations</h1>
+
+										<!--<div class="row" style="margin-bottom: 10px">-->
+											<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
+												<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
+												<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
+												<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
+												<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
+											</div>
+										<!--</div>-->
+									</div>
+								</div>
+
+							</div>
+
+							<!--<div class="row">-->
+
+								<!--<div class="table-responsive">-->
+								<div class="row">
+
+									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="display: inline-block">
+									<!--<table class="" style="border: solid 1px #cccccc; width: 100%; display: block">-->
+
+										<tr class="font-12">
+											<th style="" class=""><input type="checkbox"></th>
+											<th>LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
+											<th style="min-width: 110px">CREATED<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
+											<th colspan="3">ACTIONS</th>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+											<td>28.05.2014 10:30</td>
+											<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+											<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>
+											<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
+											<td>28.05.2014 10:30</td>
+											<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+											<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>
+											<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>
+										</tr>
+
+										<!--<tr>-->
+											<!--<td><input type="checkbox"></td>-->
+											<!--<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>-->
+											<!--<td>28.05.2014 10:30</td>-->
+											<!--<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>-->
+											<!--<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>-->
+											<!--<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>-->
+										<!--</tr>-->
+									</table>
+
+									<div class="table-footer clearfix">
+										<span class="table-footer-text pull-left">12 result from 120</span>
+
+										<ul class="pagination pagination-sm pull-right" style="margin-right: 16px; ">
+											<li class="disabled"><a href="#" style="color: red">«</a></li>
+											<li class="active"><a href="#"  style="background-color: #F57873; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
+											<li><a href="#" style="color: red">2</a></li>
+											<li><a href="#" style="color: red">3</a></li>
+											<li><a href="#" style="color: red">4</a></li>
+											<li><a href="#" style="color: red">5</a></li>
+											<li><a href="#" style="color: red">»</a></li>
+										</ul>
+									</div>
+								</div>
+
+							<!--</div>-->
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
+						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
+						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
+						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+
+
+	jQuery(document).ready(function($) {
+
+		$('#datepicker').datepicker();
+
+		$('#timepicker').timepicker({
+			minuteStep: 5,
+			showInputs: false,
+			disableFocus: true,
+			showMeridian: false,
+			showSeconds: false,
+			defaultTime: false
+		});
+
+		$('#refine_search').on('click', function(){
+			$('#additional_options').toggle();
+			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
+		});
+
+//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+//			effect: 'fade',
+//			testMode: true,
+//			onChange: function(evt)
+//			{
+//				switch (evt.selectedItem)
+//				{
+//					case 'id':
+//						window.location.href = '#';
+//						break;
+//					case 'br':
+//						window.location.href = '#';
+//						break;
+//					case 'en':
+//						window.location.href = '#';
+//						break;
+//					case 'es':
+//						window.location.href = '#';
+//						break;
+//					case 'am':
+//						window.location.href = '#';
+//						break;
+//				}
+//			}
+//		});
+	});
+</script>
