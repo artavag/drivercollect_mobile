@@ -446,7 +446,8 @@ ol {
 	height: 18px;
 	width: 16px;
 	float: right !important;
-	background: url('../img/sort.png') no-repeat;
+	/*background: url('../img/sort.png') no-repeat;*/
+	background: url('../img/sort.gif') no-repeat;
 	opacity: 0.6;
 }
 
