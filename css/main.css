@@ -34,6 +34,29 @@ ul {
 	margin: 0px;
 }
 
+.scroll-top {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 36px;
+	height: 36px;
+	background-color: #EB635E;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+.scroll-top-icon {
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+	padding: 6px 8px 10px 8px;
+
+}
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -437,6 +460,18 @@ ol {
 	font-size: 13px;
 }
 
+
+table.table {
+	/*border-left: 1px solid #E4E4E4;*/
+	/*border-right: 1px solid #E4E4E4;*/
+	margin-top: 36px;
+	margin-bottom: 36px;
+	border-collapse: separate;
+
+	/*padding: 10px 0px 0px 0px;*/
+	/*border-radius: 100px;*/
+}
+
 table.table tbody tr.font-12 th {
 	font-size: 13px;
 	color: #ffffff;
@@ -480,15 +515,6 @@ table.table tbody tr.font-12 th:last-child {
 	border-right: solid 1px #dddddd;
 }
 
-table.table {
-	/*border-left: 1px solid #E4E4E4;*/
-	/*border-right: 1px solid #E4E4E4;*/
-	margin-top: 36px;
-	margin-bottom: 36px;
-	border-collapse: separate;
-
-	/*border-radius: 100px;*/
-}
 
 
 .table-header {
