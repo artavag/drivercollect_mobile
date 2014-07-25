@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,42 +110,52 @@
 						<div class="row clearfix" style="padding: 0px 40px">
 							<div class="form-group col-lg-6 ">
 								<label for="inputEmail3" class="control-label hidden-xs">Username</label>
-								<div class="">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
 									<input type="text" class="form-control <!--input-lg-->" id="inputEmail3" placeholder="Username">
 								</div>
 							</div>
 
 							<div class="form-group col-lg-6 ">
 								<label for="inputEmail85" class="control-label hidden-xs">Email</label>
-								<div class="">
-									<input type="password" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Email">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+									<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Email">
 								</div>
 							</div>
 
 							<div class="form-group col-lg-6 ">
 								<label for="inputEmail4" class="control-label hidden-xs">Password</label>
-								<div class="">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
 									<input type="password" class="form-control <!--input-lg-->" id="inputEmail4" placeholder="Password">
 								</div>
 							</div>
 
 							<div class="form-group col-lg-6 ">
 								<label for="inputEmail8" class="control-label hidden-xs">Confirm password</label>
-								<div class="">
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
 									<input type="password" class="form-control <!--input-lg-->" id="inputEmail8" placeholder="Confirm password">
 								</div>
 							</div>
 
 							<div class="form-group col-lg-6 clearfix">
 								<label class="control-label hidden-xs">Country</label>
-								<select class="form-control">
-									<option value="0">- Select country -</option>
-									<option value="1">Armenia</option>
-									<option value="2">Brazil</option>
-									<option value="3">Indonesia</option>
-									<option value="4" selected="selected">United Kingdom</option>
-									<option value="5">Spain</option>
-								</select>
+
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></div>
+									<select class="form-control">
+										<option value="0">- Select country -</option>
+										<option value="1">Armenia</option>
+										<option value="2">Brazil</option>
+										<option value="3">Indonesia</option>
+										<option value="4" selected="selected">United Kingdom</option>
+										<option value="5">Spain</option>
+									</select>
+								</div>
+
+
 							</div>
 						</div>
 
@@ -159,8 +170,10 @@
 
 							<div class="form-group col-lg-6" style="padding-top: 26px;">
 								<label for="inputEmail85" class="control-label hidden-xs">Confirmation Code</label>
-								<div class="">
-									<input type="password" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Enter the code from image">
+
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+									<input type="password" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Code from captcha">
 								</div>
 							</div>
 						</div>
