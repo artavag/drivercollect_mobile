@@ -36,14 +36,14 @@ ul {
 
 .scroll-top {
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
+	bottom: 30px;
+	right: 30px;
 	width: 36px;
 	height: 36px;
 	background-color: #EB635E;
 	border-radius: 2px;
-	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
 	cursor: pointer;
 }
 
@@ -472,20 +472,58 @@ table.table {
 	/*border-radius: 100px;*/
 }
 
+tbody {
+	padding: 100px;
+}
+
+.table-header {
+	background-color: #D9534F;
+	/*background-color: #EB635E;*/
+	color: #fff;
+	border-top: 1px solid #ca4433;
+	border-left: 1px solid #ca4433;
+	border-right: 1px solid #ca4433;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
 table.table tbody tr.font-12 th {
 	font-size: 13px;
 	color: #ffffff;
 	font-weight: 400;
-	background-color: #EB635E;
+	/*background-color: #EB635E;*/
+	background-color: #D9534F;
 	/*border: solid 1px #CA4433;*/
+
 	border-left: solid 1px #CA4433;
+	/*border-left: solid 1px #EB635E;*/
+
 	border-top: solid 1px #CA4433;
+	/*border-top: solid 1px #EB635E;*/
+
 	border-bottom: solid 1px #AD2A26;
-	padding: 6px;
+	/*border-bottom: solid 1px #EB635E;*/
+
+	padding: 6px 6px 6px 6px ;
 }
 
 table.table tbody tr.font-12 th:last-child {
 	border-right: solid 1px #CA4433;
+	padding-right: 18px;
+}
+
+table.table tbody tr.font-12 th:first-child {
+	padding-left: 18px;
+}
+
+table.table tbody tr td:last-child {
+	padding-right: 18px;
+	border-right: solid 1px #dddddd;
+}
+
+table.table tbody tr td:first-child {
+	padding-left: 18px;
+	border-left: solid 1px #dddddd;
 }
 
 .table>tbody> tr > td {
@@ -507,25 +545,9 @@ table.table tbody tr.font-12 th:last-child {
 	padding: 4px;
 }
 
-.table tbody tr td:first-child {
-	border-left: solid 1px #dddddd;
-}
-
-.table tbody tr td:last-child {
-	border-right: solid 1px #dddddd;
-}
 
 
 
-.table-header {
-	background-color: #D9534F;
-	color: #fff;
-	border-top: 1px solid #ca4433;
-	border-left: 1px solid #ca4433;
-	border-right: 1px solid #ca4433;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-}
 
 .table>tbody+tbody {
 	border: none;
@@ -626,7 +648,6 @@ table input[type=checkbox] {
 
 
 
-
 .leftmenu {
 	font-size: 14px;
 	margin-top: 35px;
@@ -634,6 +655,7 @@ table input[type=checkbox] {
 	padding-bottom: 20px;
 	background-color: #25383B;
 	border-radius: 4px;
+	margin-right: 10px;
 	/*-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);*/
 	/*box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);*/
 
