@@ -579,8 +579,6 @@ label.radio-inline {
 	background-position: 0% 50%;
 }
 
-
-
 table input[type=checkbox] {
 	width: 15px;
 	height: 15px;
@@ -589,8 +587,6 @@ table input[type=checkbox] {
 	background-color: red;
 	color: red;
 }
-
-
 
 
 .leftmenu {
@@ -626,8 +622,14 @@ table input[type=checkbox] {
 	/*border-bottom: solid 1px #E2E3E3;*/
 }
 
-
-
+.form-wrapper-box {
+	margin-top: 36px;
+	border: solid 1px #dddddd;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);
+	border-radius: 5px;
+	padding: 0px;
+}
 
 
 
