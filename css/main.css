@@ -489,7 +489,7 @@ tbody {
 }
 
 table.table tbody tr.font-12 th {
-	font-size: 13px;
+	font-size: 15px;
 	color: #ffffff;
 	font-weight: 400;
 	/*background-color: #EB635E;*/
@@ -506,6 +506,8 @@ table.table tbody tr.font-12 th {
 	/*border-bottom: solid 1px #EB635E;*/
 
 	padding: 6px 6px 6px 6px ;
+
+
 }
 
 table.table tbody tr.font-12 th:last-child {
@@ -529,10 +531,10 @@ table.table tbody tr td:first-child {
 
 .table>tbody> tr > td {
 	background-color: #ffffff;
-	font-family: Tahoma, Geneva, Arial, sans-serif;
-	font-size: 13px;
+	/*font-family: Tahoma, Geneva, Arial, sans-serif;*/
+	font-size: 14px;
 	color: #666;
-	padding: 6px;
+	padding: 10px 6px;
 }
 
 .table>tbody> tr > td.action-buttons {
