@@ -751,7 +751,6 @@ table input[type=checkbox] {
 	font-size: 25px;
 	padding: 15px 0px 10px 25px;
 	/*text-shadow: 0px 1px 0 #ddd;*/
-
 }
 
 table.table tr td div.cost-text {
@@ -778,4 +777,18 @@ table.table tr td div.cost-text {
 	margin-top: -5px;
 	font-size: 18px;
 	font-family: Tahoma, Geneva, Arial, sans-serif;
+}
+
+.back-button {
+	background-image: url("../img/left.gif");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	padding: 20px 20px 20px 26px;
+}
+
+.back-button2 {
+	background-image: url("../img/left.gif");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	padding-left: 30px;
 }
