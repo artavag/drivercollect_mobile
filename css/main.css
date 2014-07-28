@@ -54,7 +54,6 @@ ul {
 	line-height: 20px;
 	display: block;
 	padding: 6px 8px 10px 8px;
-
 }
 
 /*
@@ -675,6 +674,16 @@ table input[type=checkbox] {
 	padding: 0px;
 }
 
+.form-wrapper-box2 {
+	margin-top: 36px;
+	border: solid 1px #dddddd;
+	border-bottom: solid 1px #cccccc;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.08);
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.08);
+	border-radius: 5px;
+	padding: 0px;
+}
+
 
 .leftmenu {
 	font-size: 14px;
@@ -691,7 +700,7 @@ table input[type=checkbox] {
 
 	/*border-bottom: none;*/
 	border: solid 1px #dddddd;
-	border-bottom: solid 1px #cccccc;
+	/*border-bottom: solid 1px #cccccc;*/
 }
 
 .leftmenu ul {
@@ -726,7 +735,9 @@ table input[type=checkbox] {
 	font-size: 12px;
 	font-weight: 400;
 	text-transform: uppercase;
+	text-shadow: 0px 1px 0 white;
 }
+
 
 .leftmenu li a:hover, .leftmenu li a:active {
 	color: #d92646;
@@ -739,6 +750,8 @@ table input[type=checkbox] {
 	font-weight: 100;
 	font-size: 25px;
 	padding: 15px 0px 10px 25px;
+	/*text-shadow: 0px 1px 0 #ddd;*/
+
 }
 
 table.table tr td div.cost-text {
