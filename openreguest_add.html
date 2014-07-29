@@ -217,38 +217,99 @@
 											</div>
 
 
-											<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">
+											<!--<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">-->
 
-												<div class="form-group col-lg-12" style="margin-bottom: 0px">
-													<!--<div class="checkbox pull-left">-->
-														<!--<label for="aaa">-->
-															<!--<input type="checkbox" name="aaa" id="aaa">Multiple request-->
-														<!--</label>-->
+												<!--<div class="form-group col-lg-12" style="margin-bottom: 0px">-->
+													<!--&lt;!&ndash;<div class="checkbox pull-left">&ndash;&gt;-->
+														<!--&lt;!&ndash;<label for="aaa">&ndash;&gt;-->
+															<!--&lt;!&ndash;<input type="checkbox" name="aaa" id="aaa">Multiple request&ndash;&gt;-->
+														<!--&lt;!&ndash;</label>&ndash;&gt;-->
+													<!--&lt;!&ndash;</div>&ndash;&gt;-->
+													<!--<div class="pull-left">-->
+														<!--<p class="form-control-static" style="font-size: 16px">Additional Details</p>-->
 													<!--</div>-->
-													<div class="pull-left">
-														<p class="form-control-static">Additional Details</p>
+
+													<!--<div class="pull-right" style="padding-top: 10px">-->
+														<!--<span><img src="img/plus.gif"></span>-->
+													<!--</div>-->
+												<!--</div>-->
+
+											<!--</div>-->
+
+											<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">
+												<div class="form-group col-lg-12">
+													<div class="" id="additional-details">
+														<p class="form-control-static pull-left" style="font-size: 16px">Additional Details</p>
+														<span class="pull-right"><img style="padding-top: 10px" src="img/plus.gif"></span>
+
+														<div class="clearfix">
+															<tr class="ride-repetition" style="outline: none;">
+																<td>Repeat on:</td>
+																<td colspan="2">
+																	<label for="1" style="min-width: 40px; margin:0px"><input type="checkbox" id="1" name="weekdays[]" value="1">M</label>
+																	<label for="2" style="min-width: 40px; margin:0px"><input type="checkbox" id="2" name="weekdays[]" value="2" checked="checked">T</label>
+																	<label for="3" style="min-width: 40px; margin:0px"><input type="checkbox" id="3" name="weekdays[]" value="3">W</label>
+																	<label for="4" style="min-width: 40px; margin:0px"><input type="checkbox" id="4" name="weekdays[]" value="4">T</label>
+																	<label for="5" style="min-width: 40px; margin:0px"><input type="checkbox" id="5" name="weekdays[]" value="5">F</label>
+																	<label for="6" style="min-width: 40px; margin:0px"><input type="checkbox" id="6" name="weekdays[]" value="6">S</label>
+																	<label for="7" style="min-width: 40px; margin:0px"><input type="checkbox" id="7" name="weekdays[]" value="7">S</label>
+																</td>
+															</tr>
+
+															<tr class="occurrences">
+																<td><label>Number of occurrences:</label></td>
+																<td colspan="2"><select name="occurrences" class="input-contact" style="width:60px">
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																</select></td>
+															</tr>
+														</div>
 													</div>
 
-													<div class="pull-right" style="padding-top: 10px">
-														<span><img src="img/plus.gif"></span>
+													<div class="clearfix">
+														<tr class="toggle-visibility" style="display: table-row;">
+															<td style="vertical-align: top"><label class="table_row_label">Additional passengers:</label></td>
+															<td style="vertical-align: top"><input class="input-contact" type="text" id="num_passengers" name="num_passengers" value="0" maxlength="2" style="width: 60px; margin-right: 15px"></td>
+															<td>
+																<label>Comment:</label>
+																<textarea style="width:200px; height:80px" class="textar" name="additional_passengers_comment"></textarea>
+															</td>
+														</tr>
+
+														<tr class="toggle-visibility" style="display: table-row;">
+															<td style="vertical-align: top"><label>Number luggages:</label></td>
+															<td style="vertical-align: top"><input class="input-contact" type="text" id="num_luggages" name="num_luggages" maxlength="2" value="0" style="width: 60px; margin-right: 15px"></td>
+															<td>
+																<label>Comment:</label>
+																<textarea style="width:200px; height:80px" class="textar" name="additional_luggages_comment"></textarea>
+															</td>
+														</tr>
+														<tr class="toggle-visibility" style="display: table-row;">
+															<td><label>Smoking:</label></td>
+															<td colspan="2">
+																<input type="radio" id="smoking_prefer_y" name="smoking_prefer" value="Y"> Yes<br>
+																<input type="radio" id="smoking_prefer_i" name="smoking_prefer" value="I" checked=""> Indifferent<br>
+																<input type="radio" id="smoking_prefer_n" name="smoking_prefer" value="N"> Strictly not<br>
+															</td>
+														</tr>
+														<tr class="toggle-visibility" style="display: table-row;">
+															<td><label>Comments</label></td>
+															<td colspan="2"><textarea name="request_comment" class="input-contact" style="width: 98%; height: 100px"></textarea></td>
+														</tr>
 													</div>
 												</div>
-
 											</div>
 
+
 											<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">
-
 												<div class="form-group col-lg-12">
-													<!--<label class="control-label hidden-xs">Currency</label>-->
-													<div class="pull-left">
-														<p class="form-control-static">Additional Details</p>
-													</div>
-
-													<div class="pull-right" style="padding-top: 10px">
-														<span><img src="img/plus.gif"></span>
+													<div class="" id="multiple-request">
+														<p class="form-control-static pull-left" style="font-size: 16px">Multiple request</p>
+														<span class="pull-right"><img style="padding-top: 10px" src="img/plus.gif"></span>
 													</div>
 												</div>
-
 											</div>
 
 											<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 10px 40px 10px 40px" class="clearfix">
@@ -309,6 +370,16 @@
 
 
 	jQuery(document).ready(function($) {
+
+		$('#additional-details').on('click', function(){
+			alert('sdg');
+		});
+
+
+		$('#multiple-request').on('click', function(){
+			alert('sd111g');
+		});
+
 
 		$('#datepicker').datepicker();
 
