@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,11 +30,13 @@
 		<!-- Add your site or application content here -->
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="js/vendor/bootstrap.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/bootstrap-datepicker.js"></script>
 		<script src="js/bootstrap-timepicker.js"></script>
 		<script src="js/jquery.polyglot.language.switcher.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/location-autocomplete.js"></script>
 
 		<div class="container-fluid" >
 			<div class="row">
@@ -47,9 +50,9 @@
 								<div class="col-lg-6 pull-right" style="padding-right: 0px">
 									<ul class="mynavbar3 pull-right">
 										<li><p>Welcome <span>guest!</span></p></li>
-										<li><a href="#">Login</a></li>
+										<li><a href="login.html">Login</a></li>
 										<li>|</li>
-										<li><a href="#">Register</a></li>
+										<li><a href="register.html">Register</a></li>
 									</ul>
 								</div>
 
@@ -61,7 +64,7 @@
 									<li><a href="index.html">Home</a></li>
 									<li><a href="rides.html">My rides</a></li>
 									<li><a href="myprofile.html">My profile</a></li>
-									<li>My account</li>
+									<li><a href="account.html">My account</a></li>
 									<!--<li><a href="faq.html">FAQs</a></li>-->
 									<li><a href="faq.html">Support</a></li>
 									<!--<li>Support</li>-->
@@ -81,100 +84,67 @@
 			<div id="content">
 				<div class="row">
 
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+					<div class="col-lg-10 col-lg-offset-1 padding-left-right" style="padding-bottom: 50px">
 
-						<div class="col-lg-2 pull-left">
+						<div class="col-lg-3">
 							<div class="leftmenu" style="padding-left: 0px">
+								<h2>My rides</h2>
 								<ul>
 									<li><a href="mylocations.html" class="menu-left-active">My locations</a></li>
 									<li><a href="rides.html">Open requests</a></li>
-									<li><a href="#">Active deals</a></li>
+									<li><a href="activedeals.html">Active deals</a></li>
 									<li><a href="#">Closed requests</a></li>
 									<li><a href="#">Closed deals</a></li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="col-lg-10 pull-left" style="padding-left: 0px; padding-right: 0px">
+						<div class="col-lg-9 form-wrapper-box2">
 
 							<div class="row">
-								<div class="table-header">
-									<!--<div style="border-top: solid 1px #F57873; border-radius: 3px" class="clearfix">-->
-									<div class="clearfix">
-										<h1 class="text-big2 pull-left" style="">Locations</h1>
-
-										<!--<div class="row" style="margin-bottom: 10px">-->
-											<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
-												<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
-												<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
-												<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
-												<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
-											</div>
-										<!--</div>-->
-									</div>
+								<div class="" style="padding-left: 0px;">
+									<h1 class="text-big3 pull-left " style="padding: 30px 50px 10px 50px">Add location</h1>
+									<h3 class="pull-left " style="font-size: 14px; font-weight: 300;clear: both;padding: 0px 50px">Type location name in form <i>Street, Town, Country</i>&nbsp;&nbsp;or&nbsp;<i>Town, Country</i> </h3>
+									<!--<a class="pull-right" href="register.html" style="padding: 54px 50px 0px 0px">Register</a>-->
 								</div>
-
 							</div>
 
-							<!--<div class="row">-->
+							<!--<form class="form-horizontal" role="form">-->
+							<form role="form">
 
-								<!--<div class="table-responsive">-->
-								<div class="row">
+								<div class="row clearfix" style="padding: 20px 40px">
+									<div class="form-group col-lg-8">
+										<!--<label for="inputEmail3" class="control-label hidden-xs">Enter bid amount (GBP)</label>-->
+										<!--<div class="input-group">-->
+											<!--<div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>-->
+											<input type="text" class="form-control" id="address_google" autocomplete="off" placeholder="Location">
+										<!--</div>-->
 
-									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="display: inline-block">
-									<!--<table class="" style="border: solid 1px #cccccc; width: 100%; display: block">-->
+											<ul class="location-ul">
+												<li>Regent St, London, UK</li>
+												<li>235 Regent St, London, United Kingdom</li>
+												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+											</ul>
 
-										<tr class="font-12">
-											<th style="" class=""><input type="checkbox"></th>
-											<th>LOCATION<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
-											<th style="min-width: 110px">CREATED<a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
-											<th colspan="3">ACTIONS</th>
-										</tr>
-
-										<tr>
-											<td><input type="checkbox"></td>
-											<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
-											<td>28.05.2014 10:30</td>
-											<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>
-											<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>
-											<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>
-										</tr>
-
-										<tr>
-											<td><input type="checkbox"></td>
-											<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>
-											<td>28.05.2014 10:30</td>
-											<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>
-											<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>
-											<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>
-										</tr>
-
-										<!--<tr>-->
-											<!--<td><input type="checkbox"></td>-->
-											<!--<td>Chestnut Grove, Penge, London Borough of Bromley, London, Greater London, England, SE20, United Kingdom</td>-->
-											<!--<td>28.05.2014 10:30</td>-->
-											<!--<td class="action-buttons" title="View request"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></td>-->
-											<!--<td class="action-buttons" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></td>-->
-											<!--<td class="action-buttons" title="Edit request"><a href="#"><span class="glyphicon glyphicon-edit"></span></a></td>-->
-										<!--</tr>-->
-									</table>
-
-									<div class="table-footer clearfix">
-										<span class="table-footer-text pull-left">12 result from 120</span>
-
-										<ul class="pagination pagination-sm pull-right" style="margin-right: 16px; ">
-											<li class="disabled"><a href="#" style="color: red">«</a></li>
-											<li class="active"><a href="#"  style="background-color: #F57873; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
-											<li><a href="#" style="color: red">2</a></li>
-											<li><a href="#" style="color: red">3</a></li>
-											<li><a href="#" style="color: red">4</a></li>
-											<li><a href="#" style="color: red">5</a></li>
-											<li><a href="#" style="color: red">»</a></li>
-										</ul>
 									</div>
 								</div>
 
-							<!--</div>-->
+								<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 20px 24px 50px; margin-top: 10px;" class="col-lg-12 clearfix">
+									<div class="">
+										<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
+											<!--<button type="submit" class="btn btn-danger">Confirm bid</button>-->
+											<a href="javascript:void(0);" class="btn btn-danger">Save location</a>
+										</div>
+
+										<div class="pull-left" style="padding: 0;margin: 0">
+											<a href="mylocations.html" class="btn btn-default">Cancel</a>
+										</div>
+									</div>
+								</div>
+
+							</form>
 						</div>
 
 						<div class="clearfix"></div>
@@ -193,6 +163,35 @@
 			</div>
 
 		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Confirm the amount you want to bid</h4>
+					</div>
+					<div class="modal-body">
+						<div style="text-align: center">
+							<p style="font-size: 20px"><strong>Current bid amount: </strong><span>0.00 GBP</span></p>
+							<p>Your counterparty will be informed by email</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+
+						<form action="offer.html" method="post" accept-charset="utf-8">
+							<input type="hidden" name="deal_id" id="deal_id" value="1">
+							<input type="hidden" name="bid_amount" id="new_bid_amount" value="1.00">
+
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<input type="submit" class="btn btn-primary" value="Confirm this bid" >
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="scroll-top"></div>
 	</body>
 </html>
 
