@@ -49,6 +49,9 @@ ul {
 	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
 	cursor: pointer;
+	background-image: url("../img/scroll_up.gif");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .scroll-top-icon {

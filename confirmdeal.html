@@ -102,9 +102,10 @@
 
 							<div class="row">
 								<div class="" style="padding-left: 0px;">
-									<h1 class="text-big3 pull-left " style="padding: 30px 50px 10px 50px">Make offer</h1>
+									<h1 class="text-big3 pull-left " style="padding: 30px 50px 10px 50px">Confirm deal</h1>
 									<h3 class="pull-right" style="font-weight: 100; margin-right: 40px;padding-top: 30px;font-size: 18px; color: #003bb3; /*border-bottom: solid 5px lightcoral*/">Ride: 128522 </h3>
-									<h3 class="pull-left " style="font-size: 21px; font-weight: 100;clear: both;padding: 0px 50px">Current bid amount: 10 GBP</h3>
+									<p class="pull-left " style="font-size: 16px; font-weight: 300;clear: both;padding: 20px 50px 0px 50px">Driver username: aaaa</p>
+									<p class="pull-left " style="font-size: 16px; font-weight: 300;clear: both;padding: 0px 50px">Rider username: vahe01</p>
 									<!--<a class="pull-right" href="register.html" style="padding: 54px 50px 0px 0px">Register</a>-->
 								</div>
 							</div>
@@ -113,11 +114,11 @@
 							<form role="form">
 
 								<div class="row clearfix" style="padding: 20px 40px">
-									<div class="form-group col-lg-3 ">
-										<label for="inputEmail3" class="control-label hidden-xs">Enter bid amount (GBP)</label>
+									<div class="form-group col-lg-6 ">
+										<label for="inputEmail3" class="control-label hidden-xs">Please enter your confirmation code for this deal</label>
 										<!--<div class="input-group">-->
 											<!--<div class="input-group-addon"><span>GBP</span></div>-->
-											<input type="text" class="form-control" id="inputEmail3" value="11">
+											<input type="text" class="form-control" id="inputEmail3" placeholder="Confirmation code">
 										<!--</div>-->
 									</div>
 								</div>
@@ -126,10 +127,7 @@
 									<div class="">
 										<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
 											<!--<button type="submit" class="btn btn-danger">Confirm bid</button>-->
-
-											<a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
-												Confirm bid
-											</a>
+											<a href="rate.hml" class="btn btn-danger">Confirm this deal settled</a>
 										</div>
 
 										<div class="pull-left" style="padding: 0;margin: 0">
@@ -158,32 +156,6 @@
 
 		</div>
 
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<h4 class="modal-title" id="myModalLabel">Confirm the amount you want to bid</h4>
-					</div>
-					<div class="modal-body">
-						<div style="text-align: center">
-							<p style="font-size: 20px"><strong>Current bid amount: </strong><span>0.00 GBP</span></p>
-							<p>Your counterparty will be informed by email</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-
-						<form action="offer.html" method="post" accept-charset="utf-8">
-							<input type="hidden" name="deal_id" id="deal_id" value="1">
-							<input type="hidden" name="bid_amount" id="new_bid_amount" value="1.00">
-
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<input type="submit" class="btn btn-primary" value="Confirm this bid" >
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="scroll-top"></div>
 	</body>
