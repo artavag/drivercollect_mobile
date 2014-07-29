@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!--<link rel="stylesheet" href="css/normalize.css">-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="js/vendor/bootstrap.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/bootstrap-timepicker.js"></script>
+		<script src="js/jquery.polyglot.language.switcher.js"></script>
+		<script src="js/main.js"></script>
+
+		<div class="container-fluid" >
+			<div class="row">
+				<div id="header2" class="col-lg-12">
+
+					<div class="row">
+						<div class="main-nav clearfix">
+
+							<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+
+								<div class="col-lg-6 pull-right" style="padding-right: 0px">
+									<ul class="mynavbar3 pull-right">
+										<li><p>Welcome <span>guest!</span></p></li>
+										<li><a href="login.html">Login</a></li>
+										<li>|</li>
+										<li><a href="register.html">Register</a></li>
+									</ul>
+								</div>
+
+								<div class="pull-left" style="padding-top: 14px;">
+									<img src="img/logo3.png">
+								</div>
+
+								<ul class="mynavbar2 pull-left">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="rides.html">My rides</a></li>
+									<li><a href="myprofile.html">My profile</a></li>
+									<li><a href="account.html">My account</a></li>
+									<!--<li><a href="faq.html">FAQs</a></li>-->
+									<li><a href="faq.html">Support</a></li>
+									<!--<li>Support</li>-->
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+
+								<div class="pull-right" style="padding-top: 18px;">
+									<img src="img/switcher.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="content">
+				<div class="row">
+
+					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+
+						<div class="col-lg-3">
+							<div class="leftmenu" style="padding-left: 0px">
+								<h2>My rides</h2>
+								<ul>
+									<li><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+									<li><a href="rides.html">Open requests</a></li>
+									<li><a href="activedeals.html">Active deals</a></li>
+									<li><a href="#">Closed requests</a></li>
+									<li><a href="#">Closed deals</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-9" style="padding-left: 0px; padding-right: 0px; margin-bottom: 50px" >
+
+							<!--<div class="table-responsive">-->
+								<!--<div class="col-lg-12 pull-left form-wrapper-box" style="padding-left: 50px; padding-right: 50px">-->
+								<div class="col-lg-12 pull-left form-wrapper-box2">
+
+									<div class="col-lg-10" style="padding-left: 40px;">
+										<h1 class="text-big3 pull-left">Add new request</h1>
+									</div>
+
+										<!--<form class="form-horizontal" role="form">-->
+										<form role="form">
+
+
+
+											<div class="row clearfix" style="padding: 0px 40px">
+
+												<div class="form-group col-lg-6 clearfix">
+													<label class="control-label hidden-xs">From location</label>
+
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></div>
+														<select class="form-control">
+															<option value="0">- Select country -</option>
+															<option value="1">Armenia</option>
+															<option value="2">Brazil</option>
+															<option value="3">Indonesia</option>
+															<option value="4" selected="selected">United Kingdom</option>
+															<option value="5">Spain</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group col-lg-6 clearfix">
+													<label class="control-label hidden-xs">To location</label>
+
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></div>
+														<select class="form-control">
+															<option value="0">- Select country -</option>
+															<option value="1">Armenia</option>
+															<option value="2">Brazil</option>
+															<option value="3">Indonesia</option>
+															<option value="4" selected="selected">United Kingdom</option>
+															<option value="5">Spain</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group col-lg-12 ">
+													<div class="form-group col-lg-6 no-padding-left" >
+														<label for="inputEmail3" class="control-label hidden-xs">Email</label>
+														<div class="input-group">
+															<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+															<input type="text" class="form-control <!--input-lg-->" id="inputEmail3" placeholder="Email">
+														</div>
+													</div>
+												</div>
+
+
+												<div class="form-group col-lg-4 ">
+													<label for="inputEmail85" class="control-label hidden-xs">From date</label>
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+														<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="From date">
+													</div>
+												</div>
+
+
+												<div class="form-group col-lg-2 ">
+													<label for="inputEmail85" class="control-label hidden-xs">From time</label>
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+														<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="From time">
+													</div>
+												</div>
+
+
+												<div class="form-group col-lg-4 ">
+													<label for="inputEmail85" class="control-label hidden-xs">To date</label>
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+														<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="From date">
+													</div>
+												</div>
+
+
+												<div class="form-group col-lg-2 ">
+													<label for="inputEmail85" class="control-label hidden-xs">To time</label>
+													<div class="input-group">
+														<div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+														<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="From time">
+													</div>
+												</div>
+
+
+												<div class="form-group col-lg-2">
+													<!--<label class="control-label hidden-xs">Currency</label>-->
+													<div class="">
+														<p class="form-control-static" style="font-weight: 400">Driver or Rider</p>
+													</div>
+												</div>
+
+												<div class="col-lg-6">
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Driver
+													</label>
+
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Rider
+													</label>
+
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Both
+													</label>
+												</div>
+
+											</div>
+
+
+											<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">
+
+												<div class="form-group col-lg-12" style="margin-bottom: 0px">
+													<!--<div class="checkbox pull-left">-->
+														<!--<label for="aaa">-->
+															<!--<input type="checkbox" name="aaa" id="aaa">Multiple request-->
+														<!--</label>-->
+													<!--</div>-->
+													<div class="pull-left">
+														<p class="form-control-static">Additional Details</p>
+													</div>
+
+													<div class="pull-right" style="padding-top: 10px">
+														<span><img src="img/plus.gif"></span>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="clearfix" style="border-top: solid 1px #dddddd; padding: 0px 40px">
+
+												<div class="form-group col-lg-12">
+													<!--<label class="control-label hidden-xs">Currency</label>-->
+													<div class="pull-left">
+														<p class="form-control-static">Additional Details</p>
+													</div>
+
+													<div class="pull-right" style="padding-top: 10px">
+														<span><img src="img/plus.gif"></span>
+													</div>
+												</div>
+
+											</div>
+
+											<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 10px 40px 10px 40px" class="clearfix">
+
+												<div style="padding: 20px 20px 24px 20px;" class="col-lg-12 clearfix">
+													<div class="" style="/*margin-top: 40px*/">
+														<div class="">
+															<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
+																<a href="offer.html" class="btn btn-danger">Save</a>
+															</div>
+
+															<div class="pull-left" style="padding: 0;margin: 0">
+																<a href="commit.html" class="btn btn-default">Cancel</a>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</form>
+									</div>
+
+
+
+							<!--<div style="" class="col-lg-12 clearfix no-padding-left-right">-->
+								<!--<div class="" style="margin-top: 30px">-->
+									<!--<a href="rides.html" class="btn btn-default back-button2">Back</a>-->
+								<!--</div>-->
+							<!--</div>-->
+
+							<!--</div>-->
+						</div>
+
+
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
+						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
+						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
+						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="scroll-top"></div>
+	</body>
+</html>
+
+<script type="text/javascript">
+
+
+	jQuery(document).ready(function($) {
+
+		$('#datepicker').datepicker();
+
+		$('#timepicker').timepicker({
+			minuteStep: 5,
+			showInputs: false,
+			disableFocus: true,
+			showMeridian: false,
+			showSeconds: false,
+			defaultTime: false
+		});
+
+		$('#refine_search').on('click', function(){
+			$('#additional_options').toggle();
+			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
+		});
+
+//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+//			effect: 'fade',
+//			testMode: true,
+//			onChange: function(evt)
+//			{
+//				switch (evt.selectedItem)
+//				{
+//					case 'id':
+//						window.location.href = '#';
+//						break;
+//					case 'br':
+//						window.location.href = '#';
+//						break;
+//					case 'en':
+//						window.location.href = '#';
+//						break;
+//					case 'es':
+//						window.location.href = '#';
+//						break;
+//					case 'am':
+//						window.location.href = '#';
+//						break;
+//				}
+//			}
+//		});
+	});
+</script>
