@@ -28,6 +28,10 @@ body {
 	/*background-color: #F9F9F9;*/
 }
 
+strong {
+	font-weight: 400;
+}
+
 ul {
 	list-style: none;
 	padding: 0px;
@@ -553,7 +557,8 @@ table.table-details tbody tr td:first-child {
 
 table.table-details tfoot.table-footer td, table.table-details tfoot.table-footer tr {
 	border: none;
-	border-top: 1px solid #E4E4E4;
+	/*border-top: 1px solid #E4E4E4;*/
+	border-top: 1px solid #dddddd;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 
@@ -585,12 +590,15 @@ table.active-deal {
 }
 
 table tfoot.table-footer {
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
+	background-color: #eeeeee;
 }
 
 table tfoot.table-footer td, table tfoot.table-footer tr {
-	background-color: #F5F5F5;
-	border: 1px solid #E4E4E4;
+	/*background-color: #F5F5F5;*/
+	background-color: #eeeeee;
+	/*border: 1px solid #E4E4E4;*/
+	border: 1px solid #cccccc;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 
@@ -728,7 +736,7 @@ table input[type=checkbox] {
 	background-position: 0% 50%;
 	/*color: #A7B1C2;*/
 	/*color: #ABB8BA;*/
-	color: #999999;
+	color: #777777;
 	display: block;
 	/*padding: 4px 0px 4px 0px;*/
 	padding: 10px 0px 10px 30px;
@@ -791,4 +799,11 @@ table.table tr td div.cost-text {
 	background-repeat: no-repeat;
 	background-position: 10px 50%;
 	padding-left: 30px;
+}
+
+.back-button3 {
+	background-image: url("../img/down.gif");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	padding-right: 30px;
 }

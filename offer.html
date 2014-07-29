@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +30,7 @@
 		<!-- Add your site or application content here -->
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="js/vendor/bootstrap.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/bootstrap-datepicker.js"></script>
 		<script src="js/bootstrap-timepicker.js"></script>
@@ -123,7 +125,11 @@
 								<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 20px 24px 50px; margin-top: 10px;" class="col-lg-12 clearfix">
 									<div class="">
 										<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
-											<button type="submit" class="btn btn-danger">Confirm bid</button>
+											<!--<button type="submit" class="btn btn-danger">Confirm bid</button>-->
+
+											<a href="javascript:void(0);" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+												Confirm bid
+											</a>
 										</div>
 
 										<div class="pull-left" style="padding: 0;margin: 0">
@@ -150,6 +156,33 @@
 				</div>
 			</div>
 
+		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Confirm the amount you want to bid</h4>
+					</div>
+					<div class="modal-body">
+						<div style="text-align: center">
+							<p style="font-size: 20px"><strong>Current bid amount: </strong><span>0.00 GBP</span></p>
+							<p>Your counterparty will be informed by email</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+
+						<form action="offer.html" method="post" accept-charset="utf-8">
+							<input type="hidden" name="deal_id" id="deal_id" value="1">
+							<input type="hidden" name="bid_amount" id="new_bid_amount" value="1.00">
+
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<input type="submit" class="btn btn-primary" value="Confirm this bid" >
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="scroll-top"><span class="glyphicon glyphicon-arrow-up scroll-top-icon"></span></div>
