@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -100,50 +101,58 @@
 					<div class="col-lg-9 form-wrapper-box2">
 
 						<div class="row">
-							<div class="" style="">
+							<div class="" style="padding: 0">
 								<h1 class="text-big3" style="padding-left: 50px">Groups</h1>
-								<p style="padding: 5px 55px">You are not a member of any group. You can request to create a group by <a href="contact.html">email</a>.</p>
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="col-lg-12" style="padding: 0">
-								<!--<form class="form-horizontal" role="form">-->
 
-								<p style="padding: 0px 55px">Or you can join an existing group. In this case you need to provide the code for joining the group.</p>
+							<form role="form" action="groups_created.html">
 
-								<form role="form" action="groups_created.html">
+								<div class="col-lg-5" style="padding: 0">
+									<p style="padding: 5px 55px">
+										<i class="fa fa-camera-retro"></i>
+										<i class="fa-li fa fa-check-square"></i>&#10004;
+										You are not a member of any group. You can request to create a group by <a href="contact.html">email</a>.</p>
+								</div>
+
+								<div class="col-lg-1" style="padding: 0">
+									<span style="font-size: 30px; font-style: italic; font-weight: 100">- or -</span>
+								</div>
+
+								<div class="col-lg-6" style="padding: 0">
+									<p style="padding: 0px 55px">You can join an existing group. In this case you need to provide the code for joining the group.</p>
 
 									<div style="padding: 10px 40px">
-										<div class="form-group col-lg-4 ">
+										<div class="form-group col-lg-7 ">
 											<label for="inputEmail3" class="control-label hidden-xs">Group name</label>
-											<div class="input-group">
-												<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+											<div class="">
 												<input type="text" class="form-control <!--input-lg-->" id="inputEmail3" placeholder="Group name">
 											</div>
 										</div>
 
-										<div class="form-group col-lg-4 ">
+										<div class="form-group col-lg-5 ">
 											<label for="inputEmail3" class="control-label hidden-xs">Code</label>
-											<div class="input-group">
-												<div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+											<div class="">
 												<input type="text" class="form-control <!--input-lg-->" id="inputEmail3" placeholder="Code">
 											</div>
 										</div>
 									</div>
+								</div>
 
-									<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 50px 24px 50px; margin-top: 10px;" class="col-lg-12 clearfix">
-										<div class="" style="/*margin-top: 40px*/">
-											<div class="">
-												<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
-													<button type="submit" class="btn btn-danger">Submit request</button>
-												</div>
+								<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 50px 24px 50px; margin-top: 10px;" class="col-lg-12 clearfix">
+									<div class="" style="/*margin-top: 40px*/">
+										<div class="">
+											<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
+												<button type="submit" class="btn btn-danger">Submit request</button>
 											</div>
 										</div>
 									</div>
+								</div>
 
-								</form>
-							</div>
+							</form>
+
 						</div>
 
 						<div class="clearfix"></div>
