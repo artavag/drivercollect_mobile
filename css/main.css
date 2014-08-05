@@ -268,12 +268,8 @@ body {
 	font-size: 1.15em;
 	font-style: normal;
 	font-weight: 300;
-	/*float: left;*/
-	/*clear: both;*/
-	/*display: inline-block;*/
 	padding: 0px 0px 0px 0px;
 	margin-left: 20px;
-	/*height: 60px;*/
 }
 
 .mynavbar2 li {
@@ -282,44 +278,49 @@ body {
 	margin-left: 20px;
 }
 
+.wellcome {
+	margin: 0;
+	padding: 0;
+}
+
+.wellcome li {
+	float: right;
+	color: #cccccc;
+	font-weight: 300;
+	font-size: 12px;
+	padding-top: 2px;
+	padding-left: 6px;
+	margin: 0;
+}
+
+.wellcome li a, .wellcome li a:visited {
+	color: #cccccc;
+}
+
+.wellcome span{
+	color: #ffffff;
+	font-weight: 300;
+	margin-left: 4px;
+}
+
 .mynavbar3 {
+	position: relative;
+	top: 0;
+	left: 0;
 	list-style: none;
 	color: #cccccc;
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.9em;
 	font-style: normal;
 	font-weight: 300;
-	/*float: left;*/
-	/*clear: both;*/
-	/*display: inline-block;*/
-	/*padding: 40px 0px 0px 0px;*/
-	/*margin-right: 274px;*/
-	/*margin-top: -65px;*/
-	/*clear: both;*/
-	/*height: 60px;*/
 	margin: 0;
 	padding: 0;
-	/*margin-left: 20px;*/
-
 }
 
 .mynavbar3 li {
 	float: left;
 	display: block;
 	padding: 2px 3px;
-}
-
-.mynavbar3 li p{
-	margin: 0;
-	padding: 0;
-	margin-right: 10px;
-	/*margin-left: 20px;*/
-}
-
-.mynavbar3 li span{
-	color: #ffffff;
-	font-weight: 300;
-	/*margin-left: 20px;*/
 }
 
 .mynavbar3 li a, .mynavbar3 li a:visited {
@@ -437,7 +438,7 @@ ul.text-regular li p {
 	text-align: justify;
 }
 
-ul.text-regular li strong{
+ul.text-regular li strong {
 	/*font-family: 'Roboto', sans-serif;*/
 	/*font-style: normal;*/
 	font-weight: 300;
@@ -554,8 +555,6 @@ table.table tbody tr.font-12 th {
 	/*border-bottom: solid 1px #EB635E;*/
 
 	padding: 6px 6px 6px 6px ;
-
-
 }
 
 table.table tbody tr.font-12 th:last-child {
@@ -606,7 +605,6 @@ table.table-details tfoot.table-footer td, table.table-details tfoot.table-foote
 	border-top: 1px solid #dddddd;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
-
 	/*border-radius: 100px;*/
 }
 
@@ -614,7 +612,7 @@ table.table-details tfoot.table-footer td, table.table-details tfoot.table-foote
 	/*padding: 8px 4px 8px 0px;*/
 /*}*/
 
-.table>tbody> tr > td .glyphicon {
+.table > tbody > tr > td .glyphicon {
 	color: #ffffff;
 	/*background-color: #F57873;*/
 	background-color: #666;
@@ -627,8 +625,6 @@ table.table-details tfoot.table-footer td, table.table-details tfoot.table-foote
 table.active-deal {
 	/*cursor: pointer;*/
 }
-
-
 
 .table>tbody+tbody {
 	border: none;
@@ -646,7 +642,6 @@ table tfoot.table-footer td, table tfoot.table-footer tr {
 	border: 1px solid #cccccc;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
-
 	/*border-radius: 100px;*/
 }
 
@@ -737,7 +732,6 @@ table input[type=checkbox] {
 	padding: 0px;
 }
 
-
 .leftmenu {
 	font-size: 14px;
 	margin-top: 36px;
@@ -750,7 +744,6 @@ table input[type=checkbox] {
 	margin-right: 10px;
 	/*-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);*/
 	/*box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);*/
-
 	/*border-bottom: none;*/
 	border: solid 1px #dddddd;
 	/*border-bottom: solid 1px #cccccc;*/
@@ -790,7 +783,6 @@ table input[type=checkbox] {
 	text-transform: uppercase;
 	text-shadow: 0px 1px 0 white;
 }
-
 
 .leftmenu li a:hover, .leftmenu li a:active {
 	color: #d92646;
@@ -893,13 +885,51 @@ table.table tr td div.cost-text {
 	border-radius: 2px;
 }
 
-.language {
-	margin-left: 5px;
-	margin-top: 5px;
-	padding: 50px;
-	padding-right: 20px;
-	background-color: white;
-	border-radius: 2px;
-	color: #000000;
-	
+.ll {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
+.language {
+	position: relative;
+	top: 0;
+	border: none;
+	padding: 6px;
+	border-radius: 1px;
+	font-size: 12px;
+}
+
+li a.language,  li a.language:visited {
+	text-decoration: none;
+	border: none;
+	background-color: #F5F5F5;
+	color: #000000;
+}
+
+li a.language:hover,  li a.language:active {
+	text-decoration: none;
+	background-color: #F5F5F5;
+	border: none;
+	color: #000000;
+}
+
+.language .flag-image img {
+	width: 22px;
+	border: none;
+	outline: none;
+	margin-top: -2px;
+}
+
+.flag-image {
+	margin: 0;
+	float: left;
+}
+
+.flag-name {
+	margin: 0;
+	margin-left: 6px;
+	float: left;
+}
+
