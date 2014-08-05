@@ -191,38 +191,25 @@ body {
 	}
 }
 
-
-
 .main-nav {
-	height: 60px;
+	height: 70px;
 	margin-left: -15px;
 	margin-right: -15px;
 	text-align: center;
-
 	background-color: #25383B;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-	/*background-color: rgba(37,56,59,0.95);*/
-
-	/*background-color: white;*/
-	/*background-image: url("../img/gradient.png");*/
-	/*border-bottom: solid 1px #333;*/
-	/*background-repeat: repeat-x;*/
-	/*background-position: 0% 100%;*/
-	/*-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
-	/*box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
-	/*border-top: solid 1px #C24C4C;*/
 }
 
-.main-nav li a, .main-nav li a:visited {
-	text-decoration: none;
-	color: #eeeeee;
-}
+/*.main-nav li a, .main-nav li a:visited {*/
+	/*text-decoration: none;*/
+	/*color: #eeeeee;*/
+/*}*/
 
-.main-nav li a:hover, .main-nav li a:active {
-	text-decoration: none;
-	color: #E37C78;
-	border-bottom: dotted 1px #E37C78;
-}
+/*.main-nav li a:hover, .main-nav li a:active {*/
+	/*text-decoration: none;*/
+	/*color: #E37C78;*/
+	/*border-bottom: dotted 1px #E37C78;*/
+/*}*/
 
 .main-nav2 {
 	/*height: 80px;*/
@@ -250,25 +237,24 @@ body {
 	padding: 0;
 }
 
-.mynavbar ul {
+/*.mynavbar ul {*/
 	/*margin: 20px 0px 0px 0px;*/
 	/*padding: 0;*/
-}
+/*}*/
 
-.mynavbar li {
-	float: left;
-	display: block;
-	margin-left: 20px;
-}
+/*.mynavbar li {*/
+	/*float: left;*/
+	/*display: block;*/
+	/*margin-left: 20px;*/
+/*}*/
 
 .mynavbar2 {
 	list-style: none;
 	color: #eeeeee;
-	font-family: 'Roboto', sans-serif;
 	font-size: 1.15em;
 	font-style: normal;
 	font-weight: 300;
-	padding: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
 	margin-left: 20px;
 }
 
@@ -278,29 +264,15 @@ body {
 	margin-left: 20px;
 }
 
-.wellcome {
-	margin: 0;
-	padding: 0;
+.mynavbar2 li a, .mynavbar2 li a:visited {
+	text-decoration: none;
+	color: #eeeeee;
 }
 
-.wellcome li {
-	float: right;
-	color: #cccccc;
-	font-weight: 300;
-	font-size: 12px;
-	padding-top: 2px;
-	padding-left: 6px;
-	margin: 0;
-}
-
-.wellcome li a, .wellcome li a:visited {
-	color: #cccccc;
-}
-
-.wellcome span{
-	color: #ffffff;
-	font-weight: 300;
-	margin-left: 4px;
+.mynavbar2 li a:hover, .mynavbar2 li a:active {
+	text-decoration: none;
+	color: #E37C78;
+	border-bottom: dotted 1px #E37C78;
 }
 
 .mynavbar3 {
@@ -892,44 +864,90 @@ table.table tr td div.cost-text {
 	left: 0;
 }
 
-.language {
-	position: relative;
-	top: 0;
-	border: none;
-	padding: 6px;
-	border-radius: 1px;
+.wellcome {
+	margin: 0;
+	padding: 0;
+	padding-top: 4px;
+}
+
+.wellcome ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.wellcome li {
+	float: right;
+	color: #cccccc;
+	font-weight: 300;
 	font-size: 12px;
+	padding-left: 6px;
 }
 
-li a.language,  li a.language:visited {
-	text-decoration: none;
-	border: none;
-	background-color: #F5F5F5;
-	color: #000000;
+.wellcome li a, .wellcome li a:visited {
+	color: #cccccc;
 }
 
-li a.language:hover,  li a.language:active {
-	text-decoration: none;
-	background-color: #F5F5F5;
-	border: none;
-	color: #000000;
+.wellcome span {
+	color: #ffffff;
+	font-weight: 300;
+	/*margin-left: 4px;*/
 }
 
-.language .flag-image img {
-	width: 22px;
-	border: none;
-	outline: none;
-	margin-top: -2px;
+.language-small {
+	margin-top: 10px;
+	padding: 5px 3px;
+	background-color: #ffffff;
+	border-radius: 1px;
 }
 
 .flag-image {
-	margin: 0;
 	float: left;
+	height: 11px;
+	outline: none;
+	margin-top: 1px;
+	border: solid 1px #999999;
 }
 
 .flag-name {
-	margin: 0;
-	margin-left: 6px;
 	float: left;
+
+	color: #000000;
+	font-size: 12px;
+	line-height: 12px;
+	font-style: normal;
+	font-weight: 300;
+
+	background-image: url("../img/select_down.gif");
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: 12px;
+	padding-left: 4px;
 }
+
+/*.flag-name a, .flag-name a:visited {*/
+	/*color: #cccccc;*/
+/*}*/
+
+/*.language {*/
+	/*position: relative;*/
+	/*top: 0;*/
+	/*border: none;*/
+	/*border-radius: 1px;*/
+	/*font-size: 12px;*/
+/*}*/
+
+/*li a.language,  li a.language:visited {*/
+	/*text-decoration: none;*/
+	/*border: none;*/
+	/*color: #cccccc;*/
+/*}*/
+
+/*li a.language:hover,  li a.language:active {*/
+	/*text-decoration: none;*/
+	/*border: none;*/
+	/*color: #cccccc;*/
+/*}*/
+
+
 
