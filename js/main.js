@@ -1,22 +1,29 @@
 $(document).ready(function(){
 
-	var a = $(document).outerHeight();
-	var b = $('#content').outerHeight();
-	var c = $('#header2').outerHeight();
-	var d = $('#footer').outerHeight();
+	var document_height = $(window).outerHeight();
+	var content_height = $('#content').outerHeight();
+
+	var header_height = $('#header2').outerHeight();
+	if (!header_height)	{
+		header_height = $('#header').outerHeight();
+	}
+
+	var footer_height = $('#footer').outerHeight();
 
 	var top = 0;
 
-	if ( b + c + d < a ){
-		top = a - (b + c ) - d + 'px';
+	console.log(document_height);
+	console.log(content_height);
+	console.log(header_height);
+	console.log(footer_height);
+	console.log(top);
 
-//		console.log(a);
-//		console.log(b);
-//		console.log(c);
-//		console.log(top);
+
+	if ( document_height > content_height + header_height + footer_height ){
+
+		top = document_height - content_height - header_height - footer_height + 'px';
 
 		$('#footer').css({
-			'position': 'relative',
 			'top': top
 		})
 	}
@@ -25,21 +32,26 @@ $(document).ready(function(){
 
 	$(window).on('resize', function(){
 
-		a = $(document).outerHeight();
-		b = $('#content').outerHeight();
-		c = $('#header2').outerHeight();
-		d = $('#footer').outerHeight();
+		document_height = $(window).outerHeight();
+		content_height = $('#content').outerHeight();
+
+		header_height = $('#header2').outerHeight();
+		if (!header_height)	{
+			header_height = $('#header').outerHeight();
+		}
+
+		footer_height = $('#footer').outerHeight();
 
 		top = 0;
 
-		if ( b + c + d < a ){
-			top = a - (b + c) - d + 'px';
+		if ( document_height > content_height + header_height + footer_height ){
+
+			top = document_height - content_height - header_height - footer_height + 'px';
 
 			$('#footer').css({
 				'top': top
 			})
 		}
-
 
 	});
 });
