@@ -99,6 +99,11 @@ body {
 	margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+	font-style: normal;
+}
+
 #header {
 	/*background-color: #F00;*/
 	/*width: 100%;*/
@@ -109,9 +114,10 @@ body {
 	background-size: cover;
 	background-position: 50% 50%;
 	/*border-bottom: solid 1px #000;*/
-	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);
-	box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+	/*-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
+	/*box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
 	z-index: 100;
+	border-bottom: solid 3px #eeeeee;
 }
 
 #header2 {
@@ -169,7 +175,7 @@ body {
 	background-color: rgba(0,0,0,0.5);
 	padding: 10px;
 	/*-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.8);*/
-	box-shadow: 0 0 3px 0 rgba(0,0,0,1);
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
 
 	/*-webkit-box-shadow:inset 0 0 5px 1px rgba(0,0,0,0.8);*/
 	/*box-shadow:inset 0 0 5px 1px rgba(0,0,0,0.8);*/
@@ -256,6 +262,7 @@ body {
 	font-weight: 300;
 	padding: 5px 0px 0px 0px;
 	margin-left: 20px;
+	margin-top: 13px;
 }
 
 .mynavbar2 li {
@@ -486,8 +493,8 @@ ul.text-regular li strong:hover {
 table.table {
 	/*border-left: 1px solid #E4E4E4;*/
 	/*border-right: 1px solid #E4E4E4;*/
-	margin-top: 36px;
-	margin-bottom: 36px;
+	/*margin-top: 36px;*/
+	/*margin-bottom: 36px;*/
 	border-collapse: separate;
 
 	/*padding: 10px 0px 0px 0px;*/
@@ -584,14 +591,20 @@ table.table-details tfoot.table-footer td, table.table-details tfoot.table-foote
 	/*padding: 8px 4px 8px 0px;*/
 /*}*/
 
-.table > tbody > tr > td .glyphicon {
-	color: #ffffff;
-	/*background-color: #F57873;*/
-	background-color: #666;
-	/*border: solid 1px #dddddd;*/
-	/*background-color: #307f83;*/
-	border-radius: 2px;
-	padding: 4px;
+.table-my > tbody > tr > td .glyphicon {
+	 color: #ffffff;
+	 /*background-color: #F57873;*/
+	 background-color: #666;
+	 /*border: solid 1px #dddddd;*/
+	 /*background-color: #307f83;*/
+	 border-radius: 2px;
+	 padding: 4px;
+}
+
+.table-home > tbody > tr > td .glyphicon {
+	padding: 0px 10px;
+	font-size: 18px;
+	color: #999999;
 }
 
 table.active-deal {
@@ -660,13 +673,6 @@ label.radio-inline {
 	padding-right: 5%;
 }
 
-.responsive-image {
-	background-image: url('../img/responsive.png');
-	height: 14em;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 100% 50%;
-}
 
 .paypal-image {
 	background-image: url('../img/paypal_options.png');
@@ -867,7 +873,7 @@ table.table tr td div.cost-text {
 .wellcome {
 	margin: 0;
 	padding: 0;
-	padding-top: 4px;
+	padding-top: 18px;
 }
 
 .wellcome ul {
@@ -880,49 +886,79 @@ table.table tr td div.cost-text {
 	float: right;
 	color: #cccccc;
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 15px;
 	padding-left: 6px;
 }
 
 .wellcome li a, .wellcome li a:visited {
 	color: #cccccc;
+	text-decoration: none;
 }
 
 .wellcome span {
-	color: #ffffff;
-	font-weight: 300;
+	/*color: #ffffff;*/
+	/*font-weight: 300;*/
 	/*margin-left: 4px;*/
 }
 
 .language-small {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	/*padding: 5px 3px;*/
 	/*background-color: #ffffff;*/
-	border-radius: 1px;
+	/*border-radius: 1px;*/
 }
 
 .flag-image {
 	float: left;
 	height: 11px;
 	outline: none;
-	margin-top: 1px;
+	margin-top: 5px;
 	/*border: solid 1px #999999;*/
 }
 
 .flag-name {
 	float: left;
-
-	/*color: #000000;*/
-	color: #cccccc;
-	font-size: 12px;
-	line-height: 12px;
-	font-style: normal;
-	font-weight: 400;
-
 	background-image: url("../img/select_down.gif");
 	background-repeat: no-repeat;
 	background-position: 100% 50%;
-	padding-right: 12px;
+	padding-right: 11px;
 	padding-left: 4px;
+	color: #cccccc;
+}
+
+.backgroud-gray {
+	background-color: #fafafa;
+	border-top: solid 1px #e6e6e6;
+	border-bottom: solid 1px #e6e6e6;
+	padding: 6em 0em 0em 0em;
+	-webkit-box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);
+	box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);
+}
+
+.backgroud-gray-light {
+	background-color: #fdfdfd;
+	/*border-top: solid 1px #e6e6e6;*/
+	border-bottom: solid 1px #e6e6e6;
+	padding: 1em 0em 1em 0em;
+	/*-webkit-box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);*/
+	/*box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);*/
+}
+
+.backgroud-gray-light h3{
+	font-weight: 300;
+}
+
+
+.backgroud-white {
+	background-color: #ffffff;
+	padding: 6em 0em 6em 0em;
+}
+
+.responsive-image {
+	background-image: url('../img/responsive.png');
+	/*height: 20em;*/
+	background-repeat: no-repeat;
+	/*background-size: contain;*/
+	background-position: 100% 100%;
 }
 
