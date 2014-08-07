@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 	/*-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
 	/*box-shadow: 0 0 5px 0 rgba(0,0,0,1);*/
 	z-index: 100;
-	border-bottom: solid 8px #eeeeee;
+	border-bottom: solid 8px #EEECEC;
 }
 
 #header2 {
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 	/*position: absolute;*/
 	/*bottom: 0%;*/
 	height: 300px;
-	border-top: solid 1px #cccccc;
+	/*border-top: solid 10px #F5F5F5;*/
 	position: relative;
 	top: 0px;
 }
@@ -600,7 +600,7 @@ table.table-details tfoot.table-footer td, table.table-details tfoot.table-foote
 }
 
 .table-home > tbody > tr > td, .table-home > tbody > tr > th {
-	background-color: #F5F5F5;
+	background-color: #F8F8F8;
 	border: none;
 	padding: 14px 4px;
 }
@@ -957,16 +957,16 @@ table.table tr td div.cost-text2 {
 }
 
 .backgroud-gray {
-	background-color: #fafafa;
+	background-color: #F8F8F8;
 	border-top: solid 1px #e6e6e6;
 	border-bottom: solid 1px #e6e6e6;
 	padding: 6em 0em 0em 0em;
-	-webkit-box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);
-	box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);
+	/*-webkit-box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);*/
+	/*box-shadow:inset 0 0 5px 0px rgba(0,0,0,0.05);*/
 }
 
 .backgroud-gray-light {
-	background-color: #fdfdfd;
+	background-color: #f8f8f8;
 	/*border-top: solid 1px #e6e6e6;*/
 	border-bottom: solid 1px #e6e6e6;
 	padding: 1em 0em 1em 0em;
@@ -992,3 +992,48 @@ table.table tr td div.cost-text2 {
 	background-position: 100% 100%;
 }
 
+.backgroud-border {
+	border-top:	dotted 1px #777;
+}
+
+#additional_options label {
+	margin-top: 4px;
+}
+
+.checkbox-my label {
+	position: relative;
+	top: 0;
+	left: 0px;
+	text-align: center;
+	padding: 2px 5px;
+	min-width: 40px;
+	/*height: 20px;*/
+	background-color: #F8F8F8;
+	margin:0px;
+	font-size: 14px;
+	font-weight: 300;
+	border-radius: 2px;
+	cursor: pointer;
+	/*margin-right: 3px;*/
+	color: #000000;
+	float: left;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	z-index: 500;
+	display: block;
+}
+
+
+.checkbox-my input {
+	z-index: 10;
+	margin-left: -0px;
+	display: block;
+	opacity: 1;
+	float: left;
+	/*margin-top: 2px;*/
+	cursor: pointer;
+}

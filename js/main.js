@@ -12,11 +12,11 @@ $(document).ready(function(){
 
 	var top = 0;
 
-	console.log(document_height);
-	console.log(content_height);
-	console.log(header_height);
-	console.log(footer_height);
-	console.log(top);
+//	console.log(document_height);
+//	console.log(content_height);
+//	console.log(header_height);
+//	console.log(footer_height);
+//	console.log(top);
 
 
 	if ( document_height > content_height + header_height + footer_height ){

@@ -93,22 +93,39 @@
 						<!--<div id="search-box" class="col-lg-8 col-lg-offset-2">-->
 						<div id="search-box" class="col-lg-10 col-lg-offset-1">
 
-							<div class="clearfix" style="font-family: 'Roboto', sans-serif; font-size: 14px">
-								<span style="color: #dcdcdc; float: left">Lorem ipsum dolor sit ame</span>
-								<span style="color: #dcdcdc; float: right" id="refine_search">Refine search <span class="glyphicon glyphicon-chevron-down"></span></span>
+							<div class="clearfix" style="">
+								<span style="color: #dcdcdc; float: left">
+									<div class="pull-left">
+										<div class="" style="padding: 0px 0px 0px 0px; font-weight: 300; font-size: 14px">Driver or Rider</div>
+									</div>
+									<div class="pull-left" style="margin-left: 30px">
+										<label class="radio-inline" style="padding: 0px 10px">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Driver
+										</label>
+
+										<label class="radio-inline " style="padding: 0px 10px">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Rider
+										</label>
+
+										<label class="radio-inline " style="padding: 0px 10px">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Both
+										</label>
+									</div>
+								</span>
+								<span style="color: #dcdcdc; float: right; padding-right: 15px; background-image: url('img/select_down_up.gif'); background-repeat: no-repeat; background-position: 100% -35%;" id="refine_search">Refine search</span>
 							</div>
 
 							<form role="form" style="margin-top: 1em">
 								<div class="row">
-									<div class="" style="width: 27.85%; float: left; margin-right: 0.7%">
+									<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">
 										<input type="text" class="form-control" id="exampleInputEmail2" placeholder="From location">
 									</div>
 
-									<div class="" style="width: 27.85%; float: left; margin-right: 0.7%">
+									<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">
 										<input type="text" class="form-control" id="exampleInputPassword2" placeholder="To location">
 									</div>
 
-									<div class="" style="width: 8%; float: left; margin-right: 0.7%">
+									<div class="" style="width: 9%; float: left; margin-right: 0.7%">
 										<div class="left-inner-addon">
 											<!--<div id="picker_icon2" class="glyphicon glyphicon-calendar" style=""></div>-->
 											<input type="text" class="form-control" id="datepicker" placeholder="From date" data-date-format="yyyy-mm-dd" style="">
@@ -122,7 +139,7 @@
 										</div>
 									</div>
 
-									<div class="" style="width: 8%; float: left; margin-right: 0.7%">
+									<div class="" style="width: 9%; float: left; margin-right: 0.7%">
 										<div class="left-inner-addon">
 											<!--<div id="picker_icon2" class="glyphicon glyphicon-calendar" style=""></div>-->
 											<input type="text" class="form-control" id="datepicker" placeholder="To date" data-date-format="yyyy-mm-dd" style="">
@@ -139,33 +156,21 @@
 									<button type="submit" class="btn btn-danger" style="float: left; width: 8%">Save</button>
 								</div>
 
-								<div id="additional_options" style="display: none">
-									<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #000; border-bottom: 1px solid #666;">
+								<div id="additional_options" style="display: none;margin-top: 10px" class="backgroud-border">
+									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #333; border-bottom: 1px solid #585858;">-->
 
-									<div class="clearfix" style="margin-top: 6px">
+									<div class="clearfix" style="padding-top: 10px; padding-bottom: 10px;">
 										<div style="color: #eeeeee; font-weight: 300">
 
-											<div class="col-lg-3" style="padding: 0;margin: 0">
-												<label class="checkbox-inline">
-													<input type="checkbox" id="inlineCheckbox1" value="option1"> Multiple request &nbsp;&nbsp;&nbsp;
-												</label>
-											</div>
+											<!--<div class="col-lg-3" style="padding: 0;margin: 0">-->
+												<!--<label class="checkbox-inline">-->
+													<!--<input type="checkbox" id="inlineCheckbox1" value="option1"> Multiple request &nbsp;&nbsp;&nbsp;-->
+												<!--</label>-->
+											<!--</div>-->
 
-											<div class="col-lg-5">
-												<div>Repeat on &nbsp;
-													<label for="1" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="1" name="weekdays[]" value="1">M</label>
-													<label for="2" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="2" name="weekdays[]" value="2">T</label>
-													<label for="3" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="3" name="weekdays[]" value="3">W</label>
-													<label for="4" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="4" name="weekdays[]" value="4">T</label>
-													<label for="5" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">F</label>
-													<label for="6" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="6" name="weekdays[]" value="6">S</label>
-													<label for="7" style="min-width: 40px; margin:0px" class="checkbox-inline"><input type="checkbox" id="7" name="weekdays[]" value="7">S</label>
-												</div>
-											</div>
-
-											<div class="col-lg-4">
+											<div class="col-lg-3 no-padding-left-right">
 												<div class="">
-													<div class="pull-left">Number of occurrences &nbsp;</div>
+													<div class="col-lg-8 pull-left no-padding-left-right" style="margin-top: 4px">Number of occurrences &nbsp;</div>
 													<select name="occurrences" class="form-control input-sm" style="width:60px">
 														<option value="1">1</option>
 														<option value="2">2</option>
@@ -174,50 +179,92 @@
 													</select>
 												</div>
 											</div>
+
+											<div class="col-lg-6 no-padding-left-right" style="margin-top: 4px">
+
+													<div class="pull-left col-lg-3 no-padding-left-right">
+														<div class="" style="">Repeat on</div>
+													</div>
+													<div class=" col-lg-9 no-padding-left-right checkbox-my" style="">
+														<label for="1" class="">Mon</label><input type="checkbox" id="1" name="weekdays[]" value="1">
+														<label for="2" class="">Tue</label><input type="checkbox" id="2" name="weekdays[]" value="2">
+														<label for="3" class="">Wen</label><input type="checkbox" id="3" name="weekdays[]" value="3">
+														<label for="4" class="">Thu</label><input type="checkbox" id="4" name="weekdays[]" value="4">
+														<label for="5" class="">Fri</label><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">
+														<label for="6" class="">Sat</label><input type="checkbox" id="6" name="weekdays[]" value="6">
+														<label for="7" class="">Sun</label><input type="checkbox" id="7" name="weekdays[]" value="7">
+
+														<!--<label for="1" class="checkbox-my" ><input type="checkbox" id="1" name="weekdays[]" value="1">M</label>-->
+														<!--<label for="2" class="checkbox-my"><input type="checkbox" id="2" name="weekdays[]" value="2">T</label>-->
+														<!--<label for="3" class="checkbox-my"><input type="checkbox" id="3" name="weekdays[]" value="3">W</label>-->
+														<!--<label for="4" class="checkbox-my"><input type="checkbox" id="4" name="weekdays[]" value="4">T</label>-->
+														<!--<label for="5" class="checkbox-my"><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">F</label>-->
+														<!--<label for="6" class="checkbox-my"><input type="checkbox" id="6" name="weekdays[]" value="6">S</label>-->
+														<!--<label for="7" class="checkbox-my"><input type="checkbox" id="7" name="weekdays[]" value="7">S</label>-->
+													</div>
+
+											</div>
+
 										</div>
 									</div>
 
-									<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #000; border-bottom: 1px solid #666;">
+									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
 
-									<div class="clearfix" style="margin-top: 6px; font-weight: normal; color: #eeeeee">
+									<div class="clearfix backgroud-border" style="padding-top: 10px; padding-bottom: 10px; font-weight: normal; color: #eeeeee">
 
-										<div class="col-lg-3" style="padding: 0;margin: 0">
+										<div class="col-lg-3 no-padding-left-right" style="padding: 0;margin: 0">
 											<div class="form-group">
-												<label for="inputPassword" class="control-label pull-left" style="font-weight: normal">Additional passengers</label>
-												<div class="col-lg-4">
-													<input type="text" class="form-control input-sm" id="inputPassword" value="0" maxlength="2">
+												<label for="inputPassword" class="pull-left col-lg-8 no-padding-left-right" style="font-weight: normal">Additional passengers</label>
+												<div class="col-lg-4 no-padding-left-right">
+													<input type="text" class="form-control input-sm" id="inputPassword" value="0" maxlength="2" style="width: 60px">
 												</div>
 											</div>
 										</div>
 
-										<div class="col-lg-3">
+										<div class="col-lg-3 no-padding-left-right" style="padding: 0;margin: 0">
 											<div class="form-group">
-												<label for="inputPassword2" class="control-label pull-left" style="font-weight: normal">Number luggages</label>
-												<div class="col-lg-4">
-													<input type="text" class="form-control input-sm" id="inputPassword2" value="0" maxlength="2">
+												<label for="inputPassword" class="pull-left col-lg-6 no-padding-left-right" style="font-weight: normal">Number luggages</label>
+												<div class="col-lg-4 no-padding-left-right">
+													<input type="text" class="form-control input-sm" id="inputPassword" value="0" maxlength="2" style="width: 60px">
 												</div>
 											</div>
 										</div>
 
-										<div class="col-lg-4 col-lg-offset-2">
-											<div class="pull-left" style="padding-right: 20px">Smoking </div>
-											<label class="radio-inline">
-												<input type="radio" id="smoking_prefer_y" name="smoking_prefer" value="Y"> Yes
-											</label>
+										<!--<div class="col-lg-3">-->
+											<!--<div class="form-group">-->
+												<!--<label for="inputPassword2" class="control-label pull-left" style="font-weight: normal">Number luggages</label>-->
+												<!--<div class="col-lg-4">-->
+													<!--<input type="text" class="form-control input-sm" id="inputPassword2" value="0" maxlength="2">-->
+												<!--</div>-->
+											<!--</div>-->
+										<!--</div>-->
 
-											<label class="radio-inline">
-												<input type="radio" id="smoking_prefer_i" name="smoking_prefer" value="I" checked=""> Indifferent
-											</label>
+										<div class="col-lg-6 no-padding-left-right">
 
-											<label class="radio-inline">
-												<input type="radio" id="smoking_prefer_n" name="smoking_prefer" value="N"> Strictly not
-											</label>
+												<div class="col-lg-3">
+													<div class="" style="margin-top: 4px">Smoking</div>
+												</div>
+												<div class="col-lg-9 no-padding-left-right" style="">
+													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option1"> Yes
+													</label>
+
+													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio22" value="option2"> Indifferent
+													</label>
+
+													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio23" value="option2"> Strictly not
+													</label>
+												</div>
+
+
 										</div>
 									</div>
 
-									<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #000; border-bottom: 1px solid #666;">
+									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
 
-									<div class="clearfix" style="margin-top: 6px; font-weight: normal; color: #eeeeee">
+									<div class="clearfix backgroud-border" style="padding-top: 10px; font-weight: normal; color: #eeeeee">
 										<textarea name="request_comment" class="form-control" placeholder="Comments"></textarea>
 									</div>
 								</div>
@@ -310,7 +357,7 @@
 
 									<tbody>
 										<tr>
-											<td style="min-width: 150px">
+											<td style="min-width: 150px; border-left: solid 2px #F57873;border-radius: 5px 0px 0px 5px;" >
 												<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
 												<span style="float: left; margin-top: -3px">
 													<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
@@ -320,14 +367,14 @@
 											<td>12 Buckingham St, London, United Kingdom</td>
 											<td>12 Buckingham St, London WC2N, UK</td>
 											<td style="min-width: 100px">28 Aug 10:30</td>
-											<td style="min-width: 100px"><div class="cost-text2">280.55 $</div></td>
+											<td style="min-width: 100px;border-radius: 0px 5px 5px 0px;border-right: solid 2px #F57873; "><div class="cost-text2">280.55 $</div></td>
 										</tr>
 										<tr>
 											<td colspan="8" style="background-color: white; padding: 3px"></td>
 										</tr>
 
 										<tr>
-											<td style="min-width: 150px">
+											<td style="min-width: 150px; border-left: solid 2px #F57873; border-radius: 5px 0px 0px 5px;" >
 												<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
 												<span style="float: left; margin-top: -3px">
 													<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
@@ -337,14 +384,14 @@
 											<td>12 Buckingham St, London, United Kingdom</td>
 											<td>12 Buckingham St, London WC2N, UK</td>
 											<td style="min-width: 100px">28 Aug 10:30</td>
-											<td style="min-width: 100px"><div class="cost-text2">280.55 $</div></td>
+											<td style="min-width: 100px;border-radius: 0px 5px 5px 0px;border-right: solid 2px #F57873; "><div class="cost-text2">280.55 $</div></td>
 										</tr>
 										<tr>
 											<td colspan="8" style="background-color: white; padding: 3px"></td>
 										</tr>
 
 										<tr>
-											<td style="min-width: 150px">
+											<td style="min-width: 150px; border-left: solid 2px #F57873; border-radius: 5px 0px 0px 5px;" >
 												<img src="img/001.jpg" width="40px" height="40px" style="float: left; margin-right: 8px">
 												<span style="float: left; margin-top: -3px">
 													<span class="clearfix"><strong style="color: #663C02">Random N.</strong></span>
@@ -354,8 +401,9 @@
 											<td>12 Buckingham St, London, United Kingdom</td>
 											<td>12 Buckingham St, London WC2N, UK</td>
 											<td style="min-width: 100px">28 Aug 10:30</td>
-											<td style="min-width: 100px"><div class="cost-text2">280.55 $</div></td>
+											<td style="min-width: 100px;border-radius: 0px 5px 5px 0px;border-right: solid 2px #F57873; "><div class="cost-text2">280.55 $</div></td>
 										</tr>
+
 									</tbody>
 
 								</table>
@@ -372,21 +420,12 @@
 						<div class="col-lg-6 pull-left ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>
 							<br>
-							<p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
 				</div>
 
-				<!--<div class="row backgroud-white">-->
-					<!--<div class="col-lg-10 col-lg-offset-1 padding-left-right">-->
-						<!--<img src="img/responsive.png" class="pull-left"/>-->
-						<!--<div class="col-lg-6 pull-right ">-->
-							<!--<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>-->
-							<!--<br>-->
-							<!--<p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
 
 				<div class="row backgroud-white">
 					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
@@ -394,7 +433,9 @@
 						<div class="col-lg-6 pull-right ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">You can pay with paypal...</h2>
 							<br>
-							<p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<br>
+							<a class="btn btn-danger">See how it works</a>
 						</div>
 					</div>
 				</div>
@@ -446,8 +487,90 @@
 		$('#refine_search').on('click', function(){
 			$('#additional_options').toggle();
 //			$('#search-box').css({ 'margin-top': '-3.4em', 'background-color': 'rgba(0,0,0, 0.9)' });
-			$('#search-box').css({ 'margin-top': '-3.4em', 'background-color': 'rgba(50,50,50, 0.98)' });
+
+			var is_visible = $('#additional_options').css('display');
+
+//			console.log (is_visible);
+
+			if (is_visible == 'block')
+			{
+//				$('#search-box').css({ 'margin-top': '-8em', 'background-color': 'rgba(50,50,50, 0.98)' });
+//				$('#search-box').css({ 'margin-top': '-5.4em', 'background-color': 'rgba(70,70,70, 0.95)' });
+				$('#search-box').css({ 'margin-top': '-5.4em', 'background-color': 'rgba(0,0,0, 0.6)' });
+				$(this).css({'background-position': '100% 135%'});
+			}
+			else
+			{
+				$('#search-box').css({ 'margin-top': '6em', 'background-color': ' rgba(0,0,0,0.5)' });
+				$(this).css({'background-position': '100% -35%'});
+			}
+
 		});
+
+		// todo get current date and make it checked
+
+		$('.checkbox-my label').on('mouseup', function(e){
+
+			e.stopPropagation();
+
+			var for_attr = $(this).attr('for');
+			var input_weekday = $('.checkbox-my input[id=' + for_attr + ']');
+
+			var input_checked = input_weekday.attr('checked');
+//			var input_checked2 = input_weekday.prop('checked');
+
+			console.log('attr '+input_checked);
+//			console.log('prop '+input_checked2);
+
+			if (input_checked)
+			{
+				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', false);
+				$('.checkbox-my input[id=' + for_attr + ']').prop('checked', false);
+
+				$('.checkbox-my label[for=' + for_attr + ']').css({
+					'background-color': '#f8f8f8'
+				});
+
+			}
+			else
+			{
+				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', true);
+				$('.checkbox-my input[id=' + for_attr + ']').prop('checked', true);
+
+				$('.checkbox-my label[for=' + for_attr + ']').css({
+					'background-color': '#d9534f'
+				});
+			}
+
+//			var input_id = $(this).attr('for');
+
+//			console.log(for_attr);
+		});
+
+
+
+//		$('.checkbox-my input').on('mouseover', function(e){
+//
+//			e.stopPropagation();
+//
+//			var input_id = $(this).attr('id');
+//
+//			$('.checkbox-my label[for=' + input_id + ']').css({
+//				'background-color': '#d9534f'
+//			});
+//		});
+
+//		$('.checkbox-my input').on('mouseleave', function(e){
+//
+//			e.stopPropagation();
+//
+//			var input_id = $(this).attr('id');
+//
+//			$('.checkbox-my label[for=' + input_id + ']').css({
+//				'background-color': '#f8f8f8'
+//			});
+//		});
+
 
 
 		$('a.language').on('click', function(){
