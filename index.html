@@ -81,11 +81,11 @@
 					</div>
 
 					<div class="row" style="margin-top: 2em">
-						<div class="col-lg-6 col-lg-offset-3">
-							<h1 class="text-big my-text-shadow" style="font-size: 70px; font-weight: 100">Searchless ride sharing</h1>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+							<h1 class="text-big my-text-shadow" style="">Searchless ride sharing</h1>
 						</div>
-						<div class="col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-3">
-							<h1 class="text-big my-text-shadow">We are different because we do the searching for you, even on parts of the journey.</h1>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 ">
+							<h1 class="text-big-slogan my-text-shadow">We are different because we do the searching for you, even on parts of the journey.</h1>
 						</div>
 					</div>
 
@@ -96,20 +96,23 @@
 							<div class="clearfix" style="">
 								<span style="color: #dcdcdc; float: left">
 									<div class="pull-left">
-										<div class="" style="padding: 0px 0px 0px 0px; font-weight: 300; font-size: 14px">Driver or Rider</div>
+										<div class="" style="padding: 0px 0px 0px 0px; font-weight: 300; font-size: 14px">Driver or rider?</div>
 									</div>
-									<div class="pull-left" style="margin-left: 30px">
-										<label class="radio-inline" style="padding: 0px 10px">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Driver
-										</label>
+									<div class="pull-left radio-driver-rider" style="margin-left: 20px">
+										<div class="pull-left">
+											<label for="driver" class="radio-inline" style="padding: 0px 10px">Driver</label>
+											<input type="radio" name="inlineRadioOptions" id="driver" value="option1">
+										</div>
 
-										<label class="radio-inline " style="padding: 0px 10px">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Rider
-										</label>
+										<div class="pull-left">
+											<label for="rider" class="radio-inline " style="padding: 0px 10px">Rider</label>
+											<input type="radio" name="inlineRadioOptions" id="rider" value="option2">
+										</div>
 
-										<label class="radio-inline " style="padding: 0px 10px">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Both
-										</label>
+										<div class="pull-left">
+											<label for="both" class="radio-inline " style="padding: 0px 10px">Both</label>
+											<input type="radio" name="inlineRadioOptions" id="both" value="option2" checked>
+										</div>
 									</div>
 								</span>
 								<span style="color: #dcdcdc; float: right; padding-right: 15px; background-image: url('img/select_down_up.gif'); background-repeat: no-repeat; background-position: 100% -35%;" id="refine_search">Refine search</span>
@@ -156,115 +159,91 @@
 									<button type="submit" class="btn btn-danger" style="float: left; width: 8%">Save</button>
 								</div>
 
-								<div id="additional_options" style="display: none;margin-top: 10px" class="backgroud-border">
+								<div id="additional_options" style="display: none;margin-top: 10px" class="">
 									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #333; border-bottom: 1px solid #585858;">-->
 
-									<div class="clearfix" style="padding-top: 10px; padding-bottom: 10px;">
-										<div style="color: #eeeeee; font-weight: 300">
+									<div class="clearfix backgroud-border">
 
-											<!--<div class="col-lg-3" style="padding: 0;margin: 0">-->
-												<!--<label class="checkbox-inline">-->
-													<!--<input type="checkbox" id="inlineCheckbox1" value="option1"> Multiple request &nbsp;&nbsp;&nbsp;-->
-												<!--</label>-->
-											<!--</div>-->
-
-											<div class="col-lg-3 no-padding-left-right">
-												<div class="">
-													<div class="col-lg-8 pull-left no-padding-left-right" style="margin-top: 4px">Number of occurrences &nbsp;</div>
-													<select name="occurrences" class="form-control input-sm" style="width:60px">
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="col-lg-6 no-padding-left-right" style="margin-top: 4px">
-
-													<div class="pull-left col-lg-3 no-padding-left-right">
-														<div class="" style="">Repeat on</div>
-													</div>
-													<div class=" col-lg-9 no-padding-left-right checkbox-my" style="">
-														<label for="1" class="">Mon</label><input type="checkbox" id="1" name="weekdays[]" value="1">
-														<label for="2" class="">Tue</label><input type="checkbox" id="2" name="weekdays[]" value="2">
-														<label for="3" class="">Wen</label><input type="checkbox" id="3" name="weekdays[]" value="3">
-														<label for="4" class="">Thu</label><input type="checkbox" id="4" name="weekdays[]" value="4">
-														<label for="5" class="">Fri</label><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">
-														<label for="6" class="">Sat</label><input type="checkbox" id="6" name="weekdays[]" value="6">
-														<label for="7" class="">Sun</label><input type="checkbox" id="7" name="weekdays[]" value="7">
-
-														<!--<label for="1" class="checkbox-my" ><input type="checkbox" id="1" name="weekdays[]" value="1">M</label>-->
-														<!--<label for="2" class="checkbox-my"><input type="checkbox" id="2" name="weekdays[]" value="2">T</label>-->
-														<!--<label for="3" class="checkbox-my"><input type="checkbox" id="3" name="weekdays[]" value="3">W</label>-->
-														<!--<label for="4" class="checkbox-my"><input type="checkbox" id="4" name="weekdays[]" value="4">T</label>-->
-														<!--<label for="5" class="checkbox-my"><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked">F</label>-->
-														<!--<label for="6" class="checkbox-my"><input type="checkbox" id="6" name="weekdays[]" value="6">S</label>-->
-														<!--<label for="7" class="checkbox-my"><input type="checkbox" id="7" name="weekdays[]" value="7">S</label>-->
-													</div>
-
-											</div>
-
-										</div>
-									</div>
-
-									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
-
-									<div class="clearfix backgroud-border" style="padding-top: 10px; padding-bottom: 10px; font-weight: normal; color: #eeeeee">
-
-										<div class="col-lg-3 no-padding-left-right" style="padding: 0;margin: 0">
-											<div class="form-group">
-												<label for="inputPassword" class="pull-left col-lg-8 no-padding-left-right" style="font-weight: normal">Additional passengers</label>
-												<div class="col-lg-4 no-padding-left-right">
-													<input type="text" class="form-control input-sm" id="inputPassword" value="0" maxlength="2" style="width: 60px">
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-3 no-padding-left-right" style="padding: 0;margin: 0">
-											<div class="form-group">
-												<label for="inputPassword" class="pull-left col-lg-6 no-padding-left-right" style="font-weight: normal">Number luggages</label>
-												<div class="col-lg-4 no-padding-left-right">
-													<input type="text" class="form-control input-sm" id="inputPassword" value="0" maxlength="2" style="width: 60px">
-												</div>
-											</div>
-										</div>
-
-										<!--<div class="col-lg-3">-->
-											<!--<div class="form-group">-->
-												<!--<label for="inputPassword2" class="control-label pull-left" style="font-weight: normal">Number luggages</label>-->
-												<!--<div class="col-lg-4">-->
-													<!--<input type="text" class="form-control input-sm" id="inputPassword2" value="0" maxlength="2">-->
-												<!--</div>-->
-											<!--</div>-->
+										<!--<div class="col-lg-3" style="padding: 0;margin: 0">-->
+											<!--<label class="checkbox-inline">-->
+												<!--<input type="checkbox" id="inlineCheckbox1" value="option1"> Multiple request &nbsp;&nbsp;&nbsp;-->
+											<!--</label>-->
 										<!--</div>-->
 
-										<div class="col-lg-6 no-padding-left-right">
+										<div class="col-lg-3 search-wrapper">
+											<span class="search-label" style="width: 60%">Number of occurrences</span>
 
-												<div class="col-lg-3">
-													<div class="" style="margin-top: 4px">Smoking</div>
+											<select name="occurrences" class="form-control input-sm pull-left" style="width:30%">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+
+										<div class="col-lg-5 col-lg-offset-1 search-wrapper">
+
+											<span class="search-label" style="width: 20%">Repeat on</span>
+
+											<div class="checkbox-my pull-left" style="width: 70%">
+												<span><label for="1" class="">Mo</label><input type="checkbox" id="1" name="weekdays[]" value="1"></span>
+												<span><label for="2" class="">Tu</label><input type="checkbox" id="2" name="weekdays[]" value="2"></span>
+												<span><label for="3" class="">We</label><input type="checkbox" id="3" name="weekdays[]" value="3"></span>
+												<span><label for="4" class="">Th</label><input type="checkbox" id="4" name="weekdays[]" value="4"></span>
+												<span><label for="5" class="">Fr</label><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked"></span>
+												<span><label for="6" class="">Sa</label><input type="checkbox" id="6" name="weekdays[]" value="6"></span>
+												<span><label for="7" class="">Su</label><input type="checkbox" id="7" name="weekdays[]" value="7"></span>
+
+											</div>
+										</div>
+
+									</div>
+
+									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
+
+									<div class="clearfix backgroud-border" style="">
+
+										<div class="col-lg-3 search-wrapper" >
+												<label for="inputPassword" class="search-label" style="width: 60%">Additional passengers</label>
+												<input type="text" class="form-control input-sm pull-left" id="inputPassword" value="0" maxlength="2" style="width: 30%">
+										</div>
+
+										<div class="col-lg-3 col-lg-offset-1 search-wrapper">
+											<!--<div class="form-group">-->
+												<label for="inputPassword10" class="search-label" style="width: 45%">Number luggages</label>
+												<input type="text" class="form-control input-sm pull-left" id="inputPassword10" value="0" maxlength="2" style="width: 30%">
+											<!--</div>-->
+										</div>
+
+
+										<div class="col-lg-4 col-lg-offset-1 search-wrapper pull-left">
+
+											<span class="pull-right">
+												<span class="search-label pull-left">Smoking</span>
+
+												<div class="pull-left radio-smoking" style="">
+													<div class="pull-left">
+														<label for="yes">Yes</label>
+														<input type="radio" name="yes" id="yes" value="option1">
+													</div>
+
+													<div class="pull-left">
+														<label for="indifferent">Indifferent</label>
+														<input type="radio" name="indifferent" id="indifferent" value="option2" checked>
+													</div>
+
+													<div class="pull-left">
+														<label for="not">Strictly not</label>
+														<input type="radio" name="not" id="not" value="option2" >
+													</div>
 												</div>
-												<div class="col-lg-9 no-padding-left-right" style="">
-													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
-														<input type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option1"> Yes
-													</label>
-
-													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
-														<input type="radio" name="inlineRadioOptions" id="inlineRadio22" value="option2"> Indifferent
-													</label>
-
-													<label class="radio-inline" style="padding-top: 0px; padding-bottom:0px ">
-														<input type="radio" name="inlineRadioOptions" id="inlineRadio23" value="option2"> Strictly not
-													</label>
-												</div>
-
-
+											</span>
 										</div>
 									</div>
 
 									<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
 
-									<div class="clearfix backgroud-border" style="padding-top: 10px; font-weight: normal; color: #eeeeee">
+									<div class="clearfix backgroud-border" style="padding-bottom: 0px">
 										<textarea name="request_comment" class="form-control" placeholder="Comments"></textarea>
 									</div>
 								</div>
@@ -485,18 +464,15 @@
 		});
 
 		$('#refine_search').on('click', function(){
+
 			$('#additional_options').toggle();
-//			$('#search-box').css({ 'margin-top': '-3.4em', 'background-color': 'rgba(0,0,0, 0.9)' });
 
 			var is_visible = $('#additional_options').css('display');
 
-//			console.log (is_visible);
-
 			if (is_visible == 'block')
 			{
-//				$('#search-box').css({ 'margin-top': '-8em', 'background-color': 'rgba(50,50,50, 0.98)' });
 //				$('#search-box').css({ 'margin-top': '-5.4em', 'background-color': 'rgba(70,70,70, 0.95)' });
-				$('#search-box').css({ 'margin-top': '-5.4em', 'background-color': 'rgba(0,0,0, 0.6)' });
+				$('#search-box').css({ 'margin-top': '-5.8em', 'background-color': 'rgba(0,0,0, 0.7)' });
 				$(this).css({'background-position': '100% 135%'});
 			}
 			else
@@ -507,69 +483,147 @@
 
 		});
 
+
+
+
 		// todo get current date and make it checked
 
-		$('.checkbox-my label').on('mouseup', function(e){
+		// Get checked inputs and make their label red
+
+		$('.checkbox-my input').each(function(){
+
+			var checked_weekday = $(this).prop('checked');
+
+			if (checked_weekday)
+			{
+				var checked_weekday_id = $(this).attr('id');
+
+				$('.checkbox-my label[for=' + checked_weekday_id + ']').css({
+					'background-color': '#d9534f',
+					'color': 'white'
+				});
+			}
+		});
+
+		$('.checkbox-my label').on('click', function(e){
 
 			e.stopPropagation();
 
 			var for_attr = $(this).attr('for');
 			var input_weekday = $('.checkbox-my input[id=' + for_attr + ']');
 
-			var input_checked = input_weekday.attr('checked');
-//			var input_checked2 = input_weekday.prop('checked');
+			input_weekday.on('change', function(d){
 
-			console.log('attr '+input_checked);
-//			console.log('prop '+input_checked2);
+				d.stopPropagation();
 
-			if (input_checked)
-			{
-				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', false);
-				$('.checkbox-my input[id=' + for_attr + ']').prop('checked', false);
+				var input_checked = input_weekday.prop('checked');
+				input_weekday.unbind('change');
 
-				$('.checkbox-my label[for=' + for_attr + ']').css({
-					'background-color': '#f8f8f8'
-				});
+				// console.log('prop '+input_checked);
 
-			}
-			else
-			{
+				if (input_checked)
+				{
 				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', true);
-				$('.checkbox-my input[id=' + for_attr + ']').prop('checked', true);
 
-				$('.checkbox-my label[for=' + for_attr + ']').css({
-					'background-color': '#d9534f'
-				});
-			}
+					$('.checkbox-my label[for=' + for_attr + ']').css({
+						'background-color': '#d9534f',
+						'color': 'white'
+					});
+				}
+				else
+				{
+				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', false);
 
-//			var input_id = $(this).attr('for');
-
-//			console.log(for_attr);
+					$('.checkbox-my label[for=' + for_attr + ']').css({
+						'background-color': '#f8f8f8',
+						'color': 'black'
+					});
+				}
+			});
 		});
 
 
 
-//		$('.checkbox-my input').on('mouseover', function(e){
-//
-//			e.stopPropagation();
-//
-//			var input_id = $(this).attr('id');
-//
-//			$('.checkbox-my label[for=' + input_id + ']').css({
-//				'background-color': '#d9534f'
-//			});
-//		});
 
-//		$('.checkbox-my input').on('mouseleave', function(e){
-//
-//			e.stopPropagation();
-//
-//			var input_id = $(this).attr('id');
-//
-//			$('.checkbox-my label[for=' + input_id + ']').css({
-//				'background-color': '#f8f8f8'
-//			});
-//		});
+		///////////////////////////////////////////////////////////////
+		// todo get current date and make it checked
+
+		// Get checked inputs and make their label red
+
+		var wrapper_element = '.radio-driver-rider',
+			initial_color = '#f8f8f8',
+			checked_color = 'orange',
+			initial_text_color = '#000000',
+			checked_text_color = '#ffffff';
+
+		radio_check(wrapper_element, initial_color, checked_color, initial_text_color, checked_text_color);
+
+		wrapper_element = '.radio-smoking';
+		initial_color = '#f8f8f8';
+		checked_color = '#d9534f';
+		initial_text_color = '#000000';
+		checked_text_color = '#ffffff';
+
+		radio_check(wrapper_element, initial_color, checked_color, initial_text_color, checked_text_color);
+
+		function radio_check(wrapper_element, initial_color, checked_color, initial_text_color, checked_text_color)
+		{
+			$(wrapper_element + ' input').each(function(){
+
+				var checked_driver = $(this).prop('checked');
+				var checked_driver_id = $(this).attr('id');
+
+				if (checked_driver)
+				{
+					$( wrapper_element + ' label[for=' + checked_driver_id + ']').css({
+						'background-color': checked_color,
+						'color': checked_text_color
+					});
+				}
+			});
+
+			$(wrapper_element + ' label').on('click', function(e){
+
+				e.stopPropagation();
+
+				var for_attr = $(this).attr('for');
+				var input_driver = $(wrapper_element + ' input[id=' + for_attr + ']');
+
+				$(wrapper_element + ' input').each(function(){
+
+					$(this).attr('checked', false);
+
+					$(wrapper_element + ' label').css({
+						'background-color': initial_color,
+						'color': initial_text_color
+					});
+				});
+
+				input_driver.on('change', function(d){
+
+					d.stopPropagation();
+
+					var input_checked = input_driver.prop('checked');
+					input_driver.unbind('change');
+
+					if (input_checked)
+					{
+						$(wrapper_element + ' input[id=' + for_attr + ']').attr('checked', true);
+
+						$( wrapper_element + ' label[for=' + for_attr + ']').css({
+							'background-color': checked_color,
+							'color': checked_text_color
+						});
+					}
+
+				});
+			});
+
+		}
+
+
+		///////////////////////////////////////////////////////////////////
+
 
 
 
