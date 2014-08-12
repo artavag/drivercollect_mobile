@@ -1,0 +1,75 @@
+@import "main_menu";
+
+@text_slogan: 5em;
+
+
+////////// xs 0-767 //////////
+@media (max-width: 480px) {
+  .text-big {
+	font-size: @text_slogan - 2.2;
+  }
+  .text-big-slogan {
+	font-size: @text_slogan - 3.4;
+  }
+}
+
+////////// xs 0-767 //////////
+@media (min-width: 481px) {
+  .text-big {
+	font-size: @text_slogan - 2.2;
+	color: #ffff00;
+  }
+  .text-big-slogan {
+	font-size: @text_slogan - 3.4;
+	color: #ffff00;
+  }
+}
+
+////////// sm 768-991 //////////
+@media (min-width: 768px) {
+  .text-big {
+	font-size: @text_slogan - 1.2;
+	color: orangered;
+  }
+  .text-big-slogan {
+	font-size: @text_slogan - 3;
+	color: orangered;
+  }
+}
+
+////////// md 992-1199 //////////
+@media (min-width: 992px) {
+  .text-big {
+	font-size: @text_slogan - 0.8;
+	color: green;
+  }
+
+  .text-big-slogan {
+	font-size: @text_slogan - 2.8;
+	color: green;
+  }
+
+  .margin-navbar {
+	margin-top: 13px;
+  }
+}
+
+////////// my custom 1300 //////////
+@media (max-width: 1370px) {
+  body {
+	font-size: 12px;
+  }
+}
+
+////////// lg 1200 //////////
+@media (min-width: 1200px) {
+  .text-big {
+	font-size: @text_slogan;
+	color: red;
+  }
+
+  .text-big-slogan {
+	font-size: @text_slogan/2;
+	color: red;
+  }
+}

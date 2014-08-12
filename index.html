@@ -13,11 +13,13 @@
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 		<!--<link rel="stylesheet" href="css/normalize.css">-->
+		<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
 		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/header_slogan.css">
 		<!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
@@ -38,19 +40,31 @@
 
 		<div class="container-fluid" >
 			<div class="row">
-				<div id="header" class="col-lg-12">
+				<div id="header" class="col-lg-24">
 
 					<div class="main-nav">
 
-						<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+						<div class="col-lg-18 col-lg-offset-3 padding-left-right">
 
 							<div class="pull-left" style="padding-top: 8px;">
 								<img src="img/logo3.png">
 							</div>
 
-							<div class="col-lg-4 pull-right wellcome">
+							<div class="pull-right visible-sm col-sm-12">
+								<ul class="wellcome-small">
+								<li><a href="register.html">Register</a></li>
+								<li>/</li>
+								<li><a href="login.html">Login</a></li>
+
+								<li>
+									<span class="wellcome-small-text" style="margin-right: 10px">Welcome <span class="username">guest</span>!</span>
+								</li>
+								</ul>
+							</div>
+
+							<div class="col-lg-8 pull-right wellcome hidden-sm">
 								<ul>
-									<li class="language-small">
+									<li class="">
 										<a href="#" class="">
 											<img class="flag-image" src="img/flags/gb.png"/>
 											<span class="flag-name">UK</span>
@@ -60,12 +74,12 @@
 									<li><a href="register.html">Register</a></li>
 									<li>/</li>
 									<li><a href="login.html">Login</a></li>
-									<li style="margin-right: 10px">Welcome <span>guest!</span></li>
+									<li style="margin-right: 10px">Welcome <span class="username">guest</span>!</li>
 								</ul>
-
 							</div>
 
-							<ul class="col-lg-6 mynavbar2 pull-left">
+
+							<ul class="col-lg-12 mynavbar2 pull-left margin-navbar">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="rides.html">My rides</a></li>
 								<li><a href="myprofile.html">My profile</a></li>
@@ -76,22 +90,37 @@
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 
+							<div class="col-sm-3 pull-right visible-sm" style="margin-top: 5px">
+								<ul class="wellcome-small">
+									<!--<li style="margin-top: -2px; margin-left: 10px"><span class="glyphicon glyphicon-user" style="padding: 4px; border-radius: 20px; font-size: 12px; color: #000000; background-color: #F5F5F5; cursor: pointer"></span></li>-->
+
+									<li class="">
+										<a href="#" class="">
+											<img style="margin-top: 3px" class="flag-image" src="img/flags/gb.png"/>
+											<span class="flag-name">UK</span>
+										</a>
+									</li>
+								</ul>
+								<!--<span class="glyphicon glyphicon-user" style="padding: 3px; border-radius: 20px; font-size: 12px; color: #F5F5F5; background-color: #c9302c"></span>-->
+
+							</div>
+
 						</div>
 
 					</div>
 
 					<div class="row" style="margin-top: 2em">
-						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+						<div class="col-lg-16 col-lg-offset-4 col-md-16 col-md-offset-4">
 							<h1 class="text-big my-text-shadow" style="">Searchless ride sharing</h1>
 						</div>
-						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 ">
+						<div class="col-lg-16 col-lg-offset-4 col-md-16 col-md-offset-4 ">
 							<h1 class="text-big-slogan my-text-shadow">We are different because we do the searching for you, even on parts of the journey.</h1>
 						</div>
 					</div>
 
 					<div class="row padding-left-right">
 						<!--<div id="search-box" class="col-lg-8 col-lg-offset-2">-->
-						<div id="search-box" class="col-lg-10 col-lg-offset-1">
+						<div id="search-box" class="col-lg-18 col-lg-offset-3 ">
 
 							<div class="clearfix" style="">
 								<span style="color: #dcdcdc; float: left">
@@ -170,7 +199,7 @@
 											<!--</label>-->
 										<!--</div>-->
 
-										<div class="col-lg-3 search-wrapper">
+										<div class="col-lg-6 search-wrapper">
 											<span class="search-label" style="width: 60%">Number of occurrences</span>
 
 											<select name="occurrences" class="form-control input-sm pull-left" style="width:30%">
@@ -181,7 +210,7 @@
 											</select>
 										</div>
 
-										<div class="col-lg-5 col-lg-offset-1 search-wrapper">
+										<div class="col-lg-10 col-lg-offset-2 search-wrapper">
 
 											<span class="search-label" style="width: 20%">Repeat on</span>
 
@@ -203,12 +232,12 @@
 
 									<div class="clearfix backgroud-border" style="">
 
-										<div class="col-lg-3 search-wrapper" >
+										<div class="col-lg-6 search-wrapper" >
 												<label for="inputPassword" class="search-label" style="width: 60%">Additional passengers</label>
 												<input type="text" class="form-control input-sm pull-left" id="inputPassword" value="0" maxlength="2" style="width: 30%">
 										</div>
 
-										<div class="col-lg-3 col-lg-offset-1 search-wrapper">
+										<div class="col-lg-6 col-lg-offset-2 search-wrapper">
 											<!--<div class="form-group">-->
 												<label for="inputPassword10" class="search-label" style="width: 45%">Number luggages</label>
 												<input type="text" class="form-control input-sm pull-left" id="inputPassword10" value="0" maxlength="2" style="width: 30%">
@@ -216,7 +245,7 @@
 										</div>
 
 
-										<div class="col-lg-4 col-lg-offset-1 search-wrapper pull-left">
+										<div class="col-lg-8 col-lg-offset-2 search-wrapper pull-left">
 
 											<span class="pull-right">
 												<span class="search-label pull-left">Smoking</span>
@@ -271,9 +300,9 @@
 			<div id="content">
 
 				<div class="row backgroud-gray-light">
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right" style="padding-top: 10px">
+					<div class="col-lg-18 col-lg-offset-3 " style="padding-top: 10px">
 
-						<div class="col-lg-4" style="padding: 0px 20px 0px 20px">
+						<div class="col-lg-8" style="padding: 0px 20px 0px 20px">
 							<img src="img/mobile_icon.png" class="" style="width: 50px;margin-left: auto; margin-right: auto;display: block"/>
 
 							<h3 style="text-align: center;margin-top: 10px">Works on the move</h3>
@@ -284,7 +313,7 @@
 						</div>
 
 
-						<div class="col-lg-4" style="padding: 0px 20px 0px 20px">
+						<div class="col-lg-8" style="padding: 0px 20px 0px 20px">
 							<img src="img/safe.png" class="" style="width: 50px;margin-left: auto; margin-right: auto;display: block"/>
 
 							<h3 style="text-align: center;margin-top: 10px">Safe</h3>
@@ -295,7 +324,7 @@
 						</div>
 
 
-						<div class="col-lg-4" style="padding: 0px 20px 0px 20px">
+						<div class="col-lg-8" style="padding: 0px 20px 0px 20px">
 							<img src="img/efficient_icon.png" class="" style="width: 50px;margin-left: auto; margin-right: auto;display: block"/>
 
 							<h3 style="text-align: center;margin-top: 10px">Efficient</h3>
@@ -315,10 +344,10 @@
 					<!--</div>-->
 				<!--</div>-->
 
-				<div class="row padding-left-right" >
-					<div class="col-lg-10 col-lg-offset-1" style="margin-bottom: 36px; margin-top: 36px">
+				<div class="row" >
+					<div class="col-lg-18 col-lg-offset-3  padding-left-right" style="margin-bottom: 36px; margin-top: 36px">
 
-						<div class="col-lg-4 no-padding-left" style="margin-bottom: 36px; margin-top: 0px">
+						<div class="col-lg-8 " style="margin-bottom: 36px; margin-top: 0px">
 							<h1>Latest rides</h1>
 							<br>
 
@@ -329,7 +358,7 @@
 						</div>
 
 
-						<div class="col-lg-8 no-padding-left-right" style="margin-bottom: 36px; margin-top: 36px">
+						<div class="col-lg-16 " style="margin-bottom: 36px; margin-top: 36px">
 
 							<div class="table-responsive">
 								<table class="table table-home table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="width: 100%;">
@@ -394,9 +423,9 @@
 
 
 				<div class="row backgroud-gray">
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+					<div class="col-lg-18 col-lg-offset-3  padding-left-right">
 						<img src="img/responsive.png" class="pull-right"/>
-						<div class="col-lg-6 pull-left ">
+						<div class="col-lg-12 pull-left ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>
 							<br>
 							<p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -407,9 +436,9 @@
 
 
 				<div class="row backgroud-white">
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+					<div class="col-lg-18 col-lg-offset-3  padding-left-right">
 						<img src="img/paypal_options.png" class="pull-left"/>
-						<div class="col-lg-6 pull-right ">
+						<div class="col-lg-12 pull-right ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">You can pay with paypal...</h2>
 							<br>
 							<p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -420,9 +449,9 @@
 				</div>
 
 				<div class="row backgroud-gray">
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+					<div class="col-lg-18 col-lg-offset-3">
 						<img src="img/responsive.png" class="pull-right"/>
-						<div class="col-lg-6 pull-left ">
+						<div class="col-lg-12 pull-left ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>
 							<br>
 							<p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -435,7 +464,7 @@
 
 			<div id="footer">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
+					<div class="col-lg-24 col-md-24 text-footer" style="margin-top: 256px">
 						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
 						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
 						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
