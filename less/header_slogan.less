@@ -2,18 +2,60 @@
 
 @text_slogan: 5em;
 
+////////// xs 0-320 //////////
+@media (max-width: 320px) {
+  .text-big {
+	font-size: @text_slogan - 2.2;
+  }
 
-////////// xs 0-767 //////////
-@media (max-width: 480px) {
+  .text-big-slogan {
+	font-size: @text_slogan - 3.4;
+  }
+
+  .wellcome {
+	float: left;
+//	margin-top: -10px;
+//	margin-bottom: 5px;
+  }
+
+  .wellcome ul{
+	float: left;
+	//	margin-top: -10px;
+	//	margin-bottom: 5px;
+  }
+
+  .wellcome li {
+	float: left;
+  }
+}
+
+
+////////// xs 321-480 //////////
+@media (min-width: 321px) {
   .text-big {
 	font-size: @text_slogan - 2.2;
   }
   .text-big-slogan {
 	font-size: @text_slogan - 3.4;
   }
+  .wellcome {
+//	float: left;
+//	margin-top: -0px;
+//	margin-bottom: 5px;
+  }
+
+  .wellcome ul{
+//	float: left;
+	//	margin-top: -10px;
+	//	margin-bottom: 5px;
+  }
+
+  .wellcome li {
+//	float: left;
+  }
 }
 
-////////// xs 0-767 //////////
+////////// xs 481-767 //////////
 @media (min-width: 481px) {
   .text-big {
 	font-size: @text_slogan - 2.2;
@@ -23,6 +65,19 @@
 	font-size: @text_slogan - 3.4;
 	color: #ffff00;
   }
+
+  .mynavbar2 {
+	float: left;
+	margin-top: -10px;
+	margin-left: -1.3em;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	clear: none;
+  }
+
+  .wellcome {
+//	padding-top: 22px;
+  }
 }
 
 ////////// sm 768-991 //////////
@@ -31,6 +86,7 @@
 	font-size: @text_slogan - 1.2;
 	color: orangered;
   }
+
   .text-big-slogan {
 	font-size: @text_slogan - 3;
 	color: orangered;
@@ -39,6 +95,17 @@
 
 ////////// md 992-1199 //////////
 @media (min-width: 992px) {
+
+  .wellcome {
+//	padding-top: 18px;
+  }
+
+  .mynavbar2 {
+	float: left;
+	margin-top: 13px;
+	clear: none;
+  }
+
   .text-big {
 	font-size: @text_slogan - 0.8;
 	color: green;
@@ -49,9 +116,6 @@
 	color: green;
   }
 
-  .margin-navbar {
-	margin-top: 13px;
-  }
 }
 
 ////////// my custom 1300 //////////
