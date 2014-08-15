@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
 	/*background-color: #F00;*/
 	/*width: 100%;*/
-	height: 520px;
+	min-height: 520px;
 	background-image: url('../img/header_backgroud.jpg');
 	/*background-size:100% 100%;*/
 	background-repeat: no-repeat;
@@ -908,146 +908,141 @@ table.table tr td div.cost-text2 {
 	border-radius: 2px;
 }
 
-.ll {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+/*.ll {*/
+	/*display: none;*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+/*}*/
 
-.mynavbar2 {
-	list-style: none;
-	color: #eeeeee;
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 300;
+
+
+/*.mynavbar2 {*/
+	/*list-style: none;*/
+	/*color: #eeeeee;*/
+	/*font-size: 1.15em;*/
+	/*font-style: normal;*/
+	/*font-weight: 300;*/
 	/*padding: 5px 0px 0px 0px;*/
-	margin-left: 1em;
-	float: right;
-	margin-top: 0px;
+	/*margin-left: 1em;*/
+	/*float: right;*/
+	/*margin-top: 0px;*/
 	/*clear: right;*/
 
-	padding-bottom: 3px;
-}
+	/*padding-bottom: 3px;*/
+/*}*/
 
-.mynavbar2 ul {
-	float: right;
-	margin: 0;
-	padding: 0;
-}
+/*.mynavbar2 ul {*/
+	/*float: right;*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+/*}*/
 
-.mynavbar2 li {
+/*.mynavbar2 li {*/
 	/*float: left;*/
 	/*display: block;*/
-	margin-left: 1.3em;
+	/*margin-left: 1.3em;*/
 
-	margin-top: 3px;
-	border-radius: 3px;
-	float: right;
+	/*margin-top: 3px;*/
+	/*border-radius: 3px;*/
+	/*float: right;*/
 	/*border-bottom: solid 1px #555;*/
-	background-color: rgba(0, 0, 0, 0.3);
-}
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+/*}*/
 
-.mynavbar2 li a, .mynavbar2 li a:visited {
-	text-decoration: none;
+/*.mynavbar2 li a, .mynavbar2 li a:visited {*/
+	/*text-decoration: none;*/
 	/*color: #eeeeee;*/
 
-	color: white;
-	display: block;
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
+	/*display: block;*/
+	/*padding-top: 6px;*/
+	/*padding-bottom: 6px;*/
+/*}*/
 
-.mynavbar2 li a:hover, .mynavbar2 li a:active {
-	text-decoration: none;
-	color: #E37C78;
-	/*border-bottom: dotted 1px #E37C78;*/
-}
+/*.mynavbar2 li a:hover, .mynavbar2 li a:active {*/
+	/*text-decoration: none;*/
+	/*color: #E37C78;*/
+/*}*/
 
-.wellcome {
-	margin: 0;
-	padding: 0;
-	padding-top: 3px;
-	/*background-color: red;*/
+
+
+
+
+/*.welcome {*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*padding-top: 3px;*/
+/*}*/
+
+/*.welcome ul {*/
 	/*float: right;*/
-	/*clear: right;*/
-}
-
-.wellcome ul {
-	float: right;
-	margin: 0;
-	padding: 0;
+	/*margin: 0;*/
+	/*padding: 0;*/
 	/*border-bottom: solid 6px #666;*/
-}
+/*}*/
 
-.wellcome li {
-	float: right;
-	color: #cccccc;
-	font-weight: 300;
-	font-size: 1.15em;
+/*.welcome li {*/
+	/*float: right;*/
+	/*color: #cccccc;*/
+	/*font-weight: 300;*/
+	/*font-size: 1.15em;*/
 
-	background-color: rgba(0, 0, 0, 0.3);
+	/*background-color: rgba(0, 0, 0, 0.3);*/
 	/*margin-left: 3px;*/
 	/*margin-right: 3px;*/
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	/*padding-left: 0.4em;*/
 	/*border-top: solid 1px #666;*/
 	/*border-bottom: solid 1px #555;*/
-}
+/*}*/
 
-.wellcome li:first-child {
-	float: right;
-	padding-top: 0px;
-	padding-bottom: 0px;
+/*.welcome li:first-child {*/
+	/*float: right;*/
+	/*padding-top: 0px;*/
+	/*padding-bottom: 0px;*/
 	/*border-bottom: solid 6px #666;*/
 
-	background-color: #25383B;
-}
+	/*background-color: #25383B;*/
+/*}*/
 
-.wellcome li:first-child p{
-	float: right;
-}
+/*.welcome li:first-child p{*/
+	/*float: right;*/
+/*}*/
 
-.wellcome li a, .wellcome li a:visited {
+/*.welcome li a, .welcome li a:visited {*/
 	/*color: #cccccc;*/
-	text-decoration: none;
+	/*text-decoration: none;*/
 
-	color: white;
-	display: block;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	/*float: left;*/
-}
-
-/*.wellcome li p {*/
+	/*color: white;*/
+	/*display: block;*/
+	/*padding-top: 6px;*/
+	/*padding-bottom: 6px;*/
 	/*float: left;*/
 /*}*/
 
-.username {
-	color: #ffffff;
-	/*float: right;*/
-}
 
 
-.flag-image {
-	float: left;
-	height: 11px;
-	outline: none;
-	margin-top: 5px;
-	/*border: solid 1px #999999;*/
-}
 
-.flag-name {
-	float: left;
-	background-image: url("../img/select_down.gif");
+/*.welcome li p {*/
+	/*float: left;*/
+/*}*/
+
+
+
+#menu-button {
+	float: right;
+	margin-top: 19px;
+	width: 27px;
+	height: 21px;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url('../img/menu.gif');
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background-position: 100% 50%;
-	padding-right: 11px;
-	padding-left: 4px;
-	/*color: #cccccc;*/
-
-	color: white;
 }
+
+
+
 
 .backgroud-gray {
 	background-color: #F7F5F5;
@@ -1205,3 +1200,4 @@ table.table tr td div.cost-text2 {
 	/*border: dotted 1px #999;*/
 	/*background-color: #333333;*/
 }
+
