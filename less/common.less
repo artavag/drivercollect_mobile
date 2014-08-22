@@ -1,14 +1,212 @@
+// Global variables
+// this variables are available on all less files, plus here are only the variables that
+// are also constant and not changing depending on screen size
+//
+// Global and constant must be here also all other css rules. if the rule is going to be
+// changed then it must not be here.
 
-.padding-left-right {
-  padding-left: 10px;
-  padding-right: 10px;
+@grid-columns: 24;
+
+@screen-ss: 321px; 		// ss - small small		321  - 480
+@screen-xs: 481px; 		// xs - extra small		481  - 767
+@screen-sm: 768px; 		// sm - small			768  - 991
+@screen-md: 992px; 		// md - medium			992  - 1199
+@screen-lg: 1200px; 	// lg - large			1200 - 1367
+@screen-xl: 1367px; 	// xl - extra large 	>= 1367
+
+@grid-gutter-width: 0px; // padding between grid columns
+
+@image-directory: "../img/";
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-@media (min-width: 1200px) {
-  .padding-left-right {
-	padding-left: 0px;
-	padding-right: 0px;
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+strong, b {
+  font-weight: 400;
+}
+
+label {
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+  resize: vertical;
+}
+
+a img {
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-style: normal;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  background-color: #EB635E;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  background-image: url("@{image-directory}scroll_up.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.scroll-top-icon {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  padding: 6px 8px 10px 8px;
+}
+
+
+////////// less for creating xl (extra large >= 1367px) class rules ///////////
+
+@media (min-width: @screen-xl) {
+  .make-grid(xl);
+}
+
+// Create grid for specific class (xl)
+.make-grid(@class) {
+  .float-grid-columns(@class);
+  .loop-grid-columns(@grid-columns, @class, width);
+  .loop-grid-columns(@grid-columns, @class, pull);
+  .loop-grid-columns(@grid-columns, @class, push);
+  .loop-grid-columns(@grid-columns, @class, offset);
+}
+
+.float-grid-columns(@class) {
+
+  .col(@index) when (@index = 1) { // initial
+	@item: ~".col-@{class}-@{index}"; // .col-sm-1
+	.col((@index + 1), @item);
+  }
+
+  .col(@index, @list) when (@index =< @grid-columns) { // general
+	@item: ".col-@{class}-@{index}";
+	.col((@index + 1), ~"@{list}, @{item}"); // change name to .col-sm-1, .col-sm-2
+  }
+
+  // first 2 loops are making comma separated list of column names: .col-sm-1, .col-sm-2
+  // this one makes the final class
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+	@{list} {
+	  float: left;
+	}
+  }
+
+  .col(1); // kickstart it (call it)
+}
+
+
+// Basic looping in LESS
+.loop-grid-columns(@index, @class, @type) when (@index >= 0) {
+  .calc-grid-column(@index, @class, @type);
+  // next iteration
+  .loop-grid-columns((@index - 1), @class, @type);
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .col-@{class}-@{index} {
+	width: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index > 0) {
+  .col-@{class}-push-@{index} {
+	left: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index = 0) {
+  .col-@{class}-push-0 {
+	left: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index > 0) {
+  .col-@{class}-pull-@{index} {
+	right: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index = 0) {
+  .col-@{class}-pull-0 {
+	right: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = offset) {
+  .col-@{class}-offset-@{index} {
+	margin-left: percentage((@index / @grid-columns));
   }
 }
 
+// Columns
+//
+// Common styles for extra large grid columns
+.make-grid-columns();
 
+.make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col(@index) when (@index = 1) { // initial
+	@item: ~".col-xl-@{index}";
+	.col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+	@item: ~".col-xl-@{index}";
+	.col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+	@{list} {
+	  position: relative;
+	  // Prevent columns from collapsing when empty
+	  min-height: 1px;
+	  // Inner gutter via padding
+	  padding-left:  (@grid-gutter-width / 2);
+	  padding-right: (@grid-gutter-width / 2);
+	}
+  }
+  .col(1); // kickstart it
+}

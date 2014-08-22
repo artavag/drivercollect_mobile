@@ -1,106 +1,56 @@
 @import "common";
-@import "nav_common";
-@import "langswitcher_common";
+@import "common/com_1_com";
+//@import "main_nav/1_com";
+//@import "langsw/1_com";
+//@import "slogan/1_com";
+//@import "search-box/1_com";
 
-@text_slogan: 5em;
 
-////////// xs 0-320 //////////
+////////// 0-320 //////////
 @media (max-width: 320px) {
-  .text-big {
-	font-size: @text_slogan - 2.2;
-	color: white;
-  }
 
-  .text-big-slogan {
-	font-size: @text_slogan - 3.4;
-  }
-
-  .promotion {
-	border-bottom: solid 1px #e6e6e6;
-  }
+	.promotion {
+		border-bottom: solid 1px #e6e6e6;
+	}
 }
 
+////////// ss 321-480 //////////
+@media (min-width: @screen-ss) {
 
-////////// xs 321-480 //////////
-@media (min-width: 321px) {
-  .text-big {
-	font-size: @text_slogan - 2.2;
-	color: orchid;
-  }
-  .text-big-slogan {
-	font-size: @text_slogan - 3.4;
-  }
+	@import "common/com_2_ss";
 
-  .promotion {
-	border-bottom: solid 1px #e6e6e6;
-  }
-
+	.promotion {
+		border-bottom: solid 1px #e6e6e6;
+	}
 }
 
 ////////// xs 481-767 //////////
-@media (min-width: 481px) {
-
-  .text-big {
-	font-size: @text_slogan - 2.2;
-	color: #ffff00;
-  }
-  .text-big-slogan {
-	font-size: @text_slogan - 3.4;
-	color: #ffff00;
-  }
-
+@media (min-width: @screen-xs) {
+	@import "common/com_3_xs";
 }
 
 ////////// sm 768-991 //////////
-@media (min-width: 768px) {
-  .text-big {
-	font-size: @text_slogan - 1.2;
-	color: orangered;
-  }
-
-  .text-big-slogan {
-	font-size: @text_slogan - 3;
-	color: orangered;
-  }
-
-  @import "nav_768_992";
-  @import "langswitcher_768_992";
+@media (min-width: @screen-sm) {
+	@import "common/com_4_sm";
+	@import "main_nav/2_768_992";
+	@import "langsw/2_768_992";
 }
 
 ////////// md 992-1199 //////////
-@media (min-width: 992px) {
-
-  .text-big {
-	font-size: @text_slogan - 0.8;
-	color: green;
-  }
-
-  .text-big-slogan {
-	font-size: @text_slogan - 2.8;
-	color: green;
-  }
-
-  @import "nav_993_1200";
-  @import "langswitcher_993_1200";
-
+@media (min-width: @screen-md) {
+	@import "common/com_5_md";
+	@import "main_nav/3_993_1200";
+	@import "langsw/3_993_1367";
 }
 
-////////// my custom 1300 //////////
-@media (max-width: 1370px) {
-  body {
-	font-size: 12px;
-  }
+////////// lg 1200 - 1366 //////////
+@media (min-width: @screen-lg) {
+	@import "common/com_6_lg";
 }
 
-////////// lg 1200 //////////
-@media (min-width: 1200px) {
-  .text-big {
-	font-size: @text_slogan;
-	color: red;
-  }
-
-  .text-big-slogan {
-	font-size: @text_slogan/2;
-	color: red;
-  }
+////////// xl 1367 //////////
+@media (min-width: @screen-xl) {
+	@import "common/com_7_xl";
+	@import "main_nav/4_1367";
+	@import "langsw/4_1367";
 }

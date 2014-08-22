@@ -1,0 +1,93 @@
+@langsw-border-radius: 2px;
+@flag-image-width: 18px;
+@flag-image-height: 12px;
+@flag-image-offset-y: 5px;  // flag in menu not in language switcher
+@flag-image-offset-x: 14px; // offset x in language switcher
+@select_down-icon-width: 9px;
+@flag-name-padding-right: @select_down-icon-width + 3; // 12px
+
+.langsw-text() {
+	font-size: @nav-buttons-font-size; // same as nav buttons font size; comes from nav_1_comm.less
+	text-decoration: none;
+	color: #000000;
+	text-align: left;
+	font-weight: 300;
+}
+
+.flag-image-selected {
+	background-repeat: no-repeat;
+	background-position: 0px @flag-image-offset-y;
+	margin-left: auto;
+	margin-right: auto;
+	width: @flag-image-width + @flag-name-padding-right + 22; // 52px
+}
+
+.flag-name-selected {
+	background-image: url("@{image-directory}select_down.gif");
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: @flag-name-padding-right;
+	padding-left: @flag-image-width + 3;
+}
+
+li#languageSwitcherAll {
+	margin-top: @distance; // 3px: comes from nav_1_common.less
+	padding: 10px;
+	border-radius: @langsw-border-radius;
+
+	& ul{
+		padding: 10px 0px;
+		display: block;
+		width: 100%;
+		background-color: white;
+		border-radius: @langsw-border-radius;
+
+		& li {
+			float: right;
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+
+			& a, & a:visited {
+				float: left;
+				display: block;
+				width: 100%;
+				padding: 5px 3px 5px (@flag-image-width + @flag-image-offset-x + 6); // 5px 3px 5px 38px;
+				background-color: white;
+				background-repeat: no-repeat;
+				background-position: @flag-image-offset-x center;
+				border-radius: 0px;
+
+				.langsw-text();
+			}
+
+			& a:hover, & a:active {
+				background-color: #F5F5F5;
+			}
+		}
+	}
+}
+
+
+/*
+ The code under generates all language classes
+*/
+
+@list: gb, es, am, br, id;	// available languages
+@count: length(@list);		// the count of languages
+
+.generate-langauge-classes(@count);
+
+.generate-langauge-classes(@count, @i: 1) when (@i =< @count) {
+
+  // holds the language name gb, am, es ...
+  @var: extract(@list, @i);
+
+  // Create a new class for each language
+  .@{var} {
+	background-image: url('@{image-directory}flags/@{var}.png');
+  }
+
+  .generate-langauge-classes(@count, (@i + 1));
+}

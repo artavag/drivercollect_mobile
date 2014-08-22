@@ -1,0 +1,19 @@
+@lansw-offset-top: (2*(@nav-buttons-font-size*1.1)) + 4*@nav-buttons-padding-v + @welcome-margin-top + @welcome-text-margin-bottom; //1.1 is line height,
+
+li#languageSwitcherAll {
+	top: @lansw-offset-top;
+	padding: 1px;
+
+	& ul{
+		background-color: white;
+		border-radius: @langsw-border-radius;
+
+		& li {
+			& a, & a:visited {
+				border: none;
+				border-radius: 0px;
+				font-size: @nav-buttons-font-size;
+			}
+		}
+	}
+}

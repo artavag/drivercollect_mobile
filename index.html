@@ -38,258 +38,226 @@
 		<!--<script src="js/jquery.polyglot.language.switcher.js"></script>-->
 		<script src="js/main.js"></script>
 
-		<div class="container-fluid" >
-			<div class="row">
-				<div id="header" class="col-lg-24">
+		<div class="container-fluid">
 
-					<div class="main-nav clearfix">
+			<div id="header" class="col-xl-24">
 
-						<div class="col-lg-18 col-lg-offset-3 padding-left-right">
+				<div class="main-nav-wrapper clearfix">
 
-							<div class="pull-left" style="padding-top: 8px; padding-bottom: 8px">
-								<img src="img/logo3.png">
-							</div>
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+						<a href="index.html" class="pull-left logo-image"></a>
+						<span id="menu-button" class="visible-xs"></span>
 
-							<span id="menu-button" class="visible-xs"></span>
+						<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
-							<div class="col-xs-24 col-sm-7 col-md-9 col-lg-8 welcome hidden-xs">
+							<ul class="col-xs-24 col-sm-24">
+								<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
 
-								<ul class="col-xs-24 col-sm-24">
-									<li class="col-xs-24 col-sm-24"><p>Welcome <span class="username">guestguestguest!</span></p></li>
+								<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+									<a href="#" id="languageSwitcherSelected">
+										<div class="flag-image-selected gb"><span class="flag-name-selected">UK</span></div>
+									</a>
+								</li>
 
-									<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
-										<a href="#" id="languageSwitcherSelected" >
-											<div style="width: 55px; /*height: 20px;*/ margin-left: auto; margin-right: auto">
-												<img class="flag-image" src="img/flags/gb.png"/>
-												<span class="flag-name">UK</span>
-											</div>
-										</a>
-									</li>
+								<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+								<li class="col-xs-7"><a href="login.html">Login</a></li>
 
-									<!--<li class="hidden-xs">/</li>-->
-									<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
-									<!--<li class="hidden-xs">/</li>-->
-									<li class="col-xs-7"><a href="login.html">Login</a></li>
-
-									<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
-										<ul>
-											<li><a href="#" id="en">United kingdom</a></li>
-											<li><a href="#" id="es">Espana</a></li>
-											<li><a href="#" id="am">Armenia</a></li>
-											<li><a href="#" id="br">Brazil</a></li>
-											<li><a href="#" id="id">Indonesia</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-
-							<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-12  mynavbar2 hidden-xs">
-								<li class="col-xs-24"><a href="index.html">Home</a></li>
-								<li class="col-xs-24"><a href="rides.html">My rides</a></li>
-								<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
-								<li class="col-xs-24"><a href="account.html">My account</a></li>
-								<li class="col-xs-24"><a href="faq.html">Support</a></li>
-								<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+								<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
+									<ul>
+										<li><a href="#" class="gb">United kingdom</a></li>
+										<li><a href="#" class="es">Espana</a></li>
+										<li><a href="#" class="am">Armenia</a></li>
+										<li><a href="#" class="br">Brazil</a></li>
+										<li><a href="#" class="id">Indonesia</a></li>
+									</ul>
+								</li>
 							</ul>
-
 						</div>
+
+						<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+							<li class="col-xs-24"><a href="index.html">Home</a></li>
+							<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+							<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+							<li class="col-xs-24"><a href="account.html">My account</a></li>
+							<li class="col-xs-24"><a href="faq.html">Support</a></li>
+							<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+						</ul>
 					</div>
+				</div>
 
-					<div class="row" style="margin-top: 2em">
+				<div class="row padding-left-right">
+					<div class="col-md-16 col-md-offset-4 col-lg-16 col-lg-offset-4">
+						<h1 class="slogan-big text-shadow-1">Searchless ride sharing</h1>
+					</div>
+					<div class="col-lg-16 col-lg-offset-4 col-md-16 col-md-offset-4">
+						<h2 class="slogan-small text-shadow-1">We are different because we do the searching for you, even on parts of the journey.</h2>
+					</div>
+				</div>
 
-						<div class="row" style="margin-top: 2em">
-							<div class="col-lg-16 col-lg-offset-4 col-md-16 col-md-offset-4">
-								<h1 class="text-big my-text-shadow" style="">Searchless ride sharing</h1>
-							</div>
-							<div class="col-lg-16 col-lg-offset-4 col-md-16 col-md-offset-4 ">
-								<h1 class="text-big-slogan my-text-shadow">We are different because we do the searching for you, even on parts of the journey.</h1>
-							</div>
-						</div>
+				<div class="row padding-left-right">
 
-						<div class="row padding-left-right">
-							<!--<div id="search-box" class="col-lg-8 col-lg-offset-2">-->
-							<div id="search-box" class="col-lg-18 col-lg-offset-3 ">
+					<div id="search-box" class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3">
 
-								<div class="clearfix" style="">
-									<span style="color: #dcdcdc; float: left">
-										<div class="pull-left">
-											<div class="" style="padding: 0px 0px 0px 0px; font-weight: 300; font-size: 14px">Driver or rider?</div>
-										</div>
-										<div class="pull-left radio-driver-rider" style="margin-left: 20px">
-											<div class="pull-left">
-												<label for="driver" class="radio-inline" style="padding: 0px 10px">Driver</label>
-												<input type="radio" name="inlineRadioOptions" id="driver" value="option1">
-											</div>
+						<form role="form">
 
-											<div class="pull-left">
-												<label for="rider" class="radio-inline " style="padding: 0px 10px">Rider</label>
-												<input type="radio" name="inlineRadioOptions" id="rider" value="option2">
-											</div>
+							<div class="clearfix">
+								<span class="col-xs-24 pull-left">
 
-											<div class="pull-left">
-												<label for="both" class="radio-inline " style="padding: 0px 10px">Both</label>
-												<input type="radio" name="inlineRadioOptions" id="both" value="option2" checked>
-											</div>
-										</div>
+									<span class="search-box-label pull-left col-xs-24">Driver or rider?</span>
+
+									<span class="col-xs-24 driver-rider-wrapper">
+										<span>
+											<label for="driver">Driver</label>
+											<input type="radio" name="driver" id="driver" value="D">
+										</span>
+
+										<span>
+											<label for="rider">Rider</label>
+											<input type="radio" name="rider" id="rider" value="R">
+										</span>
+
+										<span>
+											<label for="both">Both</label>
+											<input type="radio" name="both" id="both" value="B" checked>
+										</span>
 									</span>
-									<span style="color: #dcdcdc; float: right; padding-right: 15px; background-image: url('img/select_down_up.gif'); background-repeat: no-repeat; background-position: 100% -35%;" id="refine_search">Refine search</span>
-								</div>
-
-								<form role="form" style="margin-top: 1em">
-									<div class="row">
-										<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">
-											<input type="text" class="form-control" id="exampleInputEmail2" placeholder="From location">
-										</div>
-
-										<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">
-											<input type="text" class="form-control" id="exampleInputPassword2" placeholder="To location">
-										</div>
-
-										<div class="" style="width: 9%; float: left; margin-right: 0.7%">
-											<div class="left-inner-addon">
-												<!--<div id="picker_icon2" class="glyphicon glyphicon-calendar" style=""></div>-->
-												<input type="text" class="form-control" id="datepicker" placeholder="From date" data-date-format="yyyy-mm-dd" style="">
-											</div>
-										</div>
-
-										<div class="" style="width: 8%; float: left; margin-right: 0.7%">
-											<div class="left-inner-addon">
-												<!--<div id="picker_icon1" class="glyphicon glyphicon-time" style=""></div>-->
-												<input type="text" class="form-control" id="timepicker" placeholder="From time" style="">
-											</div>
-										</div>
-
-										<div class="" style="width: 9%; float: left; margin-right: 0.7%">
-											<div class="left-inner-addon">
-												<!--<div id="picker_icon2" class="glyphicon glyphicon-calendar" style=""></div>-->
-												<input type="text" class="form-control" id="datepicker" placeholder="To date" data-date-format="yyyy-mm-dd" style="">
-											</div>
-										</div>
-
-										<div class="" style="width: 8%; float: left; margin-right: 0.7%">
-											<div class="left-inner-addon">
-												<!--<div id="picker_icon1" class="glyphicon glyphicon-time" style=""></div>-->
-												<input type="text" class="form-control" id="timepicker" placeholder="To time" style="">
-											</div>
-										</div>
-
-										<button type="submit" class="btn btn-danger" style="float: left; width: 8%">Save</button>
-									</div>
-
-									<div id="additional_options" style="display: none;margin-top: 10px" class="">
-										<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #333; border-bottom: 1px solid #585858;">-->
-
-										<div class="clearfix backgroud-border">
-
-											<!--<div class="col-lg-3" style="padding: 0;margin: 0">-->
-												<!--<label class="checkbox-inline">-->
-													<!--<input type="checkbox" id="inlineCheckbox1" value="option1"> Multiple request &nbsp;&nbsp;&nbsp;-->
-												<!--</label>-->
-											<!--</div>-->
-
-											<div class="col-lg-6 search-wrapper">
-												<span class="search-label" style="width: 60%">Number of occurrences</span>
-
-												<select name="occurrences" class="form-control input-sm pull-left" style="width:30%">
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-												</select>
-											</div>
-
-											<div class="col-lg-10 col-lg-offset-2 search-wrapper">
-
-												<span class="search-label" style="width: 20%">Repeat on</span>
-
-												<div class="checkbox-my pull-left" style="width: 70%">
-													<span><label for="1" class="">Mo</label><input type="checkbox" id="1" name="weekdays[]" value="1"></span>
-													<span><label for="2" class="">Tu</label><input type="checkbox" id="2" name="weekdays[]" value="2"></span>
-													<span><label for="3" class="">We</label><input type="checkbox" id="3" name="weekdays[]" value="3"></span>
-													<span><label for="4" class="">Th</label><input type="checkbox" id="4" name="weekdays[]" value="4"></span>
-													<span><label for="5" class="">Fr</label><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked"></span>
-													<span><label for="6" class="">Sa</label><input type="checkbox" id="6" name="weekdays[]" value="6"></span>
-													<span><label for="7" class="">Su</label><input type="checkbox" id="7" name="weekdays[]" value="7"></span>
-
-												</div>
-											</div>
-
-										</div>
-
-										<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
-
-										<div class="clearfix backgroud-border" style="">
-
-											<div class="col-lg-6 search-wrapper" >
-													<label for="inputPassword" class="search-label" style="width: 60%">Additional passengers</label>
-													<input type="text" class="form-control input-sm pull-left" id="inputPassword" value="0" maxlength="2" style="width: 30%">
-											</div>
-
-											<div class="col-lg-6 col-lg-offset-2 search-wrapper">
-												<!--<div class="form-group">-->
-													<label for="inputPassword10" class="search-label" style="width: 45%">Number luggages</label>
-													<input type="text" class="form-control input-sm pull-left" id="inputPassword10" value="0" maxlength="2" style="width: 30%">
-												<!--</div>-->
-											</div>
-
-
-											<div class="col-lg-8 col-lg-offset-2 search-wrapper pull-left">
-
-												<span class="pull-right">
-													<span class="search-label pull-left">Smoking</span>
-
-													<div class="pull-left radio-smoking" style="">
-														<div class="pull-left">
-															<label for="yes">Yes</label>
-															<input type="radio" name="yes" id="yes" value="option1">
-														</div>
-
-														<div class="pull-left">
-															<label for="indifferent">Indifferent</label>
-															<input type="radio" name="indifferent" id="indifferent" value="option2" checked>
-														</div>
-
-														<div class="pull-left">
-															<label for="not">Strictly not</label>
-															<input type="radio" name="not" id="not" value="option2" >
-														</div>
-													</div>
-												</span>
-											</div>
-										</div>
-
-										<!--<hr style="margin: 10px 0px; padding: 0; border: 0; border-top: 1px solid #222; border-bottom: 1px solid #606060;">-->
-
-										<div class="clearfix backgroud-border" style="padding-bottom: 0px">
-											<textarea name="request_comment" class="form-control" placeholder="Comments"></textarea>
-										</div>
-									</div>
-								</form>
+								</span>
 							</div>
-						</div>
+
+
+							<div class="row">
+								<div class="clearfix col-xs-24" id="main-search-options">
+
+									<!--<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">-->
+									<div class="col-full">
+										<label for="from-location" class="search-box-label">From location</label>
+										<input type="text" class="form-control" name="from-location" id="from-location" placeholder="From location">
+									</div>
+
+									<!--<div class="" style="width: 26.9%; float: left; margin-right: 0.7%">-->
+									<div class="col-full">
+										<label for="to-location" class="search-box-label">To location</label>
+										<input type="text" class="form-control" name="to-location" id="to-location" placeholder="To location">
+									</div>
+
+									<!--<div class="" style="width: 9%; float: left; margin-right: 0.7%">-->
+									<div class="col-half">
+										<label for="datepicker" class="search-box-label">From Date</label>
+										<input type="text" class="form-control" name="datepicker" id="datepicker" placeholder="From date" data-date-format="yyyy-mm-dd">
+									</div>
+
+									<!--<div class="" style="width: 8%; float: left; margin-right: 0.7%">-->
+									<div class="col-half">
+										<label for="timepicker" class="search-box-label">From time</label>
+										<input type="text" class="form-control" name="timepicker" id="timepicker" placeholder="From time" data-date-format="yyyy-mm-dd">
+									</div>
+
+									<!--<div class="" style="width: 9%; float: left; margin-right: 0.7%">-->
+									<div class="col-half">
+										<label for="datepicker" class="search-box-label">From Date</label>
+										<input type="text" class="form-control" name="datepicker" id="datepicker" placeholder="From date" data-date-format="yyyy-mm-dd">
+									</div>
+
+									<!--<div class="" style="width: 8%; float: left; margin-right: 0.7%">-->
+									<div class="col-half">
+										<label for="timepicker" class="search-box-label">From time</label>
+										<input type="text" class="form-control" name="timepicker" id="timepicker" placeholder="From time" data-date-format="yyyy-mm-dd">
+									</div>
+
+									<span class="refine-search col-xs-24 btn btn-success">Refine search</span>
+
+									<span id="submit"><button type="submit" class="btn btn-danger">Save</button></span>
+
+								</div><!--main-search-options-->
+
+
+								<div id="additional-search-options" >
+
+									<div class="clearfix row-divider">
+
+										<div class="col-xs-24 col-lg-6">
+											<span class="search-box-label">Number of occurrences</span>
+
+											<select name="occurrences" class="form-control input-sm pull-left col-xs-24">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+
+										<div class="col-lg-10 col-lg-offset-2">
+
+											<span class="search-box-label col-xs-24">Repeat on</span>
+
+											<div class="weekdays-wrapper col-xs-24">
+												<span><label for="1">Mo</label><input type="checkbox" id="1" name="weekdays[]" value="1"></span>
+												<span><label for="2">Tu</label><input type="checkbox" id="2" name="weekdays[]" value="2"></span>
+												<span><label for="3">We</label><input type="checkbox" id="3" name="weekdays[]" value="3"></span>
+												<span><label for="4">Th</label><input type="checkbox" id="4" name="weekdays[]" value="4"></span>
+												<span><label for="5">Fr</label><input type="checkbox" id="5" name="weekdays[]" value="5" checked="checked"></span>
+												<span><label for="6">Sa</label><input type="checkbox" id="6" name="weekdays[]" value="6"></span>
+												<span><label for="7">Su</label><input type="checkbox" id="7" name="weekdays[]" value="7"></span>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="clearfix row-divider">
+
+										<div class="col-xs-24 col-lg-6">
+											<label for="inputPassword" class="search-box-label col-xs-24">Additional passengers</label>
+											<input type="text" class="form-control input-sm col-xs-24" id="inputPassword" value="0" maxlength="2">
+										</div>
+
+										<div class="col-xs-24 col-lg-6 col-lg-offset-2">
+											<label for="inputPassword10" class="search-box-label col-xs-24">Number luggages</label>
+											<input type="text" class="form-control input-sm col-xs-24" id="inputPassword10" value="0" maxlength="2">
+										</div>
+
+
+										<div class="col-xs-24 col-lg-8 col-lg-offset-2">
+
+											<span class="col-xs-24">
+												<span class="search-box-label col-xs-24">Smoking</span>
+
+												<div class="smoking-wrapper col-xs-24">
+													<span>
+														<label for="yes">Yes</label>
+														<input type="radio" name="yes" id="yes" value="option1">
+													</span>
+
+													<span>
+														<label for="indifferent">Indifferent</label>
+														<input type="radio" name="indifferent" id="indifferent" value="option2" checked>
+													</span>
+
+													<span>
+														<label for="not">Strictly not</label>
+														<input type="radio" name="not" id="not" value="option2" >
+													</span>
+												</div>
+											</span>
+										</div>
+									</div>
+
+									<div class="clearfix row-divider">
+										<label for="" class="search-box-label">Comments</label>
+										<textarea name="request_comment" class="form-control" placeholder="Comments"></textarea>
+									</div>
+								</div><!--additional-search-options-->
+
+								<!--<button type="submit" class="btn btn-danger" style="float: left; width: 8%">Save</button>-->
+							</div>
+						</form>
 					</div><!--header-->
-
-
-					<!--<div class="row">-->
-						<!--<div class="col-lg-12">-->
-							<!--<ul class="mynavbar">-->
-								<!--<li>Rides</li>-->
-								<!--<li>Profile</li>-->
-								<!--<li>Account</li>-->
-								<!--<li>FAQs</li>-->
-								<!--<li>Support</li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-
 				</div>
 			</div>
-
 
 			<div id="content">
 
 				<div class="row backgroud-gray-light">
-					<div class="col-lg-18 col-lg-offset-3 " style="padding-top: 15px">
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right" style="padding-top: 15px">
 
 						<div class="col-lg-8 promotion" style="padding: 10px 20px 0px 20px">
 							<img src="img/mobile_icon.png" class="" style="width: 50px;margin-left: auto; margin-right: auto;display: block"/>
@@ -334,7 +302,7 @@
 				<!--</div>-->
 
 				<div class="row" >
-					<div class="col-lg-18 col-lg-offset-3  padding-left-right" style="margin-bottom: 36px; margin-top: 36px">
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right" style="margin-bottom: 36px; margin-top: 36px">
 
 						<div class="col-lg-8 " style="margin-bottom: 36px; margin-top: 0px">
 							<h1>Latest rides</h1>
@@ -412,7 +380,7 @@
 
 
 				<div class="row backgroud-gray">
-					<div class="col-lg-18 col-lg-offset-3  padding-left-right">
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
 						<img src="img/responsive.png" class="pull-right"/>
 						<div class="col-lg-12 pull-left ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>
@@ -425,7 +393,7 @@
 
 
 				<div class="row backgroud-white">
-					<div class="col-lg-18 col-lg-offset-3  padding-left-right">
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
 						<img src="img/paypal_options.png" class="pull-left"/>
 						<div class="col-lg-12 pull-right ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">You can pay with paypal...</h2>
@@ -438,7 +406,7 @@
 				</div>
 
 				<div class="row backgroud-gray">
-					<div class="col-lg-18 col-lg-offset-3">
+					<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 ">
 						<img src="img/responsive.png" class="pull-right"/>
 						<div class="col-lg-12 pull-left ">
 							<h2 style="font-weight: 100; font-style: normal; font-size: 3em">We are mobile ready...</h2>
@@ -481,22 +449,32 @@
 			defaultTime: false
 		});
 
-		$('#refine_search').on('click', function(){
+		$('.refine-search').on('click', function(){
 
-			$('#additional_options').toggle();
+			$('#additional-search-options').toggle();
 
-			var is_visible = $('#additional_options').css('display');
+			var is_visible = $('#additional-search-options').css('display');
 
 			if (is_visible == 'block')
 			{
 //				$('#search-box').css({ 'margin-top': '-5.4em', 'background-color': 'rgba(70,70,70, 0.95)' });
 				$('#search-box').css({ 'margin-top': '-5.8em', 'background-color': 'rgba(0,0,0, 0.7)' });
 				$(this).css({'background-position': '100% 135%'});
+
+				$('#main-search-options #submit').appendTo($('#additional-search-options'));
+//				$('#main-search-options button[type="submit"]').empty();
 			}
 			else
 			{
-				$('#search-box').css({ 'margin-top': '6em', 'background-color': ' rgba(0,0,0,0.5)' });
+
+				// todo change code to read background color and use hard coded version rgba(0,0,0,0.55)
+
+
+				$('#search-box').css({ 'margin-top': '6em', 'background-color': ' rgba(0,0,0,0.55)' });
 				$(this).css({'background-position': '100% -35%'});
+
+				$('#additional-search-options #submit').appendTo($('#main-search-options'));
+
 			}
 
 		});
@@ -508,7 +486,7 @@
 
 		// Get checked inputs and make their label red
 
-		$('.checkbox-my input').each(function(){
+		$('.weekdays-wrapper input').each(function(){
 
 			var checked_weekday = $(this).prop('checked');
 
@@ -516,19 +494,19 @@
 			{
 				var checked_weekday_id = $(this).attr('id');
 
-				$('.checkbox-my label[for=' + checked_weekday_id + ']').css({
+				$('.weekdays-wrapper label[for=' + checked_weekday_id + ']').css({
 					'background-color': '#d9534f',
 					'color': 'white'
 				});
 			}
 		});
 
-		$('.checkbox-my label').on('click', function(e){
+		$('.weekdays-wrapper label').on('click', function(e){
 
 			e.stopPropagation();
 
 			var for_attr = $(this).attr('for');
-			var input_weekday = $('.checkbox-my input[id=' + for_attr + ']');
+			var input_weekday = $('.weekdays-wrapper input[id=' + for_attr + ']');
 
 			input_weekday.on('change', function(d){
 
@@ -541,18 +519,18 @@
 
 				if (input_checked)
 				{
-				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', true);
+				$('.weekdays-wrapper input[id=' + for_attr + ']').attr('checked', true);
 
-					$('.checkbox-my label[for=' + for_attr + ']').css({
+					$('.weekdays-wrapper label[for=' + for_attr + ']').css({
 						'background-color': '#d9534f',
 						'color': 'white'
 					});
 				}
 				else
 				{
-				$('.checkbox-my input[id=' + for_attr + ']').attr('checked', false);
+				$('.weekdays-wrapper input[id=' + for_attr + ']').attr('checked', false);
 
-					$('.checkbox-my label[for=' + for_attr + ']').css({
+					$('.weekdays-wrapper label[for=' + for_attr + ']').css({
 						'background-color': '#f8f8f8',
 						'color': 'black'
 					});
@@ -568,7 +546,9 @@
 
 		// Get checked inputs and make their label red
 
-		var wrapper_element = '.radio-driver-rider',
+		// todo read initial color and so not hard code it!!!
+
+		var wrapper_element = '.driver-rider-wrapper',
 			initial_color = '#f8f8f8',
 			checked_color = 'orange',
 			initial_text_color = '#000000',
@@ -576,7 +556,7 @@
 
 		radio_check(wrapper_element, initial_color, checked_color, initial_text_color, checked_text_color);
 
-		wrapper_element = '.radio-smoking';
+		wrapper_element = '.smoking-wrapper';
 		initial_color = '#f8f8f8';
 		checked_color = '#d9534f';
 		initial_text_color = '#000000';
@@ -645,7 +625,7 @@
 
 		$('#menu-button').on('click', function(){
 			$('.welcome').toggleClass('hidden-xs');
-			$('.mynavbar2').toggleClass('hidden-xs');
+			$('.main-navbar').toggleClass('hidden-xs');
 		});
 
 
