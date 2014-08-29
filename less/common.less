@@ -18,6 +18,22 @@
 
 @image-directory: "../img/";
 
+
+@global-background-gray: #F7F5F5;
+@global-border-dick: solid 10px darken(@global-background-gray, 5%);
+
+@global-border-radius: 2px;
+@global-input-border-color: #cccccc;
+@global-input-border: 1px solid @global-input-border-color;
+
+@global-button-red: #d9534f;
+@global-button-red-hover: darken(@global-button-red, 10%);
+
+@global-button-warning: orange;
+@global-button-warning-hover: darken(@global-button-warning, 5%);
+
+@import "fontello";
+
 /*
 * Remove text-shadow in selection highlight: h5bp.com/i
 * These selection rule sets have to be separate.
@@ -41,6 +57,10 @@
   padding: 0.2em 0;
 }
 
+html.placeholder label.label-hide {
+	display: none;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
@@ -48,6 +68,10 @@ body {
 	font-size: 10px;
 	padding: 0;
 	margin: 0;
+}
+
+section, article, aside, footer, header, nav, hgroup {
+	display:block;
 }
 
 strong, b {
@@ -80,6 +104,18 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.btn {
+	border-radius: @global-border-radius;
+	font-weight: 300;
+}
+
+.form-control {
+	border-radius: @global-border-radius;
+	border: @global-input-border;
+	-webkit-box-shadow: inset 0 1px 1px rgba( red(darken(@global-input-border-color, 100%)), green(darken(@global-input-border-color, 100%)), blue(darken(@global-input-border-color, 100%)), 0.075 );
+	box-shadow: inset 0 1px 1px rgba( red(darken(@global-input-border-color, 100%)), green(darken(@global-input-border-color, 100%)), blue(darken(@global-input-border-color, 100%)), 0.075 );
+}
+
 .scroll-top {
   position: fixed;
   bottom: 10px;
@@ -103,6 +139,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   display: block;
   padding: 6px 8px 10px 8px;
+}
+
+.background-gray {
+	background-color: @global-background-gray;
+}
+
+.dropdown-menu {
+	min-width: 130px;
+}
+
+#content {
+	min-height: 100px;
 }
 
 

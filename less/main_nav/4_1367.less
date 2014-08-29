@@ -1,4 +1,4 @@
-@nav-buttons-radius-993: 0px;
+@nav-buttons-radius: 0px;
 @nav-buttons-padding-v: 6px;
 
 @nav-buttons-font-size: 16px;
@@ -18,11 +18,11 @@ ul.main-navbar  {
 	padding-bottom: 0px;
 
 	& li {
-		border-radius: 0;
+		border-radius: @nav-buttons-radius;
 		font-size: @nav-buttons-font-size;
 
 		& a, & a:visited {
-			border-radius: 0;
+			border-radius: @nav-buttons-radius;
 			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
 			border-bottom: solid 2px @nav-bgr;
 		}
@@ -44,7 +44,7 @@ ul.main-navbar  {
 	}
 
 	& li {
-		border-radius: 0;
+		border-radius: @nav-buttons-radius;
 		font-size: @nav-buttons-font-size;
 
 		&:first-child {
@@ -60,7 +60,7 @@ ul.main-navbar  {
 		}
 
 		& a, & a:visited {
-			border-radius: 0;
+			border-radius: @nav-buttons-radius;
 			border-bottom: solid 2px @nav-bgr;
 			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
 		}

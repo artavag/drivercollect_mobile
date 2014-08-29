@@ -3,19 +3,17 @@
 @search-box-background-color: fade(@search-box-color-theme, 55%);
 @search-box-shadow-color: fade(@search-box-color-theme, 80%);
 
-@search-box-border-radius: 3px;
-@search-box-margin-top: 2em;
+@search-box-border-radius: @global-border-radius;
+@search-box-margin-top: 1.4em;
 
-@search-box-padding-v: 10px;
-@search-box-padding-h: 10px;
+
 
 @search-box-row-margin: 10px 0px;
 
-@search-box-button-padding-v: 3px;
+@search-box-button-padding-v: @ss-elem-padding-vertical;
 @search-box-button-padding-h: 10px;
 @search-box-button-margin: 2%;
 
-@search-box-text-size: 1.2em;
 
 
 // search-box mixins.
@@ -24,12 +22,14 @@
 	color: #000000;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: @search-box-border-radius;
 };
 
 .search-box-button-input() {
 	z-index: 10;
-	margin-left: -14px;
+	margin: 0;
+	padding: 0;
+	margin-left: -18px;
 	display: block;
 	opacity: 0;
 	float: left;
@@ -37,7 +37,7 @@
 };
 
 .search-box-text() {
-	font-size: @search-box-text-size;
+	font-size: @ss-font-size;
 	font-weight: 300;
 	font-style: normal;
 	color: #cccccc;
@@ -59,7 +59,7 @@
 }
 
 .placeholder-my() {
-	@search-box-placeholder-text-size: @search-box-text-size - 0.2;
+	@search-box-placeholder-text-size: @ss-font-size;
 
 	::-webkit-input-placeholder {
 		font-size: @search-box-placeholder-text-size;
@@ -111,21 +111,37 @@
 
 #search-box {
 	margin-top: @search-box-margin-top;
-	margin-bottom: 10px;
+	margin-bottom: @ss-elem-margin-vertical;
 	background-color: @search-box-background-color;
 	box-shadow: 0 0 3px 0 @search-box-shadow-color;
 	border: solid 1px @search-box-border-color;
 	border-radius: @search-box-border-radius;
 	padding: @search-box-padding-v @search-box-padding-h;
 
-	& #submit button{
-//		.search-box-text();
-//		color: #FFFFFF;
-//		padding: @search-box-button-padding-v @search-box-button-padding-h;
+	.btn-warning {
+		background-color: rgba(0,0,0,0.5);//@global-button-warning;
+		border: solid 1px #000000;
 
-		width: 100%;
+		&:hover, &:active {
+			background-color: @global-button-red;
+			border: solid 1px @global-button-red;
+		}
 	}
-//
+
+	& #submit {
+//		display: block;
+		& button{
+			//		.search-box-text();
+			//		color: #FFFFFF;
+			//		padding: @search-box-button-padding-v @search-box-button-padding-h;
+			width: 100%;
+		}
+
+//		&.row-divider {
+//			margin-top: 20px;
+//		}
+	}
+
 	& .form-control {
 //		padding: (@search-box-button-padding-v + 4px) (@search-box-button-padding-h + 3px); // 4px
 //		border: solid 1px #666666;
@@ -135,6 +151,10 @@
 		border-top:	dotted 1px #777;
 		padding: 10px 0px;
 		margin: 0;
+
+		& div {
+			margin-bottom: @ss-elem-margin-vertical;
+		}
 	}
 
 	.search-box-text();
@@ -159,7 +179,7 @@
 
 		& div {
 			float: left;
-			margin-bottom: 10px;
+			margin-bottom: @ss-elem-margin-vertical;
 		}
 
 		& .col-full {
@@ -167,7 +187,7 @@
 		}
 
 		& .col-half {
-			width: 48%;
+			width: 49%;
 
 			&:nth-child(even) {
 				float: right;
@@ -182,6 +202,8 @@
 			background-image: url('@{image-directory}select_down_up.gif');
 			background-repeat: no-repeat;
 			background-position: 95% -150%;
+			margin-top: @ss-elem-margin-vertical;
+			margin-bottom: @ss-elem-margin-vertical;
 
 			.search-box-text();
 			color: white;
@@ -192,11 +214,25 @@
 		display: none;
 		margin-top: 10px;
 
+		@margin-right: 1%;
+
+		.small-input {
+			width: (8/@grid-columns*100%);
+			float: right;
+		}
+
 		& .weekdays-wrapper {
 			& span {
 				display: inline-block;
-				margin-right: 1px;
-				width: 100/7% - 1;
+				float: left;
+				margin: 0px;
+				padding: 0;
+				margin-right: @margin-right;
+				width: (100 - (6*@margin-right))/7%;
+
+				&:last-child {
+					margin-right: 0;
+				}
 
 				& label {
 					.search-box-relative-position();
@@ -204,56 +240,24 @@
 					.search-box-button();
 					.search-box-prevent-select();
 
+					text-align: center;
 					width: 100%;
-					padding: @search-box-button-padding-v @search-box-button-padding-h;
-					min-width: 20px;
+					padding: @search-box-button-padding-v @search-box-button-padding-v; // twice @search-box-button-padding-v is not typo
+					min-width: 18px;
 					margin: 0px;
 				}
 
 				& input {
 					margin: 0px;
+					padding: 0px;
 					.search-box-button-input();
 				}
+
+
+
 			}
 		}
 	}
-
-
-
-
-//	& .radio-wrapper {
-//		margin-left: 20px;
-//		float: left;
-//
-//		& div {
-//			margin-right: 4px;
-//		}
-//
-//		& label {
-//			.search-box-relative-position();
-//
-//			text-align: center;
-//			padding: 3px 10px;
-//			background-color: #F7F5F5;
-//			margin: 0px;
-//			font-weight: 300;
-//			border-radius: 2px;
-//			cursor: pointer;
-//			color: #000000;
-//			font-size: @search-box-text-size;
-//
-//			.search-box-prevent-select();
-//		}
-//
-//		& input {
-//			z-index: 10;
-//			margin-left: -14px;
-//			display: block;
-//			opacity: 1;
-//			float: left;
-//			cursor: pointer;
-//		}
-//	}
 
 	& .search-box-label {
 		float: left;

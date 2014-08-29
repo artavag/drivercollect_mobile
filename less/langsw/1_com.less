@@ -1,4 +1,3 @@
-@langsw-border-radius: 2px;
 @flag-image-width: 18px;
 @flag-image-height: 12px;
 @flag-image-offset-y: 5px;  // flag in menu not in language switcher
@@ -7,7 +6,7 @@
 @flag-name-padding-right: @select_down-icon-width + 3; // 12px
 
 .langsw-text() {
-	font-size: @nav-buttons-font-size; // same as nav buttons font size; comes from nav_1_comm.less
+	font-size: @ss-font-size; // same as nav buttons font size; comes from nav_1_comm.less
 	text-decoration: none;
 	color: #000000;
 	text-align: left;
@@ -33,14 +32,14 @@
 li#languageSwitcherAll {
 	margin-top: @distance; // 3px: comes from nav_1_common.less
 	padding: 10px;
-	border-radius: @langsw-border-radius;
+	border-radius: @global-border-radius;
 
 	& ul{
 		padding: 10px 0px;
 		display: block;
 		width: 100%;
 		background-color: white;
-		border-radius: @langsw-border-radius;
+		border-radius: @global-border-radius;
 
 		& li {
 			float: right;
@@ -53,7 +52,7 @@ li#languageSwitcherAll {
 				float: left;
 				display: block;
 				width: 100%;
-				padding: 5px 3px 5px (@flag-image-width + @flag-image-offset-x + 6); // 5px 3px 5px 38px;
+				padding: 3px 3px 3px (@flag-image-width + @flag-image-offset-x + 6); // 5px 3px 5px 38px;
 				background-color: white;
 				background-repeat: no-repeat;
 				background-position: @flag-image-offset-x center;

@@ -1,26 +1,25 @@
-@slogan-big-text-size: 2.5em;
+@slogan-big-text-size: 1.9em;
 @slogan-small-text-size: @slogan-big-text-size*0.6;
-@slogan-shadow: 1px 1px 1px #878787;
+@slogan-shadow: 1px 1px 1px #666;
 
 @slogan-big-margin-up: 0.8em;
-@slogan-big-margin-down: 0.8em;
+@slogan-big-margin-down: 0em;
 
 .slogan-text-mixin() {
 	text-align: center;
-	font-weight: 300;
+	font-weight: 100;
 	color: #ffffff;
 	font-style: normal;
 	text-shadow: @slogan-shadow;
 }
 
-.slogan-big {
+h1.slogan-big {
 	font-size: @slogan-big-text-size;
-	margin: @slogan-big-margin-up 0 @slogan-big-margin-down 0;
+	margin-top: @slogan-big-margin-up;
 	.slogan-text-mixin();
 }
 
 .slogan-small {
-	font-size: @slogan-small-text-size;
-	margin: 0;
-	.slogan-text-mixin();
+//	.slogan-text-mixin();
+	display: none; // we do not display promotion text on small devices
 }

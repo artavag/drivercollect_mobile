@@ -1,12 +1,7 @@
-@nav-bgr: #25383B;
-
-@nav-buttons-padding-v: 6px;
-@nav-buttons-padding-h: 6px;
-@nav-buttons-radius: 1px;
 @nav-buttons-bgr-color: darken(@nav-bgr, 8%);
 
 @nav-buttons-text-color: #cccccc;
-@nav-buttons-font-size: 12px;
+@nav-buttons-font-size: @ss-font-size;
 @nav-buttons-font-style: normal;
 @nav-buttons-font-weight: 300;
 
@@ -43,7 +38,7 @@ ul.main-navbar {
 		margin-top: @distance;
 		float: left;
 		background-color: @nav-buttons-bgr-color;
-		border-radius: @nav-buttons-radius;
+		border-radius: @global-border-radius;
 
 		.button-text();
 
@@ -51,11 +46,12 @@ ul.main-navbar {
 			display: block;
 			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
 			color: @nav-buttons-text-color;
-			border-radius: @nav-buttons-radius;
+			border-radius: @global-border-radius;
 		}
 
 		& a:hover, & a:active {
 			.button-hover;
+			border-radius: @global-border-radius;
 		}
 	}
 }
@@ -72,7 +68,7 @@ ul.main-navbar {
 	& li {
 		float: right;
 		background-color: @nav-buttons-bgr-color;
-		border-radius: @nav-buttons-radius;
+		border-radius: @global-border-radius;
 
 		.button-text();
 
@@ -85,6 +81,7 @@ ul.main-navbar {
 			& p{
 				float: right;
 				margin-bottom: @welcome-text-margin-bottom;
+				font-size: @ss-font-size;
 			}
 		}
 
@@ -93,19 +90,18 @@ ul.main-navbar {
 			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
 			color: @nav-buttons-text-color;
 			text-decoration: none;
-			border-radius: @nav-buttons-radius;
+			border-radius: @global-border-radius;
 		}
 
 		& a:hover, & a:active {
 			.button-hover;
+			border-radius: @global-border-radius;
 		}
 	}
 }
 
 
-//// logo, menu  buttons ////
-/////////////////////////////
-
+// logo, menu  buttons
 @logo_mobile_width: 112px;
 @logo_mobile_height: 36px;
 @logo_mobile_offset: 8px;

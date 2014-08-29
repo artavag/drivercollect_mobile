@@ -1,4 +1,4 @@
-@nav-buttons-radius-993: 1px;
+@nav-buttons-radius: @global-border-radius;
 @nav-buttons-padding-v: 4px;
 @nav-margin-top: @nav-buttons-padding-v + 8;
 @welcome-text-margin-bottom: 0px;
@@ -10,11 +10,11 @@ ul.main-navbar  {
 	margin-left: 10px; // distance from logo
 
 	& li {
-		border-radius: @nav-buttons-radius-993;
+		border-radius: @nav-buttons-radius;
 
 		& a, & a:visited {
 			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
-			border-radius: @nav-buttons-radius-993;
+			border-radius: @nav-buttons-radius;
 		}
 
 		& a:hover, & a:active {
@@ -32,7 +32,7 @@ ul.main-navbar  {
 	}
 
 	& li {
-		border-radius: @nav-buttons-radius-993;
+		border-radius: @nav-buttons-radius;
 		width: auto;
 		margin: 0;
 		//  background-color: red;
@@ -48,7 +48,7 @@ ul.main-navbar  {
 		}
 
 		& a, & a:visited {
-			border-radius: @nav-buttons-radius-993;
+			border-radius: @nav-buttons-radius;
 			margin: 0;
 		}
 
