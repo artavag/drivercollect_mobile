@@ -4,7 +4,7 @@
 @search-box-shadow-color: fade(@search-box-color-theme, 80%);
 
 @search-box-border-radius: @global-border-radius;
-@search-box-margin-top: 1.4em;
+@search-box-margin-top: 1em;
 
 
 
@@ -12,7 +12,7 @@
 
 @search-box-button-padding-v: @ss-elem-padding-vertical;
 @search-box-button-padding-h: 10px;
-@search-box-button-margin: 2%;
+@search-box-button-margin: 1%;
 
 
 
@@ -25,7 +25,7 @@
 	border-radius: @search-box-border-radius;
 };
 
-.search-box-button-input() {
+.search-box-button-input() { // those are hidden by css opacity
 	z-index: 10;
 	margin: 0;
 	padding: 0;
@@ -123,8 +123,15 @@
 		border: solid 1px #000000;
 
 		&:hover, &:active {
-			background-color: @global-button-red;
-			border: solid 1px @global-button-red;
+//			background-color: @global-button-red;
+//			border: solid 1px @global-button-red;
+			background-color: #000000;
+			border: solid 1px #000000;
+		}
+
+		& .glyphicon {
+			font-size: 10px;
+			margin-top: 3px;
 		}
 	}
 
@@ -157,16 +164,31 @@
 		}
 	}
 
+	& .refine-search {
+		cursor: pointer;
+		float: right;
+		margin-top: @ss-elem-margin-vertical;
+		margin-bottom: @ss-elem-margin-vertical;
+
+		.search-box-text();
+		color: white;
+
+		// this is for icon
+		& span {
+			float: right;
+		}
+	}
+
 	.search-box-text();
 	.placeholder-my();
 
-	@radio-elm-width: ((100/3%) - @search-box-button-margin*2.1/3); // 2/3 means do not calculate margin of last element. 0.1 a little smaller
+	@radio-elm-width: ((100/3%) - @search-box-button-margin*2/3 - 0.1%); // 2/3 means do not calculate margin of last element. 0.1 a little smaller
 
-	& .driver-rider-wrapper {
+	& .driver-rider-wrapper-input {
 		.radio-wrapper();
 	}
 
-	& .smoking-wrapper {
+	& .smoking-wrapper-input {
 		.radio-wrapper();
 
 		& label {
@@ -187,26 +209,11 @@
 		}
 
 		& .col-half {
-			width: 49%;
+			width: (50% - @search-box-button-margin/2); //49.5%
 
 			&:nth-child(even) {
 				float: right;
 			}
-		}
-
-		& .refine-search {
-			cursor: pointer;
-			float: right;
-//			margin: 10px 0px;
-//			padding-right: 15px; // 15px are for select_down_up image
-			background-image: url('@{image-directory}select_down_up.gif');
-			background-repeat: no-repeat;
-			background-position: 95% -150%;
-			margin-top: @ss-elem-margin-vertical;
-			margin-bottom: @ss-elem-margin-vertical;
-
-			.search-box-text();
-			color: white;
 		}
 	}
 

@@ -1,43 +1,54 @@
 @import "common";
 @import "common/com_1_com";
-//@import "main_nav/1_com";
-//@import "langsw/1_com";
-//@import "slogan/1_com";
-//@import "search-box/1_com";
 
+.my-viewport {
+	width: @screen-ss;
+}
 
 ////////// ss 321-480 //////////
 @media (min-width: @screen-ss) {
 	@import "common/com_2_ss";
+	.my-viewport {
+		width: @screen-ss;
+	}
 }
 
 ////////// xs 481-767 //////////
 @media (min-width: @screen-xs) {
 	@import "common/com_3_xs";
+	.my-viewport {
+		width: @screen-xs;
+	}
 }
 
 ////////// sm 768-991 //////////
 @media (min-width: @screen-sm) {
 	@import "common/com_4_sm";
-	@import "main_nav/2_768_992";
-	@import "langsw/2_768_992";
+	.my-viewport {
+		width: @screen-sm;
+	}
 }
 
 ////////// md 992-1199 //////////
 @media (min-width: @screen-md) {
 	@import "common/com_5_md";
-	@import "main_nav/3_993_1200";
-	@import "langsw/3_993_1367";
+	.my-viewport {
+		width: @screen-md;
+	}
 }
 
 ////////// lg 1200 - 1366 //////////
 @media (min-width: @screen-lg) {
 	@import "common/com_6_lg";
+	.my-viewport {
+		width: @screen-lg;
+	}
 }
 
 ////////// xl 1367 //////////
 @media (min-width: @screen-xl) {
 	@import "common/com_7_xl";
-	@import "main_nav/4_1367";
-	@import "langsw/4_1367";
+	.my-viewport {
+		width: @screen-xl;
+	}
 }

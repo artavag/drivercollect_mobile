@@ -98,8 +98,8 @@
 			</nav>
 
 			<hgroup class="row padding-left-right">
-				<h1 class="col-md-16 col-md-offset-4 col-xl-16 col-xl-offset-4 slogan-big">Searchless ride sharing</h1>
-				<h2 class="col-md-16 col-md-offset-4 col-xl-10 col-xl-offset-7 slogan-small">We are different because we do the searching for you, even on parts of the journey.</h2>
+				<h1 class="col-md-16 col-md-offset-4 col-xl-12 col-xl-offset-6 slogan-big">Searchless ride sharing</h1>
+				<h2 class="col-sm-16 col-sm-offset-4 col-md-16 col-md-offset-4 col-xl-16 col-xl-offset-4 slogan-small">We are different because we do the searching for you, even on parts of the journey.</h2>
 			</hgroup>
 
 			<section class="row padding-left-right">
@@ -109,11 +109,11 @@
 					<form role="form">
 
 						<div class="clearfix">
-							<span class="col-xs-24 pull-left">
+							<span class="col-xs-24 col-sm-14 pull-left driver-rider-wrapper">
 
-								<span class="search-box-label pull-left col-xs-24">Driver or rider?</span>
+								<span class="search-box-label pull-left col-xs-24 col-sm-6 col-lg-4">Driver or rider?</span>
 
-								<span class="col-xs-24 driver-rider-wrapper">
+								<span class="col-xs-24 col-sm-12 col-lg-8 driver-rider-wrapper-input">
 									<span>
 										<label for="driver">Driver</label>
 										<input type="radio" name="driver_rider" id="driver" value="D">
@@ -138,47 +138,47 @@
 
 								<div class="col-full">
 									<label for="locations_from" class="search-box-label label-hide">From location</label>
-									<input type="text" class="form-control" name="locations_from" id="locations_from" placeholder="From location">
+									<input type="text" class="form-control" name="locations_from" id="locations_from" placeholder="From location" autocomplete="off">
 								</div>
 
 								<div class="col-full">
 									<label for="locations_to" class="search-box-label label-hide">To location</label>
-									<input type="text" class="form-control" name="locations_to" id="locations_to" placeholder="To location">
+									<input type="text" class="form-control" name="locations_to" id="locations_to" placeholder="To location" autocomplete="off">
 								</div>
 
 								<div class="col-half">
 									<label for="from_date" class="search-box-label label-hide">From Date</label>
-									<input type="text" class="form-control" name="from_date" id="from_date" placeholder="From date" data-date-format="yyyy-mm-dd" data-date-weekStart="1">
+									<input type="text" class="form-control" name="from_date" id="from_date" placeholder="From date" data-date-format="yyyy-mm-dd" data-date-weekStart="1" autocomplete="off">
 								</div>
 
 								<div class="col-half">
 									<label for="from_time" class="search-box-label label-hide">From time</label>
-									<input type="text" class="form-control" name="from_time" id="from_time" placeholder="From time">
+									<input type="text" class="form-control" name="from_time" id="from_time" placeholder="From time" autocomplete="off">
 								</div>
 
 								<div class="col-half">
 									<label for="to_date" class="search-box-label label-hide">To Date</label>
-									<input type="text" class="form-control" name="to_date" id="to_date" placeholder="To date" data-date-format="yyyy-mm-dd" data-date-weekStart="1">
+									<input type="text" class="form-control" name="to_date" id="to_date" placeholder="To date" data-date-format="yyyy-mm-dd" data-date-weekStart="1" autocomplete="off">
 								</div>
 
 								<div class="col-half">
 									<label for="to_time" class="search-box-label label-hide">To time</label>
-									<input type="text" class="form-control" name="to_time" id="to_time" placeholder="To time">
+									<input type="text" class="form-control" name="to_time" id="to_time" placeholder="To time" autocomplete="off">
 								</div>
 
-								<span class="refine-search col-xs-24 btn btn-warning">Refine search</span>
+								<span class="refine-search col-xs-24 col-sm-5 col-md-4 col-lg-3 pull-right btn btn-warning">Refine search<span class="glyphicon glyphicon-chevron-down"></span></span>
 
 								<span id="submit"><button type="submit" class="btn btn-danger">Save</button></span>
 
 							</div><!--main-search-options-->
 
 
-							<div id="additional-search-options" >
+							<div id="additional-search-options" class="clearfix">
 
 								<div class="clearfix row-divider">
 
-									<div class="col-xs-24 col-lg-6">
-										<span class="search-box-label col-xs-16">Number of occurrences</span>
+									<div class="col-xs-24 col-sm-9 col-lg-7">
+										<span class="search-box-label col-xs-16 col-sm-16 col-lg-13">Number of occurrences</span>
 
 										<select name="occurrences" class="form-control small-input">
 											<option value="1">1</option>
@@ -188,10 +188,10 @@
 										</select>
 									</div>
 
-									<div class="col-lg-10 col-lg-offset-2">
-										<span class="search-box-label col-xs-24">Repeat on</span>
+									<div class="col-xs-24 col-sm-14 col-sm-offset-1 col-lg-16 col-lg-offset-1">
+										<span class="search-box-label col-xs-24 col-sm-5 col-lg-5">Repeat on</span>
 
-										<div class="weekdays-wrapper col-xs-24">
+										<div class="weekdays-wrapper col-xs-24 col-sm-19 col-lg-19">
 											<span><label for="1">Mo</label><input type="checkbox" id="1" name="weekdays[]" value="1"></span>
 											<span><label for="2">Tu</label><input type="checkbox" id="2" name="weekdays[]" value="2"></span>
 											<span><label for="3">We</label><input type="checkbox" id="3" name="weekdays[]" value="3"></span>
@@ -206,22 +206,22 @@
 
 								<div class="clearfix row-divider">
 
-									<div class="col-xs-24 col-lg-6">
-										<label for="num_passengers" class="search-box-label col-xs-16">Additional passengers</label>
+									<div class="col-xs-24 col-sm-11 col-lg-7">
+										<label for="num_passengers" class="search-box-label col-xs-16 col-sm-13 col-lg-13">Additional passengers</label>
 										<input type="number" class="form-control small-input" name="num_passengers" id="num_passengers" value="0" maxlength="2">
 									</div>
 
-									<div class="col-xs-24 col-lg-6 col-lg-offset-2">
-										<label for="num_luggages" class="search-box-label col-xs-16">Number luggages</label>
+									<div class="col-xs-24 col-sm-11 col-sm-offset-2 col-lg-7 col-lg-offset-1">
+										<label for="num_luggages" class="search-box-label col-xs-16 col-sm-10 col-lg-11">Number luggages</label>
 										<input type="number" class="form-control small-input" name="num_luggages" id="num_luggages" value="0" maxlength="2">
 									</div>
 
-									<div class="col-xs-24 col-lg-8 col-lg-offset-2">
+									<div class="col-xs-24 col-lg-8 col-lg-offset-1">
 
-										<span class="col-xs-24">
-											<span class="search-box-label col-xs-24">Smoking</span>
+										<span class="smoking-wrapper col-xs-24">
+											<span class="search-box-label col-xs-24 col-sm-4">Smoking</span>
 
-											<div class="smoking-wrapper col-xs-24">
+											<div class="smoking-wrapper-input col-xs-24 col-sm-18">
 												<span>
 													<label for="smoking_prefer_y">Yes</label>
 													<input type="radio" name="smoking_prefer" id="smoking_prefer_y" value="Y">
@@ -242,7 +242,7 @@
 								</div>
 
 								<div class="clearfix row-divider">
-									<label for="request_comment" class="search-box-label">Comments</label>
+									<label for="request_comment" class="search-box-label label-hide">Comments</label>
 									<textarea name="request_comment" id="request_comment" class="form-control" placeholder="Comments"></textarea>
 								</div>
 							</div><!--additional-search-options-->
@@ -289,7 +289,7 @@
 						<a class="btn btn-danger" href="tour.html">See how it works</a>
 					</div>
 
-					<div class="col-lg-16 margin-vertical-big">
+					<div class="col-sm-24 col-lg-16 margin-vertical-big">
 
 						<div class="table-responsive margin-vertical-big">
 							<table class="table table-home table-hover">
@@ -309,6 +309,8 @@
 										<td><div class="ride-price">280.55 $</div></td>
 									</tr>
 
+									<tr class="tr-empty"></tr>
+
 									<tr>
 										<td class="user-img">
 											<img src="img/user_icon.png">
@@ -322,6 +324,8 @@
 										<td class="ride-date">28 Aug 10:30</td>
 										<td><div class="ride-price">280.55 $</div></td>
 									</tr>
+
+									<tr class="tr-empty"></tr>
 
 									<tr>
 										<td class="user-img">
@@ -392,15 +396,16 @@
 
 		<footer id="footer" class="background-gray col-xl-24">
 			<div class="row padding-left-right">
-				<div class="col-xl-24">
-					<small class="col-xs-24">Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
-					<span class="hidden-xs">|</span>
-					<a class="col-xs-24" href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a>
-					<span class="hidden-xs">|</span>
-					<a class="col-xs-24" href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
+				<div class="col-xl-24 col-md-24 col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 footer-inner clearfix">
+					<small class="col-xs-24 col-sm-24">Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<a class="col-xs-24" href="privacy.html">Privacy Policy</a>
+					<span class="hidden-xs hidden-sm">|</span>
+					<a class="col-xs-24" href="terms.html">Terms and Conditions</a>
 				</div>
 			</div>
 		</footer>
+
+		<span class="my-viewport" style="display: none"></span>
 	</body>
 </html>
 
@@ -442,11 +447,11 @@
 		var elementContainer = $('#search-box');
 
 		// Get initial values before toggle
-		var elementContainerMarginTop = elementContainer.css('margin-top');
 		var elementContainerBackgrColor  = elementContainer.css('background-color');
-		var elementContainerBackgrPos = elementContainer.css('background-position');
+		var refineSearch = $('.refine-search');
+		var refineSearchIcon = $('.refine-search span');
 
-		$('.refine-search').on('click', function(){
+		refineSearch.on('click', function(){
 
 			elementToToggle.toggle(50, 'swing', function(){
 				
@@ -454,16 +459,22 @@
 
 				if (isVisible == 'block')
 				{
-					$('#main-search-options #submit').appendTo($('#additional-search-options'));
+					if (myViewportWidth < 768 ){
+						$('#main-search-options #submit').appendTo($('#additional-search-options'));
+					}
+
 					elementContainer.css({ 'background-color': 'rgba(0,0,0, 0.7)' });
-					$(this).css({'background-position': '100% 135%'});
+					refineSearchIcon.removeClass('glyphicon-chevron-down');
+					refineSearchIcon.addClass('glyphicon-chevron-up');
 				}
 				else
 				{
-					$('#additional-search-options #submit').appendTo($('#main-search-options'));
+					if (myViewportWidth < 768 ){
+						$('#additional-search-options #submit').appendTo($('#main-search-options'));
+					}
 					elementContainer.css({ 'background-color': elementContainerBackgrColor });
-					$(this).css({'background-position': elementContainerBackgrPos});
-				}
+					refineSearchIcon.removeClass('glyphicon-chevron-up');
+					refineSearchIcon.addClass('glyphicon-chevron-down');				}
 			});
 		});
 
@@ -494,30 +505,23 @@
 		var elemenetsToChangeState = $(elemenetWrapper + ' input');
 
 		// First make all checkboxes unchecked
-		elemenetsToChangeState.attr("checked", false);
-		elemenetsToChangeState.prop("checked", false);
+		toUncheckedState();
 
 		// find the checkbox with the weekday that
 		// corresponds to current date and make it checked
 		elemenetsToChangeState.each(function(){
 
 			// get current day of week
-			var CurrentWeekDay = getCurrentDayOfWeek(false); // is integer from 1-7. 1 is Monday
+			var currentWeekDay = getCurrentDayOfWeek(false); // is integer from 1-7. 1 is Monday
 
 			var elemID = $(this).attr('id');
 
-			if (elemID == CurrentWeekDay)
+			if (elemID == currentWeekDay)
 			{
 				// Bring matched element to checked state
 				toCheckedState(elemID);
 			}
 		});
-
-
-		function getCheckedElem()
-		{
-
-		}
 
 
 		/**
@@ -532,7 +536,7 @@
 			var today = new Date();
 
 			// if date is not given calculate the weekday based on current date
-			var CurrentWeekDay = today.getUTCDay(); // contains integer from 0 to 6, beggining with sunday = 0, monday = 1...
+			var currentWeekDay = today.getUTCDay(); // contains integer from 0 to 6, beggining with sunday = 0, monday = 1...
 
 			// if date is given calculate the weekday based on given date not on current date
 			if (date)
@@ -541,14 +545,14 @@
 
 				// Calculate day of weeks
 				// By default Sunday is 0, Monday is 1, and so on. We want that sunday be 7.
-				CurrentWeekDay = from_date.getDay();
+				currentWeekDay = from_date.getDay();
 			}
 
-			if (CurrentWeekDay == 0){
-				CurrentWeekDay = 7; // we make Sunday to be 7
+			if (currentWeekDay == 0){
+				currentWeekDay = 7; // we make Sunday to be 7
 			}
 			
-			return CurrentWeekDay;
+			return currentWeekDay;
 		}
 
 
@@ -586,12 +590,22 @@
 
 		/**
 		 * Makes the element by the given id colorized and checked
+		 * if no id is passed makes all elements checked
 		 */
 		function toCheckedState(elemID)
 		{
-			$(elemenetWrapper + ' input[id=' + elemID + ']').attr('checked', true);
+			var selectorInput = ' input';
+			var selectorLabel = ' label';
 
-			$(elemenetWrapper + ' label[for=' + elemID + ']').css({
+			if (elemID) {
+				selectorInput = ' input[id=' + elemID + ']';
+				selectorLabel = ' label[for=' + elemID + ']';
+			}
+
+			$(elemenetWrapper + selectorInput).attr('checked', true);
+			$(elemenetWrapper + selectorInput).prop('checked', true);
+
+			$(elemenetWrapper + selectorLabel).css({
 				'background-color': elementChekedBackgrColor,
 				'color': elementChekedTextColor
 			});
@@ -599,12 +613,22 @@
 
 		/**
 		 * Makes the element by the given id uncolorized and unchecked
+		 * if no id is passed makes all elements unchecked
 		 */
 		function toUncheckedState(elemID)
 		{
-			$(elemenetWrapper + ' input[id=' + elemID + ']').attr('checked', false);
+			var selectorInput = ' input';
+			var selectorLabel = ' label';
 
-			$(elemenetWrapper + ' label[for=' + elemID + ']').css({
+			if (elemID) {
+				selectorInput = ' input[id=' + elemID + ']';
+				selectorLabel = ' label[for=' + elemID + ']';
+			}
+
+			$(elemenetWrapper + selectorInput).attr('checked', false);
+			$(elemenetWrapper + selectorInput).prop('checked', false);
+
+			$(elemenetWrapper + selectorLabel).css({
 				'background-color': elementInitialBackgrColor,
 				'color': elementInitialTextColor
 			});
@@ -619,74 +643,75 @@
 		 * This script watches for changes in from date field and does:
 		 *
 		 * 1. changes weekday checkbox to be checked corresponding to selected date
+		 * 2. makes date_to value equal to date_from value
 		*/
 
 		var dateFromInput = $('#from_date');
-		var datePicker = $('.datepicker');
+		var dateToInput = $('#to_date');
 
-//		console.log(dateFromInput.val());
-//
-//		dateFromInput.on('focus', function(e){
-//			console.log(dateFromInput.val());
-//		});
-
-		datePicker.on('click', function(e){
+		dateFromInput.on('changeDate', function(e){
 			e.stopPropagation();
 			e.preventDefault();
 
 			// change weekday checkboxes
 			dayOfWeekPicker(elemenetsToChangeState);
 
-			// Set date to value equal to date from value
-			//dateToSetter(dateFromInput, date_to_input);
+			// Set "date to" value equal to "date from" value
+			dateValueSetterFrom();
 		});
 
-//		dateFromInput.on('change', function(e){
-//			e.stopPropagation();
-//			e.preventDefault();
-//
-//			// change weekday checkboxes
-//			dayOfWeekPicker(elemenetsToChangeState);
-//
-//			// Set date to value equal to date from value
-//			//dateToSetter(dateFromInput, date_to_input);
-//		});
 
+		dateToInput.on('changeDate', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+
+			dateValueSetterTo();
+		});
+
+
+		/**
+		 * Checks corresponding weekday checkbox when from date is changed
+		 */
 		function dayOfWeekPicker(elemenetsToChangeState)
 		{
 			var date_string = $('#from_date').val().trim();
+			var currentWeekDay = getCurrentDayOfWeek(date_string);
 
-			console.log(date_string);
+			// first make all elements unchecked
+			toUncheckedState();
 
-			var dayOfWeek = getCurrentDayOfWeek(date_string);
+			elemenetsToChangeState.each(function(){
 
-			console.log(dayOfWeek);
+				var elemID = $(this).attr('id');
 
-			return false;
-
-			elemenetsToChangeState.attr("checked", false);
-			elemenetsToChangeState.prop("checked", false);
-
-			for (var i = 1; i <= elemenetsToChangeState.length; i++ )
-			{
-				var curElement = $(elemenetsToChangeState + '#' + i);
-
-				if (i == dayOfWeek)
+				if (elemID == currentWeekDay)
 				{
-					curElement.attr("checked", true);
-					curElement.prop("checked", true);
+					// Bring matched element to checked state
+					toCheckedState(elemID);
 				}
-			}
+			});
 		}
 
-
-		function dateToSetter(dateFromInput, date_to_input)
+		/**
+		 * Sets date to value equal to date from value
+		 */
+		function dateValueSetterFrom()
 		{
-			if (repeat_checkbox.prop('checked'))
-			{
-				var from = dateFromInput.val().trim();
-				date_to_input.val(from);
-			}
+			var dateValue = dateFromInput.val().trim();
+
+			dateFromInput.attr('value', dateValue);
+
+			dateToInput.attr('value', dateValue);
+			dateToInput.val(dateValue);
+		}
+
+		/**
+		 * Sets date to value equal to date from value
+		 */
+		function dateValueSetterTo()
+		{
+			var dateValue = dateToInput.val().trim();
+			dateToInput.attr('value', dateValue);
 		}
 
 
@@ -702,7 +727,7 @@
 		 */
 
 		// those are for driver or rider
-		var wrapperElement = '.driver-rider-wrapper';
+		var wrapperElement = '.driver-rider-wrapper-input';
 		var elementToToggleColors = $(wrapperElement + ' label');
 		var initialTextColor = elementToToggleColors.css('color');
 		var initialBackgrColor = elementToToggleColors.css('background-color');
@@ -805,6 +830,35 @@
 
 		$('body').on('click', function(e){
 			$('#languageSwitcherAll').hide();
+		});
+
+
+
+		// detecting viewport width
+
+		var myViewportWidth = $('span.my-viewport').width();
+		var refineButton = $('.refine-search');
+
+		if (myViewportWidth >= 768 ){
+			refineButton.prependTo($('#search-box'));
+			$('#main-search-options #submit').appendTo($('#main-search-options'));
+		}
+		else {
+			refineButton.appendTo($('#main-search-options'));
+		}
+
+		$(window).resize(function(){
+
+			myViewportWidth = $('span.my-viewport').width();
+
+			if (myViewportWidth >= 768 ){
+				refineButton.prependTo($('#search-box'));
+				$('#main-search-options #submit').appendTo($('#main-search-options'));
+			}
+			else {
+				refineButton.appendTo($('#main-search-options'));
+			}
+
 		});
 
 	});

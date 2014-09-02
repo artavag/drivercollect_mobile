@@ -1,0 +1,59 @@
+@nav-buttons-radius: @global-border-radius;
+@nav-buttons-padding-v: 4px;
+@nav-margin-top: @nav-buttons-padding-v + 8;
+@welcome-text-margin-bottom: 0px;
+@welcome-margin-top: 16px;
+
+// main nav buttons
+ul.main-navbar  {
+	margin-top: @nav-margin-top;
+	margin-left: 10px; // distance from logo
+
+	& li {
+		border-radius: @nav-buttons-radius;
+
+		& a, & a:visited {
+			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
+			border-radius: @nav-buttons-radius;
+		}
+
+		& a:hover, & a:active {
+//			border-bottom: solid 2px #D43F3A;
+		}
+	}
+}
+
+
+// welcome buttons
+.welcome {
+
+	& ul {
+		margin-top: @nav-margin-top;
+	}
+
+	& li {
+		border-radius: @nav-buttons-radius;
+		width: auto;
+		margin: 0;
+		//  background-color: red;
+		background-color: @nav-bgr; // #25383B comes from nav_1_common.less
+
+		&:first-child {
+			width: auto;
+
+			& p {
+				margin-bottom: @welcome-text-margin-bottom;
+				padding: @nav-buttons-padding-v @nav-buttons-padding-h; // 6px 6px from nav_1_common.less
+			}
+		}
+
+		& a, & a:visited {
+			border-radius: @nav-buttons-radius;
+			margin: 0;
+		}
+
+		& a:hover, & a:active {
+//			border-bottom: solid 2px #D43F3A;
+		}
+	}
+}

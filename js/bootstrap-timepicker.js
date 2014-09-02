@@ -887,7 +887,18 @@
         if (this.defaultTime) {
           this.setDefaultTime(this.defaultTime);
         } else {
-          this.setTime('0:0:0');
+
+		  // comment out by Vahe
+          // this.setTime('0:0:0');
+		  // end comment out by Vahe
+
+		  // Added by Vahe
+			var MydTime = new Date(),
+				myhours = MydTime.getHours(),
+				myminutes = MydTime.getMinutes();
+
+			this.setTime(myhours + ':' + myminutes + ':' + '0');
+		  // end added by Vahe
         }
       }
 

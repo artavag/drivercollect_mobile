@@ -1,23 +1,14 @@
-@slogan-big-text-size: 2.8em;
+@slogan-big-text-size: 3em;
 @slogan-small-text-size: @slogan-big-text-size*0.6;
-@slogan-shadow: 1px 1px 1px #878787;
 
-.slogan-text-mixin() {
-	text-align: center;
-	font-weight: 100;
-	color: #ffffff;
-	font-style: normal;
-	text-shadow: @slogan-shadow;
-}
-
-.slogan-big {
+h1.slogan-big {
 	font-size: @slogan-big-text-size;
-	margin: 0;
+	margin-top: @slogan-big-margin-up;
 	.slogan-text-mixin();
 }
 
 .slogan-small {
-	font-size: @slogan-small-text-size;
-	margin: 0;
 	.slogan-text-mixin();
+	font-size: @slogan-small-text-size;
+	display: block;
 }
