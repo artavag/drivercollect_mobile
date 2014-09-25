@@ -1,0 +1,21 @@
+@faq-icon-width: 3%;
+
+dl.text-regular {
+
+	dt {
+
+		& span {
+			width: 100 - @faq-icon-width;
+		}
+
+		& .icon {
+			width: @faq-icon-width;
+		}
+
+	}
+
+	& dd {
+		padding-left: @faq-icon-width;
+		font-size: @global-font-size;
+	}
+}

@@ -1,0 +1,48 @@
+.location-ul {
+	margin-top: 2px;
+	border: solid 1px @global-border-gray;
+	border-bottom: none;
+	border-radius: @global-border-radius;
+	display: none;
+	background-color: #ffffff;
+	color: #000000;
+
+	& li {
+		border-bottom: solid 1px @global-border-gray;
+		padding: 6px 10px;
+		font-size: @global-font-size;
+		cursor: pointer;
+
+		&:hover {
+			cursor: pointer;
+			background-color: @global-background-gray;
+		}
+
+		&:first-of-type {
+			border-top-left-radius: @global-border-radius;
+			border-top-right-radius: @global-border-radius;
+		}
+
+		&:last-of-type {
+			border-bottom-left-radius: @global-border-radius;
+			border-bottom-right-radius: @global-border-radius;
+		}
+	}
+}
+
+.location-ul-from, .location-ul-to {
+	.location-ul;
+
+	position: absolute;
+	top: 33px;
+	left: 0px;
+	margin-top: 0px;
+	border: @global-border-gray;
+	width: 100%;
+	-webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+	z-index: 50000;
+}
+
+
+

@@ -1,0 +1,89 @@
+//@padding-h: 0px;
+//@padding-v: 20px;
+//@input-padding: 8px;
+//@number-inputs-to-display: 2;
+//@input-margin: 10% / @number-inputs-to-display; // can not dsplay more then 10 inputs in one line
+//
+//.form-wrapper-box {
+//
+//	& h1 {
+//		.h1-form;
+//		font-size: 32px;
+//		padding-bottom: 40px;
+//	}
+//
+//	.common-link {
+//		width: auto;
+//		display: block;
+//		clear: both;
+//	}
+//
+//	@width-profile: ((100 / @number-inputs-to-display ) - (@input-margin * ((@number-inputs-to-display - 1) / @number-inputs-to-display)) - 0.1%); // 2/3 means do not calculate margin of last element. 0.1 a little smaller
+//
+//	& .form-wrapper-box-content {
+//
+//		// profile page
+//
+//		& div.profile {
+//			width: @width-profile;
+//			margin-bottom: 25px;
+//			margin-right: @input-margin;
+//
+//			&:nth-of-type(n) { // this is used to overwrite nth-of-type selector from small sizes
+//				margin-right: @input-margin;
+//			}
+//
+//			&:nth-of-type(@{number-inputs-to-display}n+@{number-inputs-to-display}) {
+//				margin-right: 0;
+//			}
+//		}
+//
+//		// Email preferences page
+//		& div.email-pref {
+//
+//			& select {
+//				width: 25%;
+//			}
+//		}
+//
+//		// register page
+//		& div.register {
+//			width: @width-profile;
+//			margin-right: @input-margin;
+//
+//			&:nth-of-type(n) { // this is used to overwrite nth-of-type selector from small sizes
+//				margin-right: @input-margin;
+//			}
+//
+//			&:nth-of-type(@{number-inputs-to-display}n+@{number-inputs-to-display}) {
+//				margin-right: 0;
+//			}
+//		}
+//	}
+//
+//	& .form-wrapper-box-footer {
+//
+//		@margin-right: 2%;
+//
+//		& button {
+//			width: @width-profile / 2 - @margin-right / 2;
+//			margin-right: @margin-right;
+//			padding: @input-padding @input-padding;
+//			font-size: @global-font-size;
+//			margin-bottom: 15px;
+//
+////			&[name="reset"] {
+////				margin-left: 10px;
+////			}
+//			&:last-child {
+//				margin-right: @margin-right;
+//			}
+//
+//		}
+//	}
+//
+//	// register page
+//	& .captcha-wrapper {
+//		padding: 15px 0px 0px 0px;
+//	}
+//}

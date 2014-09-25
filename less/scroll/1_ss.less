@@ -1,0 +1,23 @@
+@font-size: 20px;
+
+.scroll-top {
+	@width: 33px;
+
+	position: fixed;
+	bottom: 88px;
+	right: 10px;
+	width: @width;
+	height: @width;
+	background-color: @global-button-red;
+	cursor: pointer;
+	z-index: 15000;
+
+	& .icon {
+		text-align: center;
+		color: #ffffff;
+		font-size: @font-size;
+		line-height: @font-size;
+		display: block;
+		padding-top: (@width - @font-size) / 2 - 8; // we want it to be a little bit higher then middle point
+	}
+}

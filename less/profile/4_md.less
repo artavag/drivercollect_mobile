@@ -1,0 +1,201 @@
+@padding-h: 70px;
+@padding-v: 30px;
+@input-padding: 8px;
+@margin-v: 25px;
+@main-h1: 40px;
+
+.form-wrapper-box-label {
+	font-size: @global-font-size;
+	font-weight: 300;
+}
+
+.form-wrapper-box {
+
+	.margin-vertical-big;
+
+	border: solid 1px @global-border-gray;
+	border-radius: @global-border-radius;
+
+	& h1 {
+		.h1-form;
+		font-size: @main-h1;
+		padding-bottom: 50px;
+	}
+
+	& label {
+		.form-wrapper-box-label;
+	}
+
+	& p {
+		font-size: @global-font-size;
+		padding: 0;
+	}
+
+	& input {
+		padding: @input-padding @input-padding;
+	}
+
+	& select {
+		padding: @input-padding @input-padding;
+	}
+
+	& .checkbox {
+		margin: 0;
+	}
+
+	& .input-group-addon {
+		padding: @ss-elem-padding-vertical 12px;
+		border-top-left-radius: @global-border-radius;
+		border-bottom-left-radius: @global-border-radius;
+	}
+
+	& .form-wrapper-box-content {
+
+		padding: @padding-v @padding-h;
+
+		&.register {
+			padding-bottom: 0;
+		}
+
+		&.faq {
+			padding-left: 10%;
+			padding-right: 10%;
+			padding-top: 2 * @padding-v;
+			padding-bottom: 2 * @padding-v;
+		}
+
+		&.privacy {
+			.faq;
+
+			& .privacy {
+
+				& h1 {
+					font-size: @main-h1 - 10;
+				}
+			}
+		}
+
+		&.terms {
+			.faq;
+
+			& .terms {
+				.privacy .privacy;
+			}
+		}
+
+		& > div {
+
+			margin-bottom: @margin-v;
+
+			// profile page
+			&.profile {
+				@number-inputs: 2;
+				.width-calculator(@number-inputs);
+
+				padding: 0;
+				margin-right: @input-margin;
+
+				&:nth-of-type(n) { // this is used to overwrite nth-of-type selector from small sizes
+					margin-right: @input-margin;
+				}
+
+				&:nth-of-type(@{number-inputs}n+@{number-inputs}) {
+					margin-right: 0;
+				}
+			}
+			
+			&.contactus {
+
+				&:first-of-type, &:nth-of-type(2) {
+					.profile;
+				}
+			}
+
+			// change password page
+			&.change-pass {
+				.profile;
+			}
+
+			// groups page
+			&.groups {
+
+				@or-width: 20%;
+
+				width: (100 - @or-width) / 2%;
+				float: left;
+
+				& div.form-group {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 10px;
+				}
+
+				&.or {
+					width: @or-width;
+					text-align: center;
+					font-size: 35px;
+					font-style: italic;
+					font-weight: 100;
+					margin-bottom: @margin-v;
+				}
+			}
+
+			// login page
+			&.login {
+				width: 100%;
+				margin-bottom: @margin-v;
+
+				&:first-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	& .form-wrapper-box-footer {
+		background-color: @global-background-gray;
+		border-top: solid 1px @global-border-gray;
+		padding: 24px @padding-h 24px @padding-h;
+
+		&.login {
+
+			& div.checkbox.login {
+				width: auto;
+				float: right;
+
+				& label {
+					float: right;
+				}
+			}
+		}
+
+		&.register {
+
+			& div.checkbox.register {
+				width: 60%;
+				float: right;
+				margin-bottom: 0;
+
+				& label {
+					float: right;
+				}
+			}
+		}
+
+		& button, .like-button {
+
+			font-size: @global-font-size;
+
+			&.login {
+				width: 35%;
+				float: left;
+			}
+		}
+	}
+
+	// register page
+	& .captcha-wrapper {
+		padding: @padding-v @padding-h 0px @padding-h;
+	}
+
+}

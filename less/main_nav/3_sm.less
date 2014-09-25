@@ -1,0 +1,46 @@
+@nav-buttons-padding-v: 4px;
+@nav-buttons-font-size: 14px;
+@welcome-margin-top: 16px;
+
+// main nav buttons
+ul.main-navbar {
+	margin-top: -6px;
+
+	.button-text;
+
+	& li {
+		font-size: @nav-buttons-font-size;
+		margin: 0;
+		float: left;
+		width: auto;
+		background-color: @global-nav-bgr; // #25383B comes from nav_1_common.less
+
+		& a, & a:visited {
+			padding: @nav-buttons-padding-v	@nav-buttons-padding-h;
+		}
+	}
+}
+
+
+// welcome buttons
+.welcome {
+
+	& ul {
+		margin-top: @welcome-margin-top;
+	}
+
+	& li {
+		font-size: @nav-buttons-font-size;
+		width: auto;
+		margin: 0;
+		background-color: @global-nav-bgr; // #25383B comes from nav_1_common.less
+
+		&:first-child {
+			width: 100%;
+		}
+
+		& a, & a:visited {
+			padding: @nav-buttons-padding-v	@nav-buttons-padding-h;
+		}
+	}
+}

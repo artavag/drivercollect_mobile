@@ -1,53 +1,50 @@
 @import "common";
-@import "common/com_1_com";
+@import "common/1_ss";
 
 .my-viewport {
 	width: @screen-ss;
 }
 
-////////// ss 321-480 //////////
+////////// ss 0-480
 @media (min-width: @screen-ss) {
-	@import "common/com_2_ss";
-	.my-viewport {
-		width: @screen-ss;
-	}
+
 }
 
-////////// xs 481-767 //////////
+////////// xs 481-767
 @media (min-width: @screen-xs) {
-	@import "common/com_3_xs";
+	@import "common/2_xs";
 	.my-viewport {
 		width: @screen-xs;
 	}
 }
 
-////////// sm 768-991 //////////
+////////// sm 768-991
 @media (min-width: @screen-sm) {
-	@import "common/com_4_sm";
+	@import "common/3_sm";
 	.my-viewport {
 		width: @screen-sm;
 	}
 }
 
-////////// md 992-1199 //////////
+////////// md 992-1199
 @media (min-width: @screen-md) {
-	@import "common/com_5_md";
+	@import "common/4_md";
 	.my-viewport {
 		width: @screen-md;
 	}
 }
 
-////////// lg 1200 - 1366 //////////
+////////// lg 1200 - 1366
 @media (min-width: @screen-lg) {
-	@import "common/com_6_lg";
+	@import "common/5_lg";
 	.my-viewport {
 		width: @screen-lg;
 	}
 }
 
-////////// xl 1367 //////////
+////////// xl 1367
 @media (min-width: @screen-xl) {
-	@import "common/com_7_xl";
+	@import "common/6_xl";
 	.my-viewport {
 		width: @screen-xl;
 	}

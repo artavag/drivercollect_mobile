@@ -1,0 +1,373 @@
+// variables and mixins defined in this page are available on all profile pages
+
+@padding-h: 0px;
+@padding-v: 0px;
+@margin-v: 20px;
+@main-h1: 32px;
+
+@input-padding: 8px;
+
+.form-wrapper-box-label {
+	font-size: @global-font-size;
+	font-weight: 300;
+}
+
+// this is a parametric mixin to calculate input width based on input count and margin bwtween
+// Variables declared inside this mixin/function are available outside of it too
+// @param: @number-inputs int > 1
+// @param: @input-margin defaults to 5%
+
+.width-calculator (@number-inputs) {
+	@input-margin: 5%;
+	@width: ((100 / @number-inputs ) - (@input-margin * (@number-inputs - 1)) / @number-inputs - 0.1%);
+	width: @width;
+}
+
+.width-calculator (@number-inputs, @input-margin) {
+	@width: ((100 / @number-inputs ) - (@input-margin * (@number-inputs - 1)) / @number-inputs - 0.1%);
+	width: @width;
+}
+
+#additional-details, #multiple-request {
+	cursor: pointer;
+	padding: 8px 0px;
+	background-color: @global-background-gray;
+	margin: 0;
+	border-radius: @global-border-radius;
+	border-bottom: 1px solid lighten(@global-border-gray, 5%);
+
+	& .icon {
+		float: left;
+		padding-left: 15px;
+		color: @global-button-red;
+	}
+
+	& p {
+		float: left;
+		margin: 0;
+		margin-left: 2%;
+	}
+}
+
+.common-link {
+	width: 100%;
+	display: block;
+	clear: both;
+	margin-bottom: @margin-v;
+
+	&:hover, &:active {
+		text-decoration: none;
+	}
+
+	& .icon {
+		font-size: 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+#multiple-request-data, #additional-details-data {
+	padding-top: 20px;
+}
+
+
+.form-wrapper-box {
+	border: none;
+	border-radius: 0;
+	margin-bottom: 40px;
+
+	& h1 {
+		.h1-form;
+		font-size: @main-h1;
+		padding-bottom: 40px;
+	}
+
+	& .input-group-addon {
+		padding: @ss-elem-padding-vertical 12px;
+		border-top-left-radius: @global-border-radius;
+		border-bottom-left-radius: @global-border-radius;
+	}
+
+	& label {
+		.form-wrapper-box-label;
+	}
+
+	& p {
+		font-size: @global-font-size;
+		padding: 0;
+	}
+
+	& a, & a:visited {
+		font-size: @global-font-size;
+	}
+
+	& a:hover, & a:active {
+		text-decoration: none;
+	}
+
+	& input {
+		padding: @input-padding @input-padding;
+	}
+
+	& select {
+		padding: @input-padding @input-padding;
+	}
+
+	& .checkbox {
+		margin: 0;
+	}
+
+	& #map {
+		height: 200px;
+	}
+
+	& .form-wrapper-box-content {
+
+		padding: @padding-v @padding-h;
+
+		&:nth-child(2) { // if there are 2 form-wrapper-box-content one after another
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		&.login {
+			padding-top: 30px;
+		}
+
+		&.register {
+			padding-top: 30px;
+		}
+
+		&.contactus {
+			padding-top: 30px;
+		}
+
+		&.privacy {
+
+			& .privacy {
+
+				margin-bottom: 40px; // margin of article
+				@ul-icon-width: 7%;
+
+				.headers-mixin() {
+					padding: 0;
+					margin: 0;
+					width: 100%;
+					color: #000000;
+					font-weight: 300;
+				}
+
+				& h1 {
+					.headers-mixin();
+
+					font-size: @global-font-size + 10;
+					padding-bottom: 16px;
+				}
+
+				& h2 {
+					.headers-mixin();
+
+					display: block;
+					float: left;
+					font-size: @global-font-size + 4;
+					padding-bottom: 10px;
+					padding-top: 20px;
+				}
+
+				& h1 + h2 {
+					padding-top: 0;
+				}
+
+				& p {
+					font-size: @global-font-size;
+				}
+
+				& ul {
+					list-style: none;
+					padding-left: 10%;
+					margin-bottom: 15px;
+					float: left;
+					display: block;
+					width: 100%;
+
+					& li {
+						font-size: @global-font-size;
+						margin-top: 5px;
+						float: left;
+						display: block;
+						width: 100%;
+
+						& span {
+							width: 100 - @ul-icon-width;
+							float: right;
+							display: block;
+						}
+
+						& .icon, & .ulicon {
+							float: left;
+							width: @ul-icon-width;
+							margin: 0;
+							padding: 0;
+							font-size: @global-font-size;
+							color: @global-button-red;
+						}
+					}
+				}
+			}
+		}
+
+		&.terms {
+			& .terms {
+				.privacy .privacy;
+
+				& ul {
+					& li {
+						& .icon-asterisk {
+							padding-top: 1px;
+						}
+					}
+				}
+			}
+		}
+
+		&.add-request {
+
+			& .add-request {
+				width: 100%;
+			}
+		}
+
+		& > div {
+			margin-bottom: @margin-v;
+
+			// profile page
+			&.profile {
+				@number-inputs: 1;
+				.width-calculator(@number-inputs);
+
+				padding: 0;
+				margin-right: @input-margin;
+
+				&:nth-of-type(@{number-inputs}n+@{number-inputs}) {
+					margin-right: 0;
+				}
+			}
+
+			// groups page
+			&.groups {
+
+				&.or {
+					text-align: center;
+					font-size: 30px;
+					font-style: italic;
+					font-weight: 100;
+					padding-bottom: 20px;
+				}
+			}
+
+			// Email preferences page
+			&.email-pref {
+				width: 100%;
+			}
+
+			// login page
+			&.login {
+				width: 100%;
+
+				& a, & a:visited {
+					padding: 3px 0px;
+				}
+
+				& span.login {
+					padding: 3px 4px;
+				}
+			}
+
+			// register page
+			&.register {
+				width: 100%;
+
+//				&:last-child {
+//					margin-bottom: 0;
+//				}
+			}
+		}
+
+
+		& header {
+
+			// Rating information page
+			&.rating-info {
+				& h1 {
+					width: auto;
+					float: left;
+				}
+
+				& div {
+					float: left;
+					width: 100%;
+					color: @global-star-color;
+					font-size: 25px;
+				}
+			}
+
+			&.balance {
+				.rating-info;
+			}
+		}
+	}
+
+	& .form-wrapper-box-footer {
+		background-color: #ffffff;
+		padding-top: 0;
+		margin-top: 0;
+
+		&.login {
+
+			& .checkbox.login {
+				float: left;
+				width: 100%;
+				margin-bottom: @margin-v;
+			}
+		}
+
+		&.register {
+
+			& .checkbox.register {
+				float: left;
+				width: 100%;
+				margin-bottom: @margin-v;
+			}
+		}
+
+		& button, .like-button {
+			width: 100%;
+			padding: @input-padding @input-padding;
+			font-size: @global-font-size;
+			margin-bottom: @margin-v;
+
+			& .icon {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	// register page
+	& .captcha-wrapper {
+		border-top: solid 1px @global-border-gray;
+
+		padding: @margin-v @padding-h 0 @padding-h; // @margin-v is not typo
+
+		& > div {
+			margin-bottom: @margin-v;
+
+			.register {
+				width: 100%;
+			}
+
+			.ride-repetition {
+				width: 100%;
+			}
+		}
+	}
+}

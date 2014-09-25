@@ -1,0 +1,87 @@
+.menu-left-active { // this should be assigned to active link too
+	color: @global-button-red;
+	font-weight: 300;
+}
+
+.leftmenu {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	width: 100%;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #ffffff;
+
+	@padding-v: 0px;
+	@padding-h: 0px;
+	@h1-font-size: 16px;
+	@button-font-size: 24px; // this is the toggle button #menu-button-left
+
+	& header {
+		width: auto;
+		float: right;
+		clear: both;
+		background-color: #ffffff;
+
+		& #menu-button-left {
+			margin: 0;
+			padding: 5px 0px 20px 20px;
+			float: right;
+			font-size: @button-font-size;
+			line-height: 1;
+			color: #999;
+			cursor: pointer;
+		}
+
+		& h1 { // in this size h1 is invisible by hidden-xs hidden-sm
+		}
+	}
+
+	& ul {
+		display: none;
+		clear: both;
+		border: 1px solid @global-border-gray;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		background-color: @global-background-gray;
+		border-radius: @global-border-radius;
+		padding-left: @padding-h;
+		padding-right: @padding-h;
+		width: 100%;
+
+		& li {
+			border-top: 1px solid #ffffff;
+			border-bottom: 1px solid darken(@global-border-gray, 5%);
+
+			& .icon {
+				display: none;
+//				float: left;
+//				font-size: 15px;
+//				color: @global-button-red;
+//				padding-top: 10px;
+//				margin-left: 10px;
+			}
+
+			& a, & a:visited {
+				color: #000000;
+				display: block;
+				padding: 8px 0px 8px 35px;
+				font-size: 14px;
+				font-weight: 300;
+			}
+
+			& a:hover, & a:active {
+				color: @global-button-red;
+				text-decoration: none;
+			}
+
+			&:last-child {
+				border-bottom: transparent;
+			}
+
+			&:first-child {
+				border-top: transparent;
+			}
+		}
+	}
+}

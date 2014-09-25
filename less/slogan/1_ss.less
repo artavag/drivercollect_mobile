@@ -1,0 +1,26 @@
+@slogan-big-text-size: 1.9em;
+@slogan-small-text-size: @slogan-big-text-size*0.6;
+
+@slogan-big-margin-up: 0.8em;
+@slogan-big-margin-down: 0em;
+
+@slogan-shadow: 1px 1px 1px #666;
+
+.slogan-text-mixin() {
+	text-align: center;
+	font-weight: 100;
+	color: #ffffff;
+	font-style: normal;
+	text-shadow: @slogan-shadow;
+}
+
+h1.slogan-big {
+	font-size: @slogan-big-text-size;
+	margin-top: @slogan-big-margin-up;
+	.slogan-text-mixin();
+}
+
+.slogan-small {
+//	.slogan-text-mixin();
+	display: none; // we do not display promotion text on small devices
+}

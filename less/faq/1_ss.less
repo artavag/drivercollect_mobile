@@ -1,0 +1,49 @@
+@faq-icon-width: 7%;
+
+dl.text-regular {
+	margin: 0;
+	padding: 0;
+
+	dt {
+		padding: 5px 0px 2px 0px;
+		color: #000000;
+		font-size: 18px;
+		font-weight: 300;
+		cursor: pointer;
+		width: 100%;
+		display: block;
+
+		&:hover {
+			color: @global-button-red;
+		}
+
+		&.collapsed {
+			color: @global-button-red;
+		}
+
+		& span {
+			float: left;
+			display: block;
+			width: 100 - @faq-icon-width;
+		}
+
+		& .icon {
+			float: left;
+			width: @faq-icon-width;
+			margin: 0;
+			padding: 0;
+			padding-top: 5px;
+			font-size: 15px;
+			color: @global-button-red;
+		}
+
+	}
+
+	& dd {
+		width: 100%;
+		padding-left: @faq-icon-width;
+		font-size: @global-font-size;
+		margin: 0;
+		text-align: justify;
+	}
+}

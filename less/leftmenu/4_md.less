@@ -1,0 +1,54 @@
+.leftmenu {
+	.margin-vertical-big();
+
+	width: auto;
+	border-radius: @global-border-radius;
+	border: solid 1px @global-border-gray;
+
+	@padding-v: 25px;
+	@padding-h: 14px;
+	@h1-font-size: 24px;
+
+	margin-right: 10px;
+
+	& header {
+		width: 100%;
+		border-bottom: 1px solid @global-button-red;
+
+		& h1 {
+			float: left;
+			padding: @padding-v * 0.76 @padding-h;
+			font-size: @h1-font-size;
+			margin: 0;
+		}
+	}
+
+	& ul {
+		display: block;
+		border: none;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		background-color: @global-background-gray;
+		border-radius: 0;
+		padding-left: @padding-h;
+		padding-right: @padding-h;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		& li {
+
+			& .icon {
+				display: block;
+				float: left;
+				font-size: 14px;
+				color: @global-button-red;
+				padding-top: 8px;
+				margin-left: 0px;
+			}
+
+			& a, & a:visited {
+				padding: 8px 0px 8px (@padding-h + 10);
+			}
+		}
+	}
+}

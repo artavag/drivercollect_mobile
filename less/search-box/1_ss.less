@@ -1,0 +1,262 @@
+@search-box-color-theme: #000000; // not directly used but all other colors are calculated from here
+@search-box-border-color: lighten(@search-box-color-theme, 20%);
+@search-box-background-color: fade(@search-box-color-theme, 55%);
+@search-box-shadow-color: fade(@search-box-color-theme, 80%);
+
+@search-box-border-radius: @global-border-radius;
+@search-box-margin-top: 1em;
+
+@search-box-row-margin: 10px 0px 0px 0px;
+
+@search-box-button-padding-v: @ss-elem-padding-vertical;
+@search-box-button-padding-h: 10px;
+@search-box-button-margin: 1%;
+
+
+// search-box mixins.
+.search-box-button() {
+	background-color: #F7F5F5;
+	color: #000000;
+	text-align: center;
+	cursor: pointer;
+	border-radius: @search-box-border-radius;
+};
+
+.search-box-button-input() { // those are hidden by css opacity
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	margin-left: -18px;
+	display: block;
+	opacity: 0;
+	float: left;
+	cursor: pointer;
+};
+
+.search-box-text() {
+	font-size: @global-font-size;
+	font-weight: 300;
+	font-style: normal;
+	color: #cccccc;
+};
+
+.search-box-prevent-select() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.search-box-relative-position() {
+	position: relative;
+	top: 0;
+	left: 0px;
+	z-index: 500;
+	float: left;
+}
+
+.placeholder-my() {
+	@search-box-placeholder-text-size: @global-font-size;
+
+	::-webkit-input-placeholder {
+		font-size: @search-box-placeholder-text-size;
+	}
+
+	:-moz-placeholder { // Firefox 18-
+		font-size: @search-box-placeholder-text-size;
+	}
+
+	::-moz-placeholder {  // Firefox 19+
+		font-size: @search-box-placeholder-text-size;
+	}
+
+	:-ms-input-placeholder {
+		font-size: @search-box-placeholder-text-size;
+	}
+}
+
+.radio-wrapper() {
+	float: left;
+	margin-left: 0px; // distance from text
+
+	& span {
+		margin-right: @search-box-button-margin;
+		float: left;
+		width: @radio-elm-width;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	& label {
+		width: 100%;
+		.search-box-relative-position();
+		.search-box-text();
+		.search-box-button();
+		.search-box-prevent-select();
+
+		padding: @search-box-button-padding-v @search-box-button-padding-h;
+		margin: 0px;
+	}
+
+	& input {
+		.search-box-button-input();
+	}
+}
+
+
+#search-box {
+	margin-top: @search-box-margin-top;
+	margin-bottom: @ss-elem-margin-vertical;
+	background-color: @search-box-background-color;
+	box-shadow: 0 0 3px 0 @search-box-shadow-color;
+	border: solid 1px @search-box-border-color;
+	border-radius: @search-box-border-radius;
+	padding: @search-box-padding-v @search-box-padding-h;
+
+	.btn-warning {
+		background-color: rgba(0,0,0,0.5);//@global-button-warning;
+		border: solid 1px #000000;
+
+		&:hover, &:active {
+//			background-color: @global-button-red;
+//			border: solid 1px @global-button-red;
+			background-color: #000000;
+			border: solid 1px #000000;
+		}
+
+		& .icon {
+			font-size: 10px;
+			margin-top: 3px;
+		}
+	}
+
+	& #submit {
+		& button{
+			width: 100%;
+		}
+	}
+
+	& .form-control {
+//		padding: (@search-box-button-padding-v + 4px) (@search-box-button-padding-h + 3px); // 4px
+//		border: solid 1px #666666;
+	}
+
+	& .row-divider {
+		border-top:	dotted 1px #777;
+		padding: 10px 0px;
+		margin: 0;
+
+		& div {
+			margin-bottom: @ss-elem-margin-vertical;
+		}
+	}
+
+	& .refine-search {
+		cursor: pointer;
+		float: right;
+		margin-top: @ss-elem-margin-vertical;
+		margin-bottom: @ss-elem-margin-vertical;
+
+		.search-box-text();
+		color: white;
+
+		// this is for icon
+		& span {
+			float: right;
+		}
+	}
+
+	.search-box-text();
+	.placeholder-my();
+
+	@radio-elm-width: ((100/3%) - @search-box-button-margin*2/3 - 0.1%); // 2/3 means do not calculate margin of last element. 0.1 a little smaller
+
+	& .driver-rider-wrapper-input {
+		.radio-wrapper();
+	}
+
+	& .smoking-wrapper-input {
+		.radio-wrapper();
+
+		& label {
+			padding: @search-box-button-padding-v 0; // we make padding 0, because "strictly not" is too long
+		}
+	}
+
+	& .search-box-label {
+		float: left;
+		margin: 3px 0px;
+
+		.search-box-text();
+	}
+
+	& #main-search-options {
+		margin: @search-box-row-margin; // vertical margin
+
+		& div {
+			float: left;
+			margin-bottom: @ss-elem-margin-vertical;
+		}
+
+		& .col-full {
+			position: relative;
+			width: 100%;
+		}
+
+		& .col-half {
+			width: (50% - @search-box-button-margin/2); //49.5%
+
+			&:nth-child(even) {
+				float: right;
+			}
+		}
+	}
+
+	& #additional-search-options {
+		display: none;
+		margin-top: 10px;
+
+		@margin-right: 1%;
+
+		.small-input {
+			width: (8/@global-grid-columns*100%);
+			float: right;
+		}
+
+		& .weekdays-wrapper {
+			& span {
+				display: inline-block;
+				float: left;
+				margin: 0px;
+				padding: 0;
+				margin-right: @margin-right;
+				width: (100 - (6*@margin-right))/7%;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				& label {
+					.search-box-relative-position();
+					.search-box-text();
+					.search-box-button();
+					.search-box-prevent-select();
+
+					text-align: center;
+					width: 100%;
+					padding: @search-box-button-padding-v @search-box-button-padding-v; // twice @search-box-button-padding-v is not typo
+					min-width: 18px;
+					margin: 0px;
+				}
+
+				& input {
+					margin: 0px;
+					padding: 0px;
+					.search-box-button-input();
+				}
+			}
+		}
+	}
+}

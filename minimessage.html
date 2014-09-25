@@ -1,300 +1,234 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mini message</title>
+		<meta name="description" content="Mini message page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-		<!--<link rel="stylesheet" href="css/normalize.css">-->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
-		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body class="clearfix">
 		<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
+
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-		<script src="js/plugins.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/bootstrap-timepicker.js"></script>
-		<script src="js/jquery.polyglot.language.switcher.js"></script>
-		<script src="js/main.js"></script>
 
-		<div class="container-fluid" >
-			<div class="row">
-				<div id="header2" class="col-lg-12">
+		<script src="js/vendor/bootstrap.js"></script>
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
 
-					<div class="row">
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+		<script src="js/my-js/minimessage.js"></script>
 
-						<div class="main-nav">
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
 
-							<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
 
-								<div class="pull-left" style="padding-top: 8px;">
-									<img src="img/logo3.png">
-								</div>
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
-								<div class="col-lg-4 pull-right welcome">
-									<ul>
-										<li class="language-small">
-											<a href="#" class="">
-												<img class="flag-image" src="img/flags/gb.png"/>
-												<span class="flag-name">UK</span>
-											</a>
-										</li>
-										<li>/</li>
-										<li><a href="register.html">Register</a></li>
-										<li>/</li>
-										<li><a href="login.html">Login</a></li>
-										<li style="margin-right: 10px">Welcome <span>guest!</span></li>
-									</ul>
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
 
-								</div>
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
 
-								<ul class="col-lg-6 mynavbar2 pull-left">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="rides.html">My rides</a></li>
-									<li><a href="myprofile.html">My profile</a></li>
-									<li><a href="account.html">My account</a></li>
-									<!--<li><a href="faq.html">FAQs</a></li>-->
-									<li><a href="faq.html">Support</a></li>
-									<!--<li>Support</li>-->
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
 
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="content">
-				<div class="row">
-
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
-
-						<div class="col-lg-3">
-							<div class="leftmenu" style="padding-left: 0px">
-								<h2>My rides</h2>
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
 								<ul>
-									<li><a href="mylocations.html" class="menu-left-active">My locations</a></li>
-									<li><a href="rides.html">Open requests</a></li>
-									<li><a href="activedeals.html">Active deals</a></li>
-									<li><a href="#">Closed requests</a></li>
-									<li><a href="#">Closed deals</a></li>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
 								</ul>
-							</div>
-						</div>
+							</li>
+						</ul>
+					</div>
 
-						<div class="col-lg-9" style="padding-left: 0px; padding-right: 0px">
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-							<div class="form-wrapper-box2">
+		<section id="content" class="row col-xl-24">
+			<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right-big">
 
-								<div class="row">
-									<div class="" style="padding-left: 0px;">
-										<h1 class="text-big3 pull-left" style="padding: 30px 50px">Send mini message</h1>
-										<h3 class="pull-right" style="font-weight: 100; margin-right: 60px;padding-top: 30px;font-size: 18px; color: #003bb3; /*border-bottom: solid 5px lightcoral*/">Ride: 128522 </h3>									</div>
-								</div>
+				<div class="col-md-5">
+					<nav class="leftmenu margin-vertical-big clearfix">
+						<header class="clearfix">
+							<span id="menu-button-left" class="visible-xs visible-sm icon icon-chevron-down"></span>
+							<h1 class="hidden-xs hidden-sm">My rides</h1>
+						</header>
+						<ul class="clearfix">
+							<li><span class="icon icon-th"></span><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+							<li><span class="icon icon-th"></span><a href="rides.html">Open requests</a></li>
+							<li><span class="icon icon-th"></span><a href="activedeals.html">Active deals</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_requests.html">Closed requests</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_deals.html">Closed deals</a></li>
+						</ul>
+					</nav>
+				</div>
 
-								<!--<form class="form-horizontal" role="form">-->
-								<form role="form">
+				<section class="col-md-19">
 
-									<div class="row clearfix" style="padding: 0px 40px">
+					<div class="form-wrapper-box clearfix">
 
-										<div class="form-group col-lg-12" style="padding-bottom: 20px">
-											<label for="inputPassword33" class="control-label">Message</label>
-											<div class="input-group">
-												<div class="input-group-addon"><span class="glyphicon glyphicon-align-justify"></span></div>
-												<textarea class="form-control <!--input-lg-->" rows="3" placeholder="Message"></textarea>
-											</div>
-										</div>
+						<form action="review.html" method="post">
+
+							<div class="col-xs-24 form-wrapper-box-content profile">
+								<header>
+									<h1>Send mini message</h1>
+								</header>
+
+								<div class="add-request full-width form-group col-xs-24">
+									<label for="minimsg" class="control-label label-hide">Mini message</label>
+									<div class="input-group">
+										<div class="input-group-addon"><span class="icon icon-justify"></span></div>
+										<textarea class="form-control" name="minimsg" id="minimsg" rows="4" placeholder="Your mini message"></textarea>
 									</div>
-
-									<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 40px 24px 40px" class="clearfix">
-										<div class="" style="/*margin-top: 40px*/">
-											<div class="">
-												<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
-													<a href="review.html" class="btn btn-danger">Review</a>
-												</div>
-
-												<div class="pull-left" style="padding: 0;margin: 0">
-													<a href="deal_details_2.html" class="btn btn-default">Cancel</a>
-												</div>
-
-												<div class="pull-right" style="padding: 0;margin: 0">
-													<a href="javascript:void(0);" class="btn btn-primary pull-right back-button3" style="margin-right: 16px;margin-top: 6px">Show messages</a>												</div>
-											</div>
-										</div>
-									</div>
-								</form>
+								</div>
 							</div>
 
-								<!--<div class="table-responsive">-->
-								<div class="">
+							<footer class="col-xs-24 clearfix form-wrapper-box-footer">
+								<button type="submit" name="review" class="btn btn-danger">Review</button>
+								<a href="deal_details.html" class="btn btn-default like-button">Cancel</a>
+								<a href="javascript:void(0);" class="btn btn-primary like-button pull-right show-msg">Show messages<span class="pull-right icon icon-chevron-down"><span></a>
+								<a href="javascript:void(0);" class="btn btn-primary like-button pull-right hide-msg" style="display: none">Hide messages<span class="pull-right icon icon-chevron-up"><span></a>
+							</footer>
+						</form>
+					</div>
 
-									<!--<table class="table table-hover" style="font-family: Tahoma, Geneva, Arial, sans-serif; margin-bottom: 100px">-->
-									<table class="table table-responsive <!--table-bordered--> table-hover <!--table-striped-->" style="width: 100%;">
+					<div class="table-responsive table-msgs" style="display: none">
+						<table class="table table-data table-hover">
 
-										<!--<tr class="font-12" style="border: solid 1px #cccccc; background-color: #eeeeee; border-radius: 3px;">-->
-										<thead>
-											<caption class="table-header clearfix">
-												<h1 class="text-big2 pull-left" style="">Mini messages for deal: 128522</h1>
+							<caption>
+								<h1>Mini messages for deal: 128522</h1>
+							</caption>
 
-												<div class="pull-right" style="margin-top: 20px; margin-right: 16px">
-													<!--<div class="btn btn-default btn-sm pull-right">New requst</div>-->
-													<!--<div class="btn btn-default btn-sm pull-right" style="margin-right: 10px">Delete</div>-->
-													<span class="glyphicon glyphicon-remove" style="font-size: 16px; color: white; cursor: pointer;"></span>
-													<span class="glyphicon glyphicon-plus" style="margin-left: 5px; font-size: 16px; color: white; cursor: pointer;"></span>
-												</div>
-											</caption>
+							<thead>
+								<tr class="font-12">
+									<th>Sender</th>
+									<th>Receiver</th>
+									<th>Message</th>
+									<th>Date</th>
+									<th class="table-actions single-action">Actions</th>
+								</tr>
+							</thead>
 
-											<tr class="font-12">
-												<th><input type="checkbox"></th>
-												<th style="min-width: 140px">Sender</th>
-												<th style="min-width: 120px">Receiver</th>
-												<!--<th style="min-width: 110px">From time <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>-->
-												<!--<th style="min-width: 90px">To time <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>-->
-												<th style="min-width: 80px">Message</th>
-												<th style="min-width: 140px">Date <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>
-												<!--<th style="min-width: 70px">Dist. <a href="#"><div class="list-sorter" title="Order by ascending"></div></a></th>-->
-												<th style="width: 60px">Actions</th>
-												<!--<th><span class="glyphicon glyphicon-cog" style="font-size: 18px; min-width: 80px"></span></th>-->
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>vahe01</td>
-												<td>a**a</td>
-												<td>12 Buckingham St, London, United Kingdom</td>
-												<td>28.05.2014 10:30</td>
-												<td><span class="" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></span></td>
-											</tr>
+							<tbody>
+								<tr>
+									<td>vahe01</td>
+									<td>a**a</td>
+									<td>New mini message</td>
+									<td>28.05.2014 10:30</td>
+									<td class="action-buttons">
+										<a title="Delete message" href="javascript:void(0)" class="deleteMiniMessage" rel="http://drivercollect.loc/minimsg/delete/1/">
+											<span class="icon icon-remove"></span>
+										</a>
+									</td>
+								</tr>
 
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>vahe01</td>
-												<td>a**a</td>
-												<td>12 Buckingham St, London, United Kingdom</td>
-												<td>28.05.2014 10:30</td>
-												<td><span class="" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></span></td>
-											</tr>
+								<tr>
+									<td>vahe01</td>
+									<td>a**a</td>
+									<td>New mini message</td>
+									<td>28.05.2014 10:30</td>
+									<td class="action-buttons">
+										<a title="Delete message" href="javascript:void(0)" class="deleteMiniMessage" rel="http://drivercollect.loc/minimsg/delete/1/">
+											<span class="icon icon-remove"></span>
+										</a>
+									</td>
+								</tr>
+							</tbody>
 
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>vahe01</td>
-												<td>a**a</td>
-												<td>12 Buckingham St, London, United Kingdom</td>
-												<td>28.05.2014 10:30</td>
-												<td><span class="" title="Delete request"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></span></td>
-											</tr>
-										</tbody>
-										<tfoot class="table-footer">
-											<tr class="">
-												<td colspan="10">
-													<span class="table-footer-text pull-left">12 result from 120</span>
+							<tfoot>
+								<tr>
+									<td colspan="10">
+										<span class="table-footer-text pull-left">12 result from 120</span>
 
-													<ul class="pagination pagination-sm pull-right" style="margin-right: 16px;">
-														<li class="disabled"><a href="#" style="color: red">«</a></li>
-														<li class="active"><a href="#"  style="background-color: #F57873; border: solid 1px #EB635E">1 <span class="sr-only"></span></a></li>
-														<li><a href="#" style="color: red">2</a></li>
-														<li><a href="#" style="color: red">3</a></li>
-														<li><a href="#" style="color: red">4</a></li>
-														<li><a href="#" style="color: red">5</a></li>
-														<li><a href="#" style="color: red">»</a></li>
-													</ul>
-												</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							<!--</div>-->
-						</div>
+										<ul class="pagination pagination-sm">
+											<li class="disabled"><a href="#">«</a></li>
+											<li class="active"><a href="#">1<span class="sr-only"></span></a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">»</a></li>
+										</ul>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div><!--table-responsive-->
 
-						<div class="clearfix"></div>
+				</section>
+			</div>
+		</section>
+
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
 					</div>
 				</div>
 			</div>
+		</footer>
 
-			<div id="footer">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
-						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
-						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
-						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="scroll-top"></div>
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
 	</body>
 </html>
-
-<script type="text/javascript">
-
-
-	jQuery(document).ready(function($) {
-
-		$('#datepicker').datepicker();
-
-		$('#timepicker').timepicker({
-			minuteStep: 5,
-			showInputs: false,
-			disableFocus: true,
-			showMeridian: false,
-			showSeconds: false,
-			defaultTime: false
-		});
-
-		$('#refine_search').on('click', function(){
-			$('#additional_options').toggle();
-			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
-		});
-
-//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-//			effect: 'fade',
-//			testMode: true,
-//			onChange: function(evt)
-//			{
-//				switch (evt.selectedItem)
-//				{
-//					case 'id':
-//						window.location.href = '#';
-//						break;
-//					case 'br':
-//						window.location.href = '#';
-//						break;
-//					case 'en':
-//						window.location.href = '#';
-//						break;
-//					case 'es':
-//						window.location.href = '#';
-//						break;
-//					case 'am':
-//						window.location.href = '#';
-//						break;
-//				}
-//			}
-//		});
-	});
-</script>

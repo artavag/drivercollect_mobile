@@ -1,0 +1,40 @@
+
+.leftmenu {
+	.margin-vertical-big();
+
+	@padding-v: 25px;
+	@padding-h: 25px;
+	@h1-font-size: 26px;
+	@button-font-size: 24px;
+
+	margin-right: 10px;
+
+	& header {
+		& h1 {
+			font-size: @h1-font-size;
+			padding: @padding-v * 0.76 @padding-h;
+		}
+	}
+
+	& ul {
+		display: block;
+		border: none;
+		margin-top: 0px;
+		background-color: @global-background-gray;
+		border-radius: 0;
+		padding-left: @padding-h;
+		padding-right: @padding-h;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		& li {
+			& .icon {
+				margin-left: 0px;
+			}
+
+			& a, & a:visited {
+				padding: 8px 0px 8px (@padding-h - 3);
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+@nav-buttons-bgr-color: darken(@global-nav-bgr, 8%);
+
+@nav-buttons-text-color: #cccccc;
+@nav-buttons-font-size: @global-font-size;
+@nav-buttons-font-style: normal;
+@nav-buttons-font-weight: 300;
+
+@distance: 3px; // vertical distance between buttons...
+
+@welcome-text-margin-bottom: 10px;
+
+.button-text {
+	color: @nav-buttons-text-color;
+	font-size: @nav-buttons-font-size;
+	font-style: @nav-buttons-font-style;
+	font-weight: @nav-buttons-font-weight;
+}
+
+.button-hover {
+	background-color: @global-button-red;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav-wrapper {
+	text-align: center;
+	background-color: @global-nav-bgr;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+
+// Main navigation buttons
+ul.main-navbar {
+	float: left;
+	padding-bottom: @distance;	// 3px
+
+	& li {
+		margin-top: @distance;
+		float: left;
+		background-color: @nav-buttons-bgr-color;
+		border-radius: @global-border-radius;
+
+		.button-text();
+
+		& a, & a:visited {
+			display: block;
+			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
+			color: @nav-buttons-text-color;
+			border-radius: @global-border-radius;
+		}
+
+		& a:hover, & a:active {
+			.button-hover;
+			border-radius: @global-border-radius;
+		}
+	}
+}
+
+
+// welcome buttons
+.welcome {
+  	float: right;
+
+	& ul {
+		float: right;
+	}
+
+	& li {
+		float: right;
+		background-color: @nav-buttons-bgr-color;
+		border-radius: @global-border-radius;
+
+		.button-text();
+
+		&:first-child {
+			float: right;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			background-color: @global-nav-bgr;
+
+			& p{
+				float: right;
+				margin-bottom: @welcome-text-margin-bottom;
+				font-size: @global-font-size;
+			}
+		}
+
+		& a, & a:visited {
+			display: block;
+			padding: @nav-buttons-padding-v @nav-buttons-padding-h;
+			color: @nav-buttons-text-color;
+			text-decoration: none;
+			border-radius: @global-border-radius;
+		}
+
+		& a:hover, & a:active {
+			.button-hover;
+			border-radius: @global-border-radius;
+		}
+	}
+}
+
+
+// logo, menu  buttons
+@logo_mobile_width: 112px;
+@logo_mobile_height: 36px;
+@logo_mobile_offset: 8px;
+@menu-button-font-size: 24px;
+
+.logo-image {
+	outline: 0;
+	border: none;
+	width: @logo_mobile_width;
+	height: @logo_mobile_height + (2*@logo_mobile_offset);
+	background-image: url('@{image-directory}logo_mobile.png');
+	background-repeat: no-repeat;
+	background-position: 0px @logo_mobile_offset; // 8px
+}
+
+#menu-button {
+	font-size: @menu-button-font-size;
+	line-height: 1;
+	color: #cccccc;
+	float: right;
+	margin-top: floor((@logo_mobile_height + (2*@logo_mobile_offset))/2 - @menu-button-font-size/2 - 4); // 15px
+	display: inline-block;
+	cursor: pointer;
+//	background-image: url('@{image-directory}menu.gif');
+//	background-position: 50% 50%;
+//	background-repeat: no-repeat;
+}

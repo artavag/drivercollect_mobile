@@ -2,252 +2,180 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Add location</title>
+		<meta name="description" content="Add location page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-		<!--<link rel="stylesheet" href="css/normalize.css">-->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
-		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body class="clearfix">
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
+
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-		<script src="js/vendor/bootstrap.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/bootstrap-timepicker.js"></script>
-		<script src="js/jquery.polyglot.language.switcher.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/location-autocomplete.js"></script>
 
-		<div class="container-fluid" >
-			<div class="row">
-				<div id="header2" class="col-lg-12">
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
 
-					<div class="row">
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+		<script src="js/my-js/search-script.js"></script>
 
-						<div class="main-nav">
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
 
-							<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
 
-								<div class="pull-left" style="padding-top: 8px;">
-									<img src="img/logo3.png">
-								</div>
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
-								<div class="col-lg-4 pull-right welcome">
-									<ul>
-										<li class="language-small">
-											<a href="#" class="">
-												<img class="flag-image" src="img/flags/gb.png"/>
-												<span class="flag-name">UK</span>
-											</a>
-										</li>
-										<li>/</li>
-										<li><a href="register.html">Register</a></li>
-										<li>/</li>
-										<li><a href="login.html">Login</a></li>
-										<li style="margin-right: 10px">Welcome <span>guest!</span></li>
-									</ul>
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
 
-								</div>
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
 
-								<ul class="col-lg-6 mynavbar2 pull-left">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="rides.html">My rides</a></li>
-									<li><a href="myprofile.html">My profile</a></li>
-									<li><a href="account.html">My account</a></li>
-									<!--<li><a href="faq.html">FAQs</a></li>-->
-									<li><a href="faq.html">Support</a></li>
-									<!--<li>Support</li>-->
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
 
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="content">
-				<div class="row">
-
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right" style="padding-bottom: 50px">
-
-						<div class="col-lg-3">
-							<div class="leftmenu" style="padding-left: 0px">
-								<h2>My rides</h2>
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
 								<ul>
-									<li><a href="mylocations.html" class="menu-left-active">My locations</a></li>
-									<li><a href="rides.html">Open requests</a></li>
-									<li><a href="activedeals.html">Active deals</a></li>
-									<li><a href="#">Closed requests</a></li>
-									<li><a href="#">Closed deals</a></li>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section id="content" class="row col-xl-24">
+
+			<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right-big">
+
+				<div class="col-md-5">
+					<nav class="leftmenu margin-vertical-big clearfix">
+						<header class="clearfix">
+							<span id="menu-button-left" class="visible-xs visible-sm icon icon-chevron-down"></span>
+							<h1 class="hidden-xs hidden-sm">My rides</h1>
+						</header>
+						<ul class="clearfix">
+							<li><span class="icon icon-th"></span><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+							<li><span class="icon icon-th"></span><a href="rides.html">Open requests</a></li>
+							<li><span class="icon icon-th"></span><a href="activedeals.html">Active deals</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_requests.html">Closed requests</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_deals.html">Closed deals</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<section class="col-md-19 form-wrapper-box clearfix">
+
+					<form action="http://drivercollect.loc/mylocations/create" method="post">
+
+						<div class="col-xs-24 form-wrapper-box-content">
+
+							<header>
+								<h1>Add location</h1>
+								<p class="pull-left">Type location name in form <i><b>Street, Town, Country</b></i>&nbsp;&nbsp; or just &nbsp;&nbsp;<i><b>Town, Country</b></i> </p>
+							</header>
+
+							<div class="form-group">
+
+								<input type="text" class="form-control address" name="address" id="address" data-direction="" autocomplete="off" placeholder="Street, Town, Country">
+
+								<input name="label" type="hidden" value="">
+								<input name="place_id" type="hidden" value="">
+								<input name="country" type="hidden" value="">
+								<input name="town" type="hidden" value="">
+								<input name="street" type="hidden" value="">
+								<input name="lat" type="hidden" value="">
+								<input name="lon" type="hidden" value="">
+
+								<ul class="location-ul">
+									<li class="address-single">Regent St, London, UK</li>
+									<li class="address-single">235 Regent St, London, United Kingdom</li>
+									<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+									<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+									<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
 								</ul>
 							</div>
+
+							<a href="mylocations.html" class="pull-left common-link"><span class="icon icon-arrow-left"></span>Back to locations</a>
 						</div>
 
-						<div class="col-lg-9 form-wrapper-box2">
+						<footer class="col-xs-24 clearfix form-wrapper-box-footer">
+							<button type="submit" name="addlocation" class="btn btn-danger">Save location</button>
+						</footer>
+					</form>
 
-							<div class="row">
-								<div class="" style="padding-left: 0px;">
-									<h1 class="text-big3 pull-left " style="padding: 30px 50px 10px 50px">Add location</h1>
-									<h3 class="pull-left " style="font-size: 14px; font-weight: 300;clear: both;padding: 0px 50px">Type location name in form <i>Street, Town, Country</i>&nbsp;&nbsp;or&nbsp;<i>Town, Country</i> </h3>
-									<!--<a class="pull-right" href="register.html" style="padding: 54px 50px 0px 0px">Register</a>-->
-								</div>
-							</div>
+				</section>
+			</div>
+		</section>
 
-							<!--<form class="form-horizontal" role="form">-->
-							<form role="form">
-
-								<div class="row clearfix" style="padding: 20px 40px">
-									<div class="form-group col-lg-8">
-										<!--<label for="inputEmail3" class="control-label hidden-xs">Enter bid amount (GBP)</label>-->
-										<!--<div class="input-group">-->
-											<!--<div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>-->
-											<input type="text" class="form-control" id="address_google" autocomplete="off" placeholder="Location">
-										<!--</div>-->
-
-											<ul class="location-ul">
-												<li>Regent St, London, UK</li>
-												<li>235 Regent St, London, United Kingdom</li>
-												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
-												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
-												<li>Regent Quarter, Kings Cross, London N1 9AF, UK</li>
-											</ul>
-
-									</div>
-								</div>
-
-								<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 20px 20px 24px 50px; margin-top: 10px;" class="col-lg-12 clearfix">
-									<div class="">
-										<div class="pull-left" style="padding: 0;margin: 0; margin-right: 10px">
-											<!--<button type="submit" class="btn btn-danger">Confirm bid</button>-->
-											<a href="javascript:void(0);" class="btn btn-danger">Save location</a>
-										</div>
-
-										<div class="pull-left" style="padding: 0;margin: 0">
-											<a href="mylocations.html" class="btn btn-default">Cancel</a>
-										</div>
-									</div>
-								</div>
-
-							</form>
-						</div>
-
-						<div class="clearfix"></div>
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
 					</div>
 				</div>
 			</div>
+		</footer>
 
-			<div id="footer">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
-						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
-						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
-						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<h4 class="modal-title" id="myModalLabel">Confirm the amount you want to bid</h4>
-					</div>
-					<div class="modal-body">
-						<div style="text-align: center">
-							<p style="font-size: 20px"><strong>Current bid amount: </strong><span>0.00 GBP</span></p>
-							<p>Your counterparty will be informed by email</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-
-						<form action="offer.html" method="post" accept-charset="utf-8">
-							<input type="hidden" name="deal_id" id="deal_id" value="1">
-							<input type="hidden" name="bid_amount" id="new_bid_amount" value="1.00">
-
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<input type="submit" class="btn btn-primary" value="Confirm this bid" >
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="scroll-top"></div>
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
 	</body>
 </html>
-
-<script type="text/javascript">
-
-
-	jQuery(document).ready(function($) {
-
-		$('#datepicker').datepicker();
-
-		$('#timepicker').timepicker({
-			minuteStep: 5,
-			showInputs: false,
-			disableFocus: true,
-			showMeridian: false,
-			showSeconds: false,
-			defaultTime: false
-		});
-
-		$('#refine_search').on('click', function(){
-			$('#additional_options').toggle();
-			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
-		});
-
-//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-//			effect: 'fade',
-//			testMode: true,
-//			onChange: function(evt)
-//			{
-//				switch (evt.selectedItem)
-//				{
-//					case 'id':
-//						window.location.href = '#';
-//						break;
-//					case 'br':
-//						window.location.href = '#';
-//						break;
-//					case 'en':
-//						window.location.href = '#';
-//						break;
-//					case 'es':
-//						window.location.href = '#';
-//						break;
-//					case 'am':
-//						window.location.href = '#';
-//						break;
-//				}
-//			}
-//		});
-	});
-</script>

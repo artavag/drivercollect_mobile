@@ -10,21 +10,13 @@
 		<meta name="description" content="Searchless ride sharing. We do ride searching for you. Submit your ride direction and we will find it for you.">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-		<!--<link rel="stylesheet" href="css/normalize.css">-->
-		<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
-		<!--<link rel="stylesheet" href="css/polyglot-language-switcher.css">-->
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>-->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body class="clearfix">
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -42,23 +34,29 @@
 		</script>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-		<script src="js/plugins.js"></script>
-		<script src="js/modernizr.custom.97613.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/bootstrap-timepicker.js"></script>
-		<!--<script src="js/jquery.polyglot.language.switcher.js"></script>-->
-		<script src="js/main.js"></script>
-		<!--<script src="js/open_requests.js"></script>-->
+
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
+
+		<script src="js/my-js/functions.js"></script>
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+		<script src="js/my-js/search-script.js"></script>
+
 
 		<header id="header-big" class="row col-xl-24 clearfix">
 			<nav class="main-nav-wrapper clearfix">
 
 				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
 					<a href="index.html" class="pull-left logo-image"></a>
-					<span id="menu-button" class="visible-xs"></span>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
 
 					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
@@ -67,7 +65,9 @@
 
 							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
 								<a href="#" id="languageSwitcherSelected">
-									<div class="flag-image-selected gb"><span class="flag-name-selected">UK</span></div>
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
 								</a>
 							</li>
 
@@ -76,11 +76,11 @@
 
 							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
 								<ul>
-									<li><a href="#" class="gb">United kingdom</a></li>
-									<li><a href="#" class="es">Espana</a></li>
 									<li><a href="#" class="am">Armenia</a></li>
 									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
 									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -99,19 +99,19 @@
 
 			<hgroup class="row padding-left-right">
 				<h1 class="col-md-16 col-md-offset-4 col-xl-12 col-xl-offset-6 slogan-big">Searchless ride sharing</h1>
-				<h2 class="col-sm-16 col-sm-offset-4 col-md-16 col-md-offset-4 col-xl-16 col-xl-offset-4 slogan-small">We are different because we do the searching for you, even on parts of the journey.</h2>
+				<h2 class="col-sm-18 col-sm-offset-3 col-md-18 col-md-offset-3 col-xl-16 col-xl-offset-4 slogan-small">We are different because we do the searching for you, even on parts of the journey.</h2>
 			</hgroup>
 
 			<section class="row padding-left-right">
 
 				<div id="search-box" class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3">
 
-					<form role="form">
+					<form role="form" action="" method="post">
 
 						<div class="clearfix">
 							<span class="col-xs-24 col-sm-14 pull-left driver-rider-wrapper">
 
-								<span class="search-box-label pull-left col-xs-24 col-sm-6 col-lg-4">Driver or rider?</span>
+								<span class="search-box-label pull-left col-xs-24 col-sm-6 col-md-5 col-lg-4">Driver or rider?</span>
 
 								<span class="col-xs-24 col-sm-12 col-lg-8 driver-rider-wrapper-input">
 									<span>
@@ -138,12 +138,44 @@
 
 								<div class="col-full">
 									<label for="locations_from" class="search-box-label label-hide">From location</label>
-									<input type="text" class="form-control" name="locations_from" id="locations_from" placeholder="From location" autocomplete="off">
+									<input type="text" class="form-control address" name="locations_from" id="locations_from" data-direction="location-ul-from" placeholder="From location" autocomplete="off">
+
+									<input name="label_from" type="hidden" value="">
+									<input name="place_id_from" type="hidden" value="">
+									<input name="country_from" type="hidden" value="">
+									<input name="town_from" type="hidden" value="">
+									<input name="street_from" type="hidden" value="">
+									<input name="lat_from" type="hidden" value="">
+									<input name="lon_from" type="hidden" value="">
+
+									<ul class="location-ul-from">
+										<li class="address-single">Regent St, London, UK</li>
+										<li class="address-single">235 Regent St, London, United Kingdom</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK</li>
+									</ul>
 								</div>
 
 								<div class="col-full">
 									<label for="locations_to" class="search-box-label label-hide">To location</label>
-									<input type="text" class="form-control" name="locations_to" id="locations_to" placeholder="To location" autocomplete="off">
+									<input type="text" class="form-control address" name="locations_to" id="locations_to" data-direction="location-ul-to" placeholder="To location" autocomplete="off">
+
+									<input name="label_to" type="hidden" value="">
+									<input name="place_id_to" type="hidden" value="">
+									<input name="country_to" type="hidden" value="">
+									<input name="town_to" type="hidden" value="">
+									<input name="street_to" type="hidden" value="">
+									<input name="lat_to" type="hidden" value="">
+									<input name="lon_to" type="hidden" value="">
+
+									<ul class="location-ul-to">
+										<li class="address-single">Regent St, London, UK2</li>
+										<li class="address-single">235 Regent St, London, United Kingdom2</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK2</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK2</li>
+										<li class="address-single">Regent Quarter, Kings Cross, London N1 9AF, UK2</li>
+									</ul>
 								</div>
 
 								<div class="col-half">
@@ -166,10 +198,8 @@
 									<input type="text" class="form-control" name="to_time" id="to_time" placeholder="To time" autocomplete="off">
 								</div>
 
-								<span class="refine-search col-xs-24 col-sm-5 col-md-4 col-lg-3 pull-right btn btn-warning">Refine search<span class="glyphicon glyphicon-chevron-down"></span></span>
-
 								<span id="submit"><button type="submit" class="btn btn-danger">Save</button></span>
-
+								<span class="refine-search col-xs-24 col-sm-4 col-md-3 col-lg-3 pull-right btn btn-warning" style="display: block">Refine search<span class="icon icon-chevron-down"></span></span>
 							</div><!--main-search-options-->
 
 
@@ -258,20 +288,20 @@
 			<section class="row background-gray promotion clearfix">
 				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3">
 
-					<div class="col-lg-8">
-						<img src="img/mobile_icon.png"/>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<span class="icon icon-phone"></span>
 						<h1>Works on the move</h1>
 						<p>Lorem ipsum dolor sit amet, te probo moderatius eam, ut vis nihil intellegam sadipscing. Graeco verear theophrastus qui ea.</p>
 					</div>
 
-					<div class="col-lg-8">
-						<img src="img/safe.png"/>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<span class="icon icon-safe"></span>
 						<h1>Safe</h1>
 						<p>Lorem ipsum dolor sit amet, te probo moderatius eam, ut vis nihil intellegam sadipscing. Graeco verear theophrastus qui ea.</p>
 					</div>
 
-					<div class="col-lg-8">
-						<img src="img/efficient_icon.png"/>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<span class="icon icon-cog"></span>
 						<h1>Efficient</h1>
 						<p>Lorem ipsum dolor sit amet, te probo moderatius eam, ut vis nihil intellegam sadipscing. Graeco verear theophrastus qui ea.</p>
 					</div>
@@ -282,25 +312,31 @@
 			<section class="row">
 				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right latest-rides">
 
-					<div class="col-lg-8 margin-vertical-big">
+					<div class="col-lg-8 col-lg-8 margin-vertical-big">
 						<h1>Latest rides</h1>
 						<p>Currently <strong>1025 rides</strong> available.</p>
 						<p>Lorem ipsum dolor sit amet, te probo moderatius eam, ut vis nihil intellegam sadipscing. Graeco verear theophrastus qui ea.</p>
 						<a class="btn btn-danger" href="tour.html">See how it works</a>
 					</div>
 
-					<div class="col-sm-24 col-lg-16 margin-vertical-big">
+					<div class="col-xs-24 col-lg-16 margin-vertical-big">
 
-						<div class="table-responsive margin-vertical-big">
+						<div class="table-responsive">
 							<table class="table table-home table-hover">
 
 								<tbody>
 									<tr>
 										<td class="user-img">
-											<img src="img/user_icon.png">
+											<span class="icon icon-user"></span>
 										</td>
 										<td class="user-rating">
-											<div class="user-rating-stars">★★★★★</div>
+											<div class="user-rating-stars">
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+											</div>
 											<span class=""><b>RandomName</b></span>
 										</td>
 										<td>12 Buckingham St, London, United Kingdom</td>
@@ -313,10 +349,16 @@
 
 									<tr>
 										<td class="user-img">
-											<img src="img/user_icon.png">
+											<span class="icon icon-user"></span>
 										</td>
 										<td class="user-rating">
-											<div class="user-rating-stars">★★★★★</div>
+											<div class="user-rating-stars">
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star-half"></span>
+												<span class="icon icon-star-empty"></span>
+											</div>
 											<span class=""><b>RandomName</b></span>
 										</td>
 										<td>12 Buckingham St, London, United Kingdom</td>
@@ -329,10 +371,16 @@
 
 									<tr>
 										<td class="user-img">
-											<img src="img/user_icon.png">
+											<span class="icon icon-user"></span>
 										</td>
 										<td class="user-rating">
-											<div class="user-rating-stars">★★★★★</div>
+											<div class="user-rating-stars">
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star"></span>
+												<span class="icon icon-star-empty"></span>
+												<span class="icon icon-star-empty"></span>
+											</div>
 											<span class=""><b>RandomName</b></span>
 										</td>
 										<td>12 Buckingham St, London, United Kingdom</td>
@@ -340,9 +388,7 @@
 										<td class="ride-date">28 Aug 10:30</td>
 										<td><div class="ride-price">280.55 $</div></td>
 									</tr>
-
 								</tbody>
-
 							</table>
 						</div>
 
@@ -373,7 +419,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 
-					<div class="pull-right payments-image promotion-image-wrapper col-sm-24 col-md-14 col-lg-14"></div>
+					<div class="pull-left payments-image promotion-image-wrapper col-sm-24 col-md-14 col-lg-10"></div>
 
 				</div>
 			</section>
@@ -394,472 +440,20 @@
 
 		</section><!--content-->
 
-		<footer id="footer" class="background-gray col-xl-24">
+		<footer id="footer" class="background-gray col-xs-24">
 			<div class="row padding-left-right">
-				<div class="col-xl-24 col-md-24 col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 footer-inner clearfix">
-					<small class="col-xs-24 col-sm-24">Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
-					<a class="col-xs-24" href="privacy.html">Privacy Policy</a>
-					<span class="hidden-xs hidden-sm">|</span>
-					<a class="col-xs-24" href="terms.html">Terms and Conditions</a>
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
+					</div>
 				</div>
 			</div>
 		</footer>
 
 		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
 	</body>
 </html>
-
-<script type="text/javascript">
-
-	jQuery(document).ready(function($) {
-
-		$('#from_date').datepicker();
-		$('#to_date').datepicker();
-
-		$('#from_time').timepicker({
-			minuteStep: 10,
-			showInputs: false,
-			disableFocus: true,
-			showMeridian: false,
-			showSeconds: false,
-			disableMousewheel: true,
-			defaultTime: false//"current"
-		});
-
-		$('#to_time').timepicker({
-			minuteStep: 10,
-			showInputs: false,
-			disableFocus: true,
-			showMeridian: false,
-			showSeconds: false,
-			disableMousewheel: true,
-			defaultTime: false//"current"
-		});
-
-
-		/**
-		 * Refine search
-		 *
-		 * This script toggles visibility of additional search options when
-		 * refine search button is clicked
-		 */
-		var elementToToggle = $('#additional-search-options');
-		var elementContainer = $('#search-box');
-
-		// Get initial values before toggle
-		var elementContainerBackgrColor  = elementContainer.css('background-color');
-		var refineSearch = $('.refine-search');
-		var refineSearchIcon = $('.refine-search span');
-
-		refineSearch.on('click', function(){
-
-			elementToToggle.toggle(50, 'swing', function(){
-				
-				var isVisible = elementToToggle.css('display');
-
-				if (isVisible == 'block')
-				{
-					if (myViewportWidth < 768 ){
-						$('#main-search-options #submit').appendTo($('#additional-search-options'));
-					}
-
-					elementContainer.css({ 'background-color': 'rgba(0,0,0, 0.7)' });
-					refineSearchIcon.removeClass('glyphicon-chevron-down');
-					refineSearchIcon.addClass('glyphicon-chevron-up');
-				}
-				else
-				{
-					if (myViewportWidth < 768 ){
-						$('#additional-search-options #submit').appendTo($('#main-search-options'));
-					}
-					elementContainer.css({ 'background-color': elementContainerBackgrColor });
-					refineSearchIcon.removeClass('glyphicon-chevron-up');
-					refineSearchIcon.addClass('glyphicon-chevron-down');				}
-			});
-		});
-
-
-
-
-		/**
-		 * This script makes following 3 tasks:
-		 *
-		 * 1. Changes checked inputs and labels background and text color
-		 * 2. Detects current weekday and makes it checked.
-		 * 3. Changes checked weekday when "date from" value is changed
-		 */
-
-		/**
-		 * This the initaial state. Here we are looking all weekday checkbox inputs
-		 * to find the checked one
-		 */
-		var elementToTakeColors = $('button[type="submit"]');
-		var elementChekedBackgrColor = elementToTakeColors.css('background-color');
-		var elementChekedTextColor = elementToTakeColors.css('color');
-
-		var elemenetWrapper = '.weekdays-wrapper';
-		var elementToChangeColors = $(elemenetWrapper + ' label');
-		var elementInitialTextColor = elementToChangeColors.css('color');
-		var elementInitialBackgrColor = elementToChangeColors.css('background-color');
-
-		var elemenetsToChangeState = $(elemenetWrapper + ' input');
-
-		// First make all checkboxes unchecked
-		toUncheckedState();
-
-		// find the checkbox with the weekday that
-		// corresponds to current date and make it checked
-		elemenetsToChangeState.each(function(){
-
-			// get current day of week
-			var currentWeekDay = getCurrentDayOfWeek(false); // is integer from 1-7. 1 is Monday
-
-			var elemID = $(this).attr('id');
-
-			if (elemID == currentWeekDay)
-			{
-				// Bring matched element to checked state
-				toCheckedState(elemID);
-			}
-		});
-
-
-		/**
-		 * Calculates and returns the current day of week based on submitted date argument
-		 *
-		 * if argument is false then returns weekday corresponding to current date
-		 *
-		 * returns integer in range 1 - 7. 1 is Monday, 7 is Sunday
-		 */
-		function getCurrentDayOfWeek(date)
-		{
-			var today = new Date();
-
-			// if date is not given calculate the weekday based on current date
-			var currentWeekDay = today.getUTCDay(); // contains integer from 0 to 6, beggining with sunday = 0, monday = 1...
-
-			// if date is given calculate the weekday based on given date not on current date
-			if (date)
-			{
-				var from_date = new Date(date);
-
-				// Calculate day of weeks
-				// By default Sunday is 0, Monday is 1, and so on. We want that sunday be 7.
-				currentWeekDay = from_date.getDay();
-			}
-
-			if (currentWeekDay == 0){
-				currentWeekDay = 7; // we make Sunday to be 7
-			}
-			
-			return currentWeekDay;
-		}
-
-
-		// label on click
-		elementToChangeColors.on('click', function(e){
-
-			e.stopPropagation();
-
-			// get labels for attr.
-			var elemID = $(this).attr('for');
-
-			// get label's input id
-			var clickedLabelInput = $(elemenetWrapper + ' input[id=' + elemID + ']');
-
-			// when after clicking on label input is also changed
-			clickedLabelInput.on('change', function(d){
-
-				d.stopPropagation();
-
-				var clickedLabelInputState = clickedLabelInput.prop('checked'); // is boolean
-
-				clickedLabelInput.unbind('change');
-
-				// if the input is checked then change also it's label
-				if (clickedLabelInputState)
-				{
-					toCheckedState(elemID);
-				}
-				else
-				{
-					toUncheckedState(elemID);
-				}
-			});
-		});
-
-		/**
-		 * Makes the element by the given id colorized and checked
-		 * if no id is passed makes all elements checked
-		 */
-		function toCheckedState(elemID)
-		{
-			var selectorInput = ' input';
-			var selectorLabel = ' label';
-
-			if (elemID) {
-				selectorInput = ' input[id=' + elemID + ']';
-				selectorLabel = ' label[for=' + elemID + ']';
-			}
-
-			$(elemenetWrapper + selectorInput).attr('checked', true);
-			$(elemenetWrapper + selectorInput).prop('checked', true);
-
-			$(elemenetWrapper + selectorLabel).css({
-				'background-color': elementChekedBackgrColor,
-				'color': elementChekedTextColor
-			});
-		}
-
-		/**
-		 * Makes the element by the given id uncolorized and unchecked
-		 * if no id is passed makes all elements unchecked
-		 */
-		function toUncheckedState(elemID)
-		{
-			var selectorInput = ' input';
-			var selectorLabel = ' label';
-
-			if (elemID) {
-				selectorInput = ' input[id=' + elemID + ']';
-				selectorLabel = ' label[for=' + elemID + ']';
-			}
-
-			$(elemenetWrapper + selectorInput).attr('checked', false);
-			$(elemenetWrapper + selectorInput).prop('checked', false);
-
-			$(elemenetWrapper + selectorLabel).css({
-				'background-color': elementInitialBackgrColor,
-				'color': elementInitialTextColor
-			});
-		}
-
-
-		//////////////////////////////////////////////////////////////////////////////
-
-
-
-		/**
-		 * This script watches for changes in from date field and does:
-		 *
-		 * 1. changes weekday checkbox to be checked corresponding to selected date
-		 * 2. makes date_to value equal to date_from value
-		*/
-
-		var dateFromInput = $('#from_date');
-		var dateToInput = $('#to_date');
-
-		dateFromInput.on('changeDate', function(e){
-			e.stopPropagation();
-			e.preventDefault();
-
-			// change weekday checkboxes
-			dayOfWeekPicker(elemenetsToChangeState);
-
-			// Set "date to" value equal to "date from" value
-			dateValueSetterFrom();
-		});
-
-
-		dateToInput.on('changeDate', function(e){
-			e.stopPropagation();
-			e.preventDefault();
-
-			dateValueSetterTo();
-		});
-
-
-		/**
-		 * Checks corresponding weekday checkbox when from date is changed
-		 */
-		function dayOfWeekPicker(elemenetsToChangeState)
-		{
-			var date_string = $('#from_date').val().trim();
-			var currentWeekDay = getCurrentDayOfWeek(date_string);
-
-			// first make all elements unchecked
-			toUncheckedState();
-
-			elemenetsToChangeState.each(function(){
-
-				var elemID = $(this).attr('id');
-
-				if (elemID == currentWeekDay)
-				{
-					// Bring matched element to checked state
-					toCheckedState(elemID);
-				}
-			});
-		}
-
-		/**
-		 * Sets date to value equal to date from value
-		 */
-		function dateValueSetterFrom()
-		{
-			var dateValue = dateFromInput.val().trim();
-
-			dateFromInput.attr('value', dateValue);
-
-			dateToInput.attr('value', dateValue);
-			dateToInput.val(dateValue);
-		}
-
-		/**
-		 * Sets date to value equal to date from value
-		 */
-		function dateValueSetterTo()
-		{
-			var dateValue = dateToInput.val().trim();
-			dateToInput.attr('value', dateValue);
-		}
-
-
-
-		//////////////////////////////////////////////////////////////////////////////
-
-
-		/**
-		 * This script is for radio buttons. Makes following:
-		 *
-		 * 1. Changes color of selected/unselected radio buttons color
-		 *
-		 */
-
-		// those are for driver or rider
-		var wrapperElement = '.driver-rider-wrapper-input';
-		var elementToToggleColors = $(wrapperElement + ' label');
-		var initialTextColor = elementToToggleColors.css('color');
-		var initialBackgrColor = elementToToggleColors.css('background-color');
-		var checkedTextColor = '#ffffff';
-		var checkedBackgrColor = 'orange';
-
-		radio_check(wrapperElement, initialBackgrColor, checkedBackgrColor, initialTextColor, checkedTextColor);
-
-		// those are for smoking
-		wrapperElement = '.smoking-wrapper';
-		elementToTakeColors = $('button[type="submit"]');
-		checkedBackgrColor = elementToTakeColors.css('background-color');
-		checkedTextColor = elementToTakeColors.css('color');
-
-		radio_check(wrapperElement, initialBackgrColor, checkedBackgrColor, initialTextColor, checkedTextColor);
-
-		function radio_check(wrapperElement, initialBackgrColor, checkedBackgrColor, initialTextColor, checkedTextColor)
-		{
-			// this is the initial state. We are looking here the check radio button in order to colorize it.
-			$(wrapperElement + ' input').each(function(){
-
-				var checked_driver = $(this).prop('checked');
-				var checked_driver_id = $(this).attr('id');
-
-				if (checked_driver)
-				{
-					$( wrapperElement + ' label[for=' + checked_driver_id + ']').css({
-						'background-color': checkedBackgrColor,
-						'color': checkedTextColor
-					});
-				}
-			});
-
-			$(wrapperElement + ' label').on('click', function(e){
-
-				e.stopPropagation();
-
-				var elemID = $(this).attr('for');
-				var input_driver = $(wrapperElement + ' input[id=' + elemID + ']');
-
-				// Here we make all radios unchecked and uncolored
-				$(wrapperElement + ' input').each(function(){
-
-					// first remove checked attrinute from all radio buttons
-					$(this).attr('checked', false);
-
-					// ... and bring to default/unchecked state
-					$(wrapperElement + ' label').css({
-						'background-color': initialBackgrColor,
-						'color': initialTextColor
-					});
-				});
-
-				input_driver.on('change', function(d){
-
-					d.stopPropagation();
-
-					var clickedLabelInputState = input_driver.prop('checked');
-					input_driver.unbind('change');
-
-					if (clickedLabelInputState)
-					{
-						$(wrapperElement + ' input[id=' + elemID + ']').attr('checked', true);
-
-						$(wrapperElement + ' label[for=' + elemID + ']').css({
-							'background-color': checkedBackgrColor,
-							'color': checkedTextColor
-						});
-					}
-
-				});
-			});
-
-		}
-
-
-
-		//////////////////////////////////////////////////////////////////////////////
-
-
-		/**
-		 * this script toggles navigation when menu button is clicked
-		 */
-		$('#menu-button').on('click', function(){
-			$('.welcome').toggleClass('hidden-xs');
-			$('.main-navbar').toggleClass('hidden-xs');
-		});
-
-
-		//////////////////////////////////////////////////////////////////////////////
-
-
-		/**
-		 * this script toggles language switcher
-		 */
-		$('#languageSwitcher').on('click', function(e){
-			e.stopPropagation();
-			$('#languageSwitcherAll').toggle(100);
-		});
-
-		$('body').on('click', function(e){
-			$('#languageSwitcherAll').hide();
-		});
-
-
-
-		// detecting viewport width
-
-		var myViewportWidth = $('span.my-viewport').width();
-		var refineButton = $('.refine-search');
-
-		if (myViewportWidth >= 768 ){
-			refineButton.prependTo($('#search-box'));
-			$('#main-search-options #submit').appendTo($('#main-search-options'));
-		}
-		else {
-			refineButton.appendTo($('#main-search-options'));
-		}
-
-		$(window).resize(function(){
-
-			myViewportWidth = $('span.my-viewport').width();
-
-			if (myViewportWidth >= 768 ){
-				refineButton.prependTo($('#search-box'));
-				$('#main-search-options #submit').appendTo($('#main-search-options'));
-			}
-			else {
-				refineButton.appendTo($('#main-search-options'));
-			}
-
-		});
-
-	});
-</script>

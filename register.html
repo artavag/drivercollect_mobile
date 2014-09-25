@@ -1,272 +1,207 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Register</title>
+		<meta name="description" content="Register page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="clearfix">
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-	<!--<link rel="stylesheet" href="css/normalize.css">-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/datepicker.css">
-	<link rel="stylesheet" href="css/bootstrap-timepicker.css">
-	<link rel="stylesheet" href="css/polyglot-language-switcher.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
 
-<!-- Add your site or application content here -->
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/bootstrap-timepicker.js"></script>
-<script src="js/jquery.polyglot.language.switcher.js"></script>
-<script src="js/main.js"></script>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-<div class="container-fluid" >
-	<div class="row">
-		<div id="header2" class="col-lg-12">
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
 
-			<div class="row">
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
 
-				<div class="main-nav">
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
 
-					<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
 
-						<div class="pull-left" style="padding-top: 8px;">
-							<img src="img/logo3.png">
-						</div>
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
-						<div class="col-lg-4 pull-right welcome">
-							<ul>
-								<li class="language-small">
-									<a href="#" class="">
-										<img class="flag-image" src="img/flags/gb.png"/>
-										<span class="flag-name">UK</span>
-									</a>
-								</li>
-								<li>/</li>
-								<li><a href="register.html">Register</a></li>
-								<li>/</li>
-								<li><a href="login.html">Login</a></li>
-								<li style="margin-right: 10px">Welcome <span>guest!</span></li>
-							</ul>
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
 
-						</div>
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
 
-						<ul class="col-lg-6 mynavbar2 pull-left">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="rides.html">My rides</a></li>
-							<li><a href="myprofile.html">My profile</a></li>
-							<li><a href="account.html">My account</a></li>
-							<!--<li><a href="faq.html">FAQs</a></li>-->
-							<li><a href="faq.html">Support</a></li>
-							<!--<li>Support</li>-->
-							<li><a href="contact.html">Contact</a></li>
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
+
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
+								<ul>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
+								</ul>
+							</li>
 						</ul>
-
 					</div>
 
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
 				</div>
+			</nav>
+		</header>
 
-			</div>
 
-		</div>
-	</div>
+		<section id="content" class="row col-xs-24 padding-left-right-big clearfix">
+			<div class="col-md-14 col-md-offset-5 col-xl-10 col-xl-offset-7 form-wrapper-box clearfix">
+				<form action="" method="post">
 
-	<div id="content" style="padding-bottom: 50px">
-		<div class="row">
+					<div class="col-xs-24 form-wrapper-box-content register clearfix">
 
-			<div class="col-lg-6 col-lg-offset-3">
-				<div class="col-lg-10 col-lg-offset-1 form-wrapper-box">
-					<!--<div class="col-lg-2 pull-left">-->
-					<!--<div class="leftmenu" style="padding-left: 0px">-->
-					<!--<ul>-->
-					<!--<li><a href="myprofile.html">My profile</a></li>-->
-					<!--<li><a href="#">My Groups</a></li>-->
-					<!--<li><a href="#">Email preferences</a></li>-->
-					<!--<li><a href="#">My ratings</a></li>-->
-					<!--<li><a href="#">Change password</a></li>-->
-					<!--<li><a href="#">Cancel account</a></li>-->
-					<!--</ul>-->
-					<!--</div>-->
-					<!--</div>-->
+						<header>
+							<h1>Register</h1>
+						</header>
 
-					<div class="row">
-						<div class="" style="padding-left: 0px;">
-							<h1 class="text-big3 pull-left" style="padding: 30px 50px">Register</h1>
-							<!--<a class="pull-right" href="register.html" style="padding: 54px 50px 0px 0px">Register</a>-->
-						</div>
-					</div>
+						<div class="row clearfix">
 
-					<!--<form class="form-horizontal" role="form">-->
-					<form role="form">
-
-						<div class="row clearfix" style="padding: 0px 40px">
-							<div class="form-group col-lg-6 ">
-								<label for="inputEmail3" class="control-label hidden-xs">Username</label>
+							<div class="register form-group col-xs-24">
+								<label for="username" class="control-label label-hide">Username</label>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-									<input type="text" class="form-control <!--input-lg-->" id="inputEmail3" placeholder="Username">
+									<div class="input-group-addon"><span class="icon icon-user"></span></div>
+									<input type="text" class="form-control" id="username" name="username" placeholder="Username">
 								</div>
 							</div>
 
-							<div class="form-group col-lg-6 ">
-								<label for="inputEmail85" class="control-label hidden-xs">Email</label>
+							<div class="register form-group col-xs-24">
+								<label for="email" class="control-label label-hide">Email</label>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-									<input type="email" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Email">
+									<div class="input-group-addon"><span class="icon icon-envelope"></span></div>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 								</div>
 							</div>
 
-							<div class="form-group col-lg-6 ">
-								<label for="inputEmail4" class="control-label hidden-xs">Password</label>
+							<div class="register form-group col-xs-24">
+								<label for="password" class="control-label label-hide">Password</label>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-									<input type="password" class="form-control <!--input-lg-->" id="inputEmail4" placeholder="Password">
+									<div class="input-group-addon"><span class="icon icon-lock"></span></div>
+									<input type="text" class="form-control" id="password" name="password" placeholder="Password">
 								</div>
 							</div>
 
-							<div class="form-group col-lg-6 ">
-								<label for="inputEmail8" class="control-label hidden-xs">Confirm password</label>
+							<div class="register form-group col-xs-24">
+								<label for="confirm_password" class="control-label label-hide">Confirm password</label>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-									<input type="password" class="form-control <!--input-lg-->" id="inputEmail8" placeholder="Confirm password">
+									<div class="input-group-addon"><span class="icon icon-lock"></span></div>
+									<input type="text" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password">
 								</div>
 							</div>
 
-							<div class="form-group col-lg-6 clearfix">
-								<label class="control-label hidden-xs">Country</label>
+							<div class="register form-group col-xs-24">
+								<label for="country" class="control-label label-hide">Country</label>
 
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></div>
-									<select class="form-control">
-										<option value="0">- Select country -</option>
+									<div class="input-group-addon"><span class="icon icon-globe"></span></div>
+									<select class="form-control" name="country" id="country">
+										<option value="0" selected="selected">- Select country -</option>
 										<option value="1">Armenia</option>
 										<option value="2">Brazil</option>
 										<option value="3">Indonesia</option>
-										<option value="4" selected="selected">United Kingdom</option>
+										<option value="4">United Kingdom</option>
 										<option value="5">Spain</option>
 									</select>
 								</div>
-
-
 							</div>
 						</div>
+					</div>
 
-
-						<div class="clearfix" style="border-top: solid 1px #dddddd; margin: 15px 0px; padding: 0px 40px">
-							<div class="form-group col-lg-6">
-								<span class="">
-									<img src="http://dcdev1.drivercollect.com/captcha_image/0.3171076800208539" id="captcha"><br>
-									<a href="javascript:void(0)" id="change-image">Not readable? Change text.</a>
-								</span>
-							</div>
-
-							<div class="form-group col-lg-6" style="padding-top: 26px;">
-								<label for="inputEmail85" class="control-label hidden-xs">Confirmation Code</label>
-
-								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
-									<input type="password" class="form-control <!--input-lg-->" id="inputEmail85" placeholder="Code from captcha">
-								</div>
-							</div>
+					<div class="clearfix col-xs-24 captcha-wrapper">
+						<div class="register form-group col-xs-24">
+							<span class="">
+								<img src="http://dev2.drivercollect.com/captcha_image/0.3171076800208539" id="captcha"><br>
+								<a href="javascript:void(0)" id="change-image">Not readable? Change text.</a>
+							</span>
 						</div>
 
+						<div class="register form-group col-xs-24">
+							<label for="inputEmail85" class="control-label label-hide">Confirmation Code</label>
 
-						<div style="background-color: #F1F2F2; border-top: solid 1px #dddddd; padding: 30px 40px 0px 40px" class="clearfix">
-
-							<div class="col-lg-6">
-								<button type="submit" class="btn btn-danger col-lg-8">Register</button>
+							<div class="input-group">
+								<div class="input-group-addon"><span class="icon icon-asterisk"></span></div>
+								<input type="password" class="form-control" id="inputEmail85" placeholder="Code from captcha">
 							</div>
-
-							<div class="form-group col-lg-6 pull-right">
-								<div class="checkbox" style="margin-top: 0px">
-									<label for="aaa">
-										<input type="checkbox" name="aaa" id="aaa">I have read and accepted the <a href="terms.html">Terms and Conditions</a> for joining DriverCollect
-									</label>
-								</div>
-							</div>
-
 						</div>
-					</form>
+					</div>
+
+					<footer class="col-xs-24 clearfix form-wrapper-box-footer register">
+						<div class="checkbox register pull-right">
+							<label><input type="checkbox" name="accept" id="accept">I have read and accepted the <a href="terms.html">Terms and Conditions</a> for joining DriverCollect</label>
+						</div>
+						<button type="submit" name="register" class="btn btn-danger register">Register</button>
+					</footer>
+
+				</form>
+			</div>
+		</section>
+
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+		</footer>
 
-	<div id="footer">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
-				Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
-				<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
-				<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
-			</div>
-		</div>
-	</div>
-
-</div>
-</body>
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
+	</body>
 </html>
-
-<script type="text/javascript">
-
-
-	jQuery(document).ready(function($) {
-
-		$('#datepicker').datepicker();
-
-		$('#timepicker').timepicker({
-			minuteStep: 5,
-			showInputs: false,
-			disableFocus: true,
-			showMeridian: false,
-			showSeconds: false,
-			defaultTime: false
-		});
-
-		$('#refine_search').on('click', function(){
-			$('#additional_options').toggle();
-			$('#search-box').css({ 'margin-top': '0em', 'background-color': 'rgba(0,0,0, 0.8)' });
-		});
-
-//		$('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-//			effect: 'fade',
-//			testMode: true,
-//			onChange: function(evt)
-//			{
-//				switch (evt.selectedItem)
-//				{
-//					case 'id':
-//						window.location.href = '#';
-//						break;
-//					case 'br':
-//						window.location.href = '#';
-//						break;
-//					case 'en':
-//						window.location.href = '#';
-//						break;
-//					case 'es':
-//						window.location.href = '#';
-//						break;
-//					case 'am':
-//						window.location.href = '#';
-//						break;
-//				}
-//			}
-//		});
-	});
-</script>

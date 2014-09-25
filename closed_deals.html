@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Closed deals</title>
+		<meta name="description" content="Closed deals page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="clearfix">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
+
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
+		<script src="js/vendor/bootstrap.js"></script>
+
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+		<script src="js/my-js/active-deals.js"></script>
+
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
+
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
+
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
+
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
+
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
+
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
+
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
+								<ul>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section id="content" class="row col-xl-24">
+
+			<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+
+				<div class="col-md-5">
+					<nav class="leftmenu margin-vertical-big clearfix">
+						<header class="clearfix">
+							<span id="menu-button-left" class="visible-xs visible-sm icon icon-chevron-down"></span>
+							<h1 class="hidden-xs hidden-sm">My rides</h1>
+						</header>
+						<ul class="clearfix">
+							<li><span class="icon icon-th"></span><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+							<li><span class="icon icon-th"></span><a href="rides.html">Open requests</a></li>
+							<li><span class="icon icon-th"></span><a href="activedeals.html">Active deals</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_requests.html">Closed requests</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_deals.html">Closed deals</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<section class="col-md-19">
+					<div id="ads_all" class="table-responsive active-deal-table">
+
+						<table class="table table-data table-hover">
+							<caption>
+								<h1>Closed deals</h1>
+								<div>
+									<span class="show-deals" data-table="ads_all">All</span>
+									<span class="show-deals" data-table="ads_as_driver">As Driver</span>
+									<span class="show-deals" data-table="ads_as_rider">As Rider</span>
+								</div>
+							</caption>
+
+							<thead>
+								<tr>
+									<th>From location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+									<th>To location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+									<th>User <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+									<th>Cost <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+									<th>Extra details</th>
+									<th class="table-actions single-action">Actions</th>
+								</tr>
+							</thead>
+
+							<tbody>
+
+								<tr>
+									<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+									<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+
+									<td class="user-data">
+										<span class="icon icon-user"></span>
+
+										<div class="user-rating-stars">
+
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star-empty"></span>
+											<span class="user-name-rating"><b>RandomName</b></span>
+										</div>
+									</td>
+
+									<td><div class="ride-price">50.5 $</div></td>
+
+									<td class="extra-info">
+										<div>Distance 	<span>287 km</span></div>
+										<div>Curr. bid  <span>15.00 GBP</span></div>
+										<div>From 		<span>28.05.2014 10:30</span></div>
+										<div>To 		<span>28.05.2014 10:30</span></div>
+									</td>
+
+									<td class="action-buttons">
+										<span title="View deal"><a href="deal_details_closed.html"><span class="icon icon-eye-open"></span></a></span>
+									</td>
+								</tr>
+
+								<tr>
+									<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+									<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+
+									<td class="user-data">
+										<span class="icon icon-user"></span>
+
+										<div class="user-rating-stars">
+
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star"></span>
+											<span class="icon icon-star-empty"></span>
+											<span class="user-name-rating"><b>RandomName</b></span>
+										</div>
+									</td>
+
+									<td><div class="ride-price">50.5 $</div></td>
+
+									<td class="extra-info">
+										<div>Distance 	<span>287 km</span></div>
+										<div>Curr. bid  <span>15.00 GBP</span></div>
+										<div>From 		<span>28.05.2014 10:30</span></div>
+										<div>To 		<span>28.05.2014 10:30</span></div>
+									</td>
+
+									<td class="action-buttons">
+										<span title="View deal"><a href="deal_details_closed.html"><span class="icon icon-eye-open"></span></a></span>
+									</td>
+								</tr>
+							</tbody>
+
+							<tfoot>
+								<tr>
+									<td colspan="10">
+										<span class="table-footer-text pull-left">12 result from 120</span>
+
+										<ul class="pagination pagination-sm">
+											<li class="disabled"><a href="#">«</a></li>
+											<li class="active"><a href="#">1<span class="sr-only"></span></a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">»</a></li>
+										</ul>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+
+
+					<div id="ads_as_rider" class="table-responsive active-deal-table">
+
+						<table class="table table-data table-hover">
+							<caption>
+								<h1>Closed deals</h1>
+								<div>
+									<span class="show-deals" data-table="ads_all">All</span>
+									<span class="show-deals" data-table="ads_as_driver">As Driver</span>
+									<span class="show-deals" data-table="ads_as_rider">As Rider</span>
+								</div>
+							</caption>
+
+							<thead>
+							<tr>
+								<th>From location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>To location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>User <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>Cost <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>Extra details</th>
+								<th class="table-actions single-action">Actions</th>
+							</tr>
+							</thead>
+
+							<tbody>
+
+							<tr>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+
+								<td class="user-data">
+									<span class="icon icon-user"></span>
+
+									<div class="user-rating-stars">
+
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star-empty"></span>
+										<span class="user-name-rating"><b>RandomName</b></span>
+									</div>
+								</td>
+
+								<td><div class="ride-price">50.5 $</div></td>
+
+								<td class="extra-info">
+									<div>Distance 	<span>287 km</span></div>
+									<div>Curr. bid  <span>15.00 GBP</span></div>
+									<div>From 		<span>28.05.2014 10:30</span></div>
+									<div>To 		<span>28.05.2014 10:30</span></div>
+								</td>
+
+								<td class="action-buttons">
+									<span title="View deal"><a href="deal_details_closed.html"><span class="icon icon-eye-open"></span></a></span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+
+								<td class="user-data">
+									<span class="icon icon-user"></span>
+
+									<div class="user-rating-stars">
+
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star-empty"></span>
+										<span class="user-name-rating"><b>RandomName</b></span>
+									</div>
+								</td>
+
+								<td><div class="ride-price">50.5 $</div></td>
+
+								<td class="extra-info">
+									<div>Distance 	<span>287 km</span></div>
+									<div>Curr. bid  <span>15.00 GBP</span></div>
+									<div>From 		<span>28.05.2014 10:30</span></div>
+									<div>To 		<span>28.05.2014 10:30</span></div>
+								</td>
+
+								<td class="action-buttons">
+									<span title="View deal"><a href="deal_details_closed.html"><span class="icon icon-eye-open"></span></a></span>
+								</td>
+							</tr>
+							</tbody>
+
+							<tfoot>
+							<tr>
+								<td colspan="10">
+									<span class="table-footer-text pull-left">12 result from 120</span>
+
+									<ul class="pagination pagination-sm">
+										<li class="disabled"><a href="#">«</a></li>
+										<li class="active"><a href="#">1<span class="sr-only"></span></a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</td>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+
+
+					<div id="ads_as_driver" class="table-responsive active-deal-table">
+
+						<table class="table table-data table-hover">
+							<caption>
+								<h1>Closed deals</h1>
+								<div>
+									<span class="show-deals" data-table="ads_all">All</span>
+									<span class="show-deals" data-table="ads_as_driver">As Driver</span>
+									<span class="show-deals" data-table="ads_as_rider">As Rider</span>
+								</div>
+							</caption>
+
+							<thead>
+							<tr>
+								<th>From location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>To location<a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>User <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>Cost <a href="#" class="list-sorter" title="Order by ascending"><span class="icon icon-chevron-down"></span></a></th>
+								<th>Extra details</th>
+								<th class="table-actions single-action">Actions</th>
+							</tr>
+							</thead>
+
+							<tbody>
+
+							<tr>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+								<td>12 Buckingham St, London, United Kingdom 12 Buckingham St, London, United Kingdom</td>
+
+								<td class="user-data">
+									<span class="icon icon-user"></span>
+
+									<div class="user-rating-stars">
+
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star"></span>
+										<span class="icon icon-star-empty"></span>
+										<span class="user-name-rating"><b>RandomName</b></span>
+									</div>
+								</td>
+
+								<td><div class="ride-price">50.5 $</div></td>
+
+								<td class="extra-info">
+									<div>Distance 	<span>287 km</span></div>
+									<div>Curr. bid  <span>15.00 GBP</span></div>
+									<div>From 		<span>28.05.2014 10:30</span></div>
+									<div>To 		<span>28.05.2014 10:30</span></div>
+								</td>
+
+								<td class="action-buttons">
+									<span title="View deal"><a href="deal_details_closed.html"><span class="icon icon-eye-open"></span></a></span>
+								</td>
+							</tr>
+
+
+							</tbody>
+
+							<tfoot>
+							<tr>
+								<td colspan="10">
+									<span class="table-footer-text pull-left">12 result from 120</span>
+
+									<ul class="pagination pagination-sm">
+										<li class="disabled"><a href="#">«</a></li>
+										<li class="active"><a href="#">1<span class="sr-only"></span></a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+								</td>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+
+				</section>
+			</div>
+		</section><!--content-->
+
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
+
+	</body>
+</html>

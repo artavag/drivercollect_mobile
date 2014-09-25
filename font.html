@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="Add location page">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<style type="text/css">
+		p span {
+			font-size: 16px;
+			float: left;
+			margin: 5px;
+		}
+	</style>
+
+</head>
+<body class="clearfix">
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+<section id="content" class="row col-xl-24">
+	<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right-big">
+		<div class="col-xs-24">
+
+			<h1>Icons</h1>
+
+			<input type="text" id="size" value="16">
+
+			<div id="up" style="padding: 10px; border: solid 1px #cccccc; width: 30px">+</div>
+			<div id="down" style="padding: 10px; border: solid 1px #cccccc; width: 30px">-</div>
+			<div id="change" style="padding: 10px; border: solid 1px #cccccc" class="clearfix">change</div>
+
+			<!--<p><span class="$1"></span></p>-->
+			<div>
+				<p><span class="icon icon-asterisk"></span></p>
+				<p><span class="icon icon-plus"></span></p>
+				<p><span class="icon icon-minus"></span></p>
+				<p><span class="icon icon-envelope"></span></p>
+				<p><span class="icon icon-pencil"></span></p>
+				<p><span class="icon icon-search"></span></p>
+				<p><span class="icon icon-star"></span></p>
+				<p><span class="icon icon-star-empty"></span></p>
+				<p><span class="icon icon-user"></span></p>
+				<p><span class="icon icon-th"></span></p>
+				<p><span class="icon icon-ok"></span></p>
+				<p><span class="icon icon-remove"></span></p>
+				<p><span class="icon icon-cog"></span></p>
+				<p><span class="icon icon-trash"></span></p>
+				<p><span class="icon icon-home"></span></p>
+				<p><span class="icon icon-time"></span></p>
+				<p><span class="icon icon-lock"></span></p>
+				<p><span class="icon icon-center"></span></p>
+				<p><span class="icon icon-justify"></span></p>
+				<p><span class="icon icon-map-marker"></span></p>
+				<p><span class="icon icon-chevron-left"></span></p>
+				<p><span class="icon icon-chevron-right"></span></p>
+				<p><span class="icon icon-arrow-left"></span></p>
+				<p><span class="icon icon-arrow-right"></span></p>
+				<p><span class="icon icon-eye-open"></span></p>
+				<p><span class="icon icon-calendar"></span></p>
+				<p><span class="icon icon-chevron-up"></span></p>
+				<p><span class="icon icon-chevron-down"></span></p>
+				<p><span class="icon icon-bell"></span></p>
+				<p><span class="icon icon-globe"></span></p>
+				<p><span class="icon icon-phone"></span></p>
+				<p><span class="icon icon-safe"></span></p>
+				<p><span class="icon icon-star-half"></span></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#change').on('click', function(){
+			var fontSize = $('#size').val() + 'px';
+
+			$(".icon").css({
+				'font-size': fontSize,
+				'color': 'red'
+			});
+		});
+
+		$('#up').on('click', function(){
+			var fontSize = $('#size').val();
+
+			fontSize = ++fontSize;
+
+			$('#size').val(fontSize);
+
+			fontSize = fontSize + 'px';
+
+			$(".icon").css({
+				'font-size': fontSize
+			});
+		});
+
+
+		$('#down').on('click', function(){
+			var fontSize = $('#size').val();
+
+			fontSize = --fontSize;
+
+			$('#size').val(fontSize);
+
+			fontSize = fontSize + 'px';
+
+			$(".icon").css({
+				'font-size': fontSize
+			});
+		});
+
+	});
+</script>
+</body>
+</html>

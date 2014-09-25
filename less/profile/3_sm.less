@@ -1,0 +1,155 @@
+@padding-h: 0px;
+@padding-v: 20px;
+@input-padding: 8px;
+@margin-v: 25px;
+@main-h1: 36px;
+
+.form-wrapper-box {
+
+	& h1 {
+		.h1-form;
+		font-size: @main-h1;
+		padding-bottom: 40px;
+	}
+
+	.common-link {
+		width: auto;
+		display: block;
+		clear: both;
+		margin-top: 20px;
+	}
+
+	& #map {
+		height: 400px;
+		overflow: hidden;
+	}
+
+	& .form-wrapper-box-content {
+
+		&.privacy {
+
+			& .privacy {
+
+				& h1 {
+					font-size: @global-font-size + 16;
+				}
+			}
+		}
+
+		&.terms {
+			& .terms {
+				.privacy .privacy;
+			}
+		}
+
+		&.add-request {
+
+			& .add-request {
+				@number-inputs: 2;
+				.width-calculator(@number-inputs);
+
+				margin-right: @input-margin;
+
+				&:nth-of-type(@{number-inputs}n+@{number-inputs}) {
+					margin-right: 0;
+				}
+
+				&:last-child {
+					margin-top: 25px;
+				}
+
+				&.full-width {
+					width: 100%;
+				}
+			}
+		}
+
+
+		& > div {
+
+			margin-bottom: @margin-v;
+
+			// profile page
+			&.profile {
+				@number-inputs: 2;
+				.width-calculator(@number-inputs);
+
+				margin-right: @input-margin;
+
+				&:nth-of-type(n) { // this is used to overwrite nth-of-type selector from small sizes
+					margin-right: @input-margin;
+				}
+
+				&:nth-of-type(@{number-inputs}n+@{number-inputs}) {
+					margin-right: 0;
+				}
+			}
+
+			// register page
+			& div.register {
+				.profile;
+			}
+
+			&.payment {
+				.profile;
+			}
+
+			&.change-pass {
+				.profile;
+			}
+
+			// Email preferences page
+			&.email-pref {
+				@number-inputs: 2;
+				.width-calculator(@number-inputs);
+
+				margin-right: @input-margin;
+			}
+
+			&.cancel-account {
+				.email-pref;
+			}
+		}
+
+		& header {
+
+			// Rating information page
+			&.rating-info {
+				& div {
+					float: right;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	& .form-wrapper-box-footer {
+
+		& button, .like-button {
+			padding: @input-padding 2*@input-padding;
+			font-size: @global-font-size;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	// register page
+	& .captcha-wrapper {
+		padding-top: @padding-v;
+
+		& div.register {
+
+			@number-inputs: 2;
+			.width-calculator(@number-inputs);
+
+			margin-right: @input-margin;
+			margin-bottom: @margin-v;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

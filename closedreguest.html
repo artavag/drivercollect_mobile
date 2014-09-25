@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Closed request</title>
+		<meta name="description" content="Closed request page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="clearfix">
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
+
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
+
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
+
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
+
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
+
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
+
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
+
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
+
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
+								<ul>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section id="content" class="row col-xs-24">
+			<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+
+				<div class="col-md-5">
+					<nav class="leftmenu margin-vertical-big clearfix">
+						<header class="clearfix">
+							<span id="menu-button-left" class="visible-xs visible-sm icon icon-chevron-down"></span>
+							<h1 class="hidden-xs hidden-sm">My rides</h1>
+						</header>
+						<ul class="clearfix">
+							<li><span class="icon icon-th"></span><a href="mylocations.html" class="menu-left-active">My locations</a></li>
+							<li><span class="icon icon-th"></span><a href="rides.html">Open requests</a></li>
+							<li><span class="icon icon-th"></span><a href="activedeals.html">Active deals</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_requests.html">Closed requests</a></li>
+							<li><span class="icon icon-th"></span><a href="closed_deals.html">Closed deals</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<section class="col-md-19 form-wrapper-box clearfix">
+
+					<div class="col-xs-24 form-wrapper-box-content">
+
+						<h1>Closed request: 128522</h1>
+
+						<table class="table-details table table-hover table-striped">
+							<caption>
+								<h2 class="driver-rider-text">Your are the rider</h2>
+							</caption>
+
+							<tbody>
+								<tr>
+									<td>From location</td>
+									<td>Chestnut Grove, Greater London</td>
+
+									<td class="td-border-left">To location</td>
+									<td>Richmond Avenue, Greater London</td>
+								</tr>
+
+								<tr>
+									<td>Required from</td>
+									<td>28th-Jul-14 14:18</td>
+
+									<td class="td-border-left">Required to</td>
+									<td>31st-Aug-14 14:18</td>
+								</tr>
+
+								<tr>
+									<td>Cost</td>
+									<td>1.44 GBP</td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Number of passengers</td>
+									<td>0</td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Number of luggages</td>
+									<td>1</td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Smoking preference</td>
+									<td>Indifferent</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div id="map" class="col-xs-24"></div>
+
+						<a href="closed_requests.html" type="submit" class="pull-left common-link"><span class="icon icon-arrow-left"></span>Back to requests</a>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
+	</body>
+</html>
+
+
+<script src="http://open.mapquestapi.com/sdk/js/v7.0.s/mqa.toolkit.js?key=Fmjtd%7Cluubn90b25%2C25%3Do5-902g96"></script>
+<script type="text/javascript">
+    /*An example of using the MQA.EventUtil to hook into the window load event and execute defined function
+     passed in as the last parameter. You could alternatively create a plain function here and have it
+     executed whenever you like (e.g. <body onload="yourfunction">).*/
+
+    MQA.EventUtil.observe(window, 'load', function() {
+
+        /*Arrays to hold lat/lng data for use with the Directions module*/
+        var latitude = new Array;
+        var longitude = new Array;
+
+        /*Addresses that need to be geocoded*/
+        var locations = new Array('1090 N Charlotte St, Lancaster, PA', 'Millersville, PA');
+
+        $(document).ready(function() {
+            /*Using the Nominatim API Service to geocode the addresses in the locations array*/
+            for (i = 0; i < locations.length; i++) {
+                $.ajax({
+                    url: 'http://open.mapquestapi.com/nominatim/v1/search',
+                    dataType: 'json',
+                    async: false,
+                    crossDomain: true,
+                    data: {
+                        q: locations[i],
+                        format: 'json'
+                    },
+                    success: function(data, textStatus, jqXHR) {
+                        /*Storing the lat/lngs in an array for later use*/
+                        latitude.push(data[0].lat);
+                        longitude.push(data[0].lon);
+
+                        /*Get map and create the route when done*/
+                        if (i == locations.length - 1) {
+                            getMap();
+                        }
+                    }
+                });
+            }
+
+            function getMap() {
+
+                /*Create an object for options*/
+                var options = {
+                    elt: document.getElementById('map'), /*ID of element on the page where you want the map added*/
+                    zoom: 13, /*initial zoom level of map*/
+                    latLng: {lat: 40.735383, lng: -73.984655}, /*center of map in latitude/longitude*/
+                    mtype: 'osm'                                /*map type (osm)*/
+                };
+
+                /*Construct an instance of MQA.TileMap with the options object*/
+                window.map = new MQA.TileMap(options);
+
+                /*This uses the MQA.withModule support to download and initialize the routing support modules. When the
+                 modules are ready for use, the function provided as the last parameter will be executed.*/
+                MQA.withModule('directions', function() {
+
+                    /*Uses the MQA.TileMap.addRoute function (added to the TileMap with the directions module)
+                     passing in an array of location objects as the only parameter.*/
+                    map.addRoute([
+                        // {latLng: {lat:{{ data.request_info['lat_from'] }}, lng:{{ data.request_info['lon_from'] }}}},
+                        // {latLng: {lat:{{ data.request_info['lat_to'] }}, lng:{{ data.request_info['lon_to'] }}}}
+
+						{latLng: {lat:51.4440292000000, lng:-0.1537279000000}},
+						{latLng: {lat:51.4108732000000, lng:-0.2115047000000}}
+                    ]);
+                });
+            }
+        });
+    });
+</script>

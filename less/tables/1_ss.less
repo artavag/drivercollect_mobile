@@ -1,0 +1,479 @@
+@table-home-border-radius: 8px;
+@table-home-border-left-right: solid 2px lighten(@global-button-red, 10%);
+
+@border-darken-percent: 10%;
+@action-button-padding: 5px;
+
+@tabe-font-size: @global-font-size + 1;
+@table-padding-first-last: 18px;
+@table-padding-v: 6px;
+@table-padding-h: 6px;
+
+@caption-padding: 3 * @table-padding-v @table-padding-first-last;
+
+.table-responsive {
+	margin-bottom: 40px;
+	border: none;
+	padding-bottom: 10px;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.td-border-left {
+	border-left: solid 1px #dddddd;
+}
+
+.list-sorter {
+	float: right !important;
+	opacity: 0.6;
+	color: #ffffff;
+
+	&:hover, &:active {
+		text-decoration: none;
+		color: #ffffff;
+	}
+}
+
+.table-header() {
+	background-color: @global-button-red;
+	border-top: 1px solid darken(@global-button-red, @border-darken-percent);
+	border-left: 1px solid darken(@global-button-red, @border-darken-percent);
+	border-right: 1px solid darken(@global-button-red, @border-darken-percent);
+	border-top-right-radius: @global-border-radius;
+	border-top-left-radius: @global-border-radius;
+}
+
+table.table {
+	border-collapse: separate;
+}
+
+.ride-price {
+	background-color: @global-button-red;
+	color: #ffffff;
+	border-radius: @global-border-radius;
+	padding: 2px 0px;
+	text-align: center;
+	min-width: 80px;
+	margin: 0;
+}
+
+.distance {
+	min-width: 70px;
+}
+
+.user-data {
+	min-width: 180px;
+}
+
+.table-actions {
+	min-width: 2 * 3 * (@action-button-padding + @tabe-font-size) + @table-padding-h - @table-padding-first-last; // 3 buttons + padding left/right, 17px is padding of last child
+
+	&.single-action {
+		min-width: 75px;
+	}
+}
+
+.date-from-to-mixin() {
+	min-width: @tabe-font-size * 9;
+}
+
+.extra-info-mixin() {
+	min-width: @tabe-font-size * 12;
+
+	& span {
+		float: right;
+		text-align: right;
+	}
+}
+
+
+.user-icon-param-mixin(@user-icon-size) {
+	width: @user-icon-size;
+	height: @user-icon-size;
+	border-radius: @user-icon-size / 2;
+	color: lighten(#000000, 35%);
+	font-size: ceil(@user-icon-size * 0.5);
+	text-align: center;
+	line-height: 1;
+	padding-top: (@user-icon-size - ceil(@user-icon-size * 0.5)) / 2;
+	background-color: darken(@global-background-gray, 4%);
+}
+
+.user-rating-stars-mixin(){
+
+	min-width: 120px;
+
+	.icon {
+		color: @global-star-color;
+		margin: 0px 0px 0px -2px;
+		font-size: 16px;
+		padding: 0;
+	}
+
+	& .user-name-rating {
+		display: block;
+		width: 100%;
+	}
+}
+
+.driver-rider-text {
+	font-size: 18px;
+	color: @global-button-red;
+	text-align: left;
+	font-weight: 300;
+}
+
+.show-deals {
+	font-size: 14px;
+	color: @global-button-red;
+	background-color: #ffffff;
+	padding: 2px 10px;
+	margin: 0px;
+	border-radius: 15px;
+	border: 1px solid darken(@global-button-red, 10%);
+	font-weight: 300;
+
+	&:hover {
+		.active-deal-add-selected;
+		cursor: pointer;
+	}
+}
+
+.active-deal-add-selected {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: darken(@global-button-red, 10%);
+	border: 1px solid darken(@global-button-red, 12%);
+}
+
+
+
+// home page table
+table.table-home {
+	white-space: normal;
+	color: #000000;
+	font-size: @global-font-size;
+	border-collapse: separate;
+
+	& tbody
+	{
+		& tr {
+
+			& td {
+				background-color: @global-background-gray;
+				border: none;
+				border-bottom: 1px solid darken(@global-background-gray, 1%);
+				border-top: 1px solid darken(@global-background-gray, 1%);
+				padding: 14px 10px;
+
+				&.user-img {
+					@user-icon-size: 50px;
+					width: @user-icon-size + 16;
+
+					& .icon {
+						.user-icon-param-mixin(@user-icon-size);
+					}
+				}
+
+				&.user-rating {
+					min-width: 120px;
+
+					& .user-rating-stars {
+						.user-rating-stars-mixin();
+					}
+				}
+
+				&.ride-date {
+					min-width: 120px;
+				}
+
+				&:first-child {
+					border-left: @table-home-border-left-right;
+					border-radius: @table-home-border-radius 0px 0px @table-home-border-radius;
+					padding-left: 10px;
+				}
+
+				&:last-child {
+					border-radius: 0px @table-home-border-radius @table-home-border-radius 0px;
+					border-right: @table-home-border-left-right;
+					padding-right: 10px;
+				}
+			}
+		}
+
+		& tr.tr-empty {
+			display: block;
+			padding: 3px 0px;
+		}
+	}
+}
+
+
+.table-data {
+
+	& input[type=checkbox] {
+		width: 15px;
+		height: 15px;
+	}
+
+	& caption {
+		.table-header();
+		color: #ffffff;
+
+		& h1 {
+			float: left;
+			font-weight: 300;
+			font-size: 25px;
+			text-align: left;
+			font-style: normal;
+			margin: 0;
+			padding: @caption-padding @caption-padding;
+		}
+
+		& div {
+			margin: @caption-padding @caption-padding;
+			float: right;
+
+			.icon { // delete add request buttons
+				margin-left: 5px;
+				font-size: 25px;
+				cursor: pointer;
+				color: #ffffff;
+
+				&:hover, &:active {
+					text-decoration: none;
+				}
+			}
+
+			& .delete-multiple {
+				display: none;
+			}
+		}
+	}
+
+	& thead {
+		.table-header();
+
+		color: #ffffff;
+		font-weight: 100;
+
+		& tr {
+
+			& th {
+				font-size: @tabe-font-size;
+				font-weight: 300;
+				border-right: solid 1px darken(@global-button-red, @border-darken-percent);
+				border-top: solid 1px darken(@global-button-red, @border-darken-percent) !important; // to over write bootstrap
+				border-bottom: solid 1px darken(@global-button-red, @border-darken-percent);
+				padding: @table-padding-h;
+
+				&.date-from-to {
+					.date-from-to-mixin();
+				}
+
+				&:first-child {
+					padding-left: @table-padding-first-last;
+					border-left: solid 1px darken(@global-button-red, @border-darken-percent);
+					border-right: none;
+				}
+
+				&:nth-child(2) {
+					border-left: solid 1px darken(@global-button-red, @border-darken-percent);
+				}
+
+				&:last-child {
+					padding-right: @table-padding-first-last;
+				}
+			}
+		}
+	}
+
+	& tbody {
+
+		& tr {
+
+			& td {
+				font-size: @tabe-font-size;
+				border: none;
+				border-bottom: 1px solid @global-border-gray;
+
+				&.extra-info {
+					.extra-info-mixin();
+				}
+
+				&.action-buttons {
+
+					& .icon { // those are action buttons
+						top: 0px; // this over writes bootstraps top 1px
+						font-size: @tabe-font-size;
+						line-height: 1 * @tabe-font-size;
+						color: #ffffff;
+						background-color: @global-nav-bgr;
+						border-radius: @global-border-radius;
+						padding: @action-button-padding @action-button-padding;
+						margin: 0;
+						min-width: 25px;
+						text-align: center;
+					}
+				}
+
+				&.user-data {
+					& .icon-user {
+						.user-icon-param-mixin(40px);
+						float: left;
+					}
+
+					& .user-rating-stars {
+						.user-rating-stars-mixin();
+						float: right;
+					}
+				}
+
+				&:last-child {
+					padding-right: @table-padding-first-last;
+					border-right: solid 1px @global-border-gray;
+				}
+
+				&:first-child {
+					padding-left: @table-padding-first-last;
+					border-left: solid 1px @global-border-gray;
+				}
+			}
+		}
+	}
+
+	& tfoot {
+		background-color: @global-background-gray;
+		font-size: @tabe-font-size;
+
+		& tr {
+
+			& td {
+				border: 1px solid @global-border-gray;
+				border-top: none;
+				border-bottom-right-radius: @global-border-radius;
+				border-bottom-left-radius: @global-border-radius;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		@tfooter-padding-v: 26px;
+		@pagination-padding-v: 6px;
+
+		& .table-footer-text {
+			padding: @tfooter-padding-v @table-padding-first-last; // to do change to
+			display: block;
+			margin: 0;
+			font-size: @tabe-font-size;
+			line-height: 1;
+		}
+
+		& ul.pagination {
+			float: right;
+			margin-right: @table-padding-first-last;
+			margin-top: (@tabe-font-size + 2 * @tfooter-padding-v) / 2 - (@tabe-font-size + 2 * @pagination-padding-v) / 2;
+
+			& li {
+				margin-left: 0px;
+				display: inline-block;
+
+				& a, & a:visited {
+					line-height: 1;
+					font-size: @tabe-font-size;
+					padding: @pagination-padding-v (@pagination-padding-v + @pagination-padding-v * 0.65);
+					background-color: #ffffff;
+					border: 1px solid darken(@global-background-gray, @border-darken-percent);
+					color: #000000;
+					border-radius: @global-border-radius;
+				}
+
+				& a:hover, & a:active {
+					background-color: @global-button-red;
+					color: #ffffff;
+					border: 1px solid darken(@global-button-red, @border-darken-percent);
+				}
+
+				&.active {
+					& a, & span {
+						background-color: @global-button-red;
+						border: solid 1px @global-button-red;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+table.table-details {
+
+	//	border: 1px solid @global-border-gray;
+	//	width: 100%;
+	//	margin:0px;
+	//	border: none
+	margin-bottom: 0;
+
+	& thead {
+		& tr {
+			& td {
+				padding: 10px 0px;
+			}
+		}
+	}
+
+	& tbody {
+
+		& tr {
+
+			border-top: 1px solid #dddddd;
+			border-bottom-right-radius: 3px;
+			border-bottom-left-radius: 3px;
+
+			& td {
+				background-color: #ffffff;
+				padding: 6px 10px;
+
+				&:last-child {
+					border-right: none;
+				}
+
+				&:first-child {
+					//					padding-left: 40px;
+					border-left: none;
+				}
+			}
+		}
+	}
+}
+
+
+.button-up-down {
+	& .icon {
+		float: right;
+	}
+}
+
+
+
+
+.back-button {
+	background-image: url("@{image-directory}left.gif");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	padding: 20px 20px 20px 26px;
+}
+
+.back-button2 {
+	background-image: url("@{image-directory}left.gif");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	padding-left: 30px;
+}
+
+.additional-buttons {
+	background-image: url("@{image-directory}plus.gif");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}

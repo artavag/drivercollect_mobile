@@ -5,7 +5,7 @@
 // Global and constant must be here also all other css rules. if the rule is going to be
 // changed then it must not be here.
 
-@grid-columns: 24;
+@global-grid-columns: 24;
 
 @screen-ss: 321px; 		// ss - small small		321  - 480
 @screen-xs: 481px; 		// xs - extra small		481  - 767
@@ -26,19 +26,24 @@
 @global-input-border-color: #cccccc;
 @global-input-border: 1px solid @global-input-border-color;
 
-@global-button-red: #d9534f;
+@global-button-red: #DE353D;
 @global-button-red-hover: darken(@global-button-red, 10%);
+
+@global-text-red: darken(@global-button-red, 10%);
 
 @global-button-warning: orange;
 @global-button-warning-hover: darken(@global-button-warning, 5%);
 
+@global-star-color: darken(orange, 4%);
+
+@global-nav-bgr: #25383B;
+@global-border-gray: #dddddd;
+
 @import "fontello";
 
-/*
-* Remove text-shadow in selection highlight: h5bp.com/i
-* These selection rule sets have to be separate.
-* Customize the background color to match your design.
-*/
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -88,9 +93,8 @@ ul {
   margin: 0px;
 }
 
-/*
-* Allow only vertical resizing of textareas.
-*/
+
+// Allow only vertical resizing of textareas.
 textarea {
   resize: vertical;
 }
@@ -109,36 +113,33 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+.btn-danger {
+	background-color: @global-button-red;
+	border: 1px solid darken(@global-button-red, 5%);
+	border-bottom: 1px solid darken(@global-button-red, 10%);
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+	background-color: darken(@global-button-red, 8%);
+	border: 1px solid darken(@global-button-red, 14%);
+	border-bottom: 1px solid darken(@global-button-red, 16%);
+}
+
 .form-control {
 	border-radius: @global-border-radius;
 	border: @global-input-border;
+	font-size: @global-font-size;
+
+	//	height: floor((@global-font-size*1.1) + (2*@ss-elem-padding-vertical) + 4); // 1.1 is line height
+	height: auto;
+	padding: @ss-elem-padding-vertical 12px;
+
 	-webkit-box-shadow: inset 0 1px 1px rgba( red(darken(@global-input-border-color, 100%)), green(darken(@global-input-border-color, 100%)), blue(darken(@global-input-border-color, 100%)), 0.075 );
 	box-shadow: inset 0 1px 1px rgba( red(darken(@global-input-border-color, 100%)), green(darken(@global-input-border-color, 100%)), blue(darken(@global-input-border-color, 100%)), 0.075 );
-}
-
-.scroll-top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 36px;
-  height: 36px;
-  background-color: #EB635E;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
-  cursor: pointer;
-  background-image: url("@{image-directory}scroll_up.gif");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.scroll-top-icon {
-  text-align: center;
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
-  display: block;
-  padding: 6px 8px 10px 8px;
 }
 
 .background-gray {
@@ -153,6 +154,29 @@ h1, h2, h3, h4, h5, h6 {
 	min-height: 100px;
 }
 
+.h1-form {
+	font-size: 36px;
+	line-height: 1;
+	margin: 0;
+	color: #000000;
+}
+
+.alert {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.icon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'fontello';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 ////////// less for creating xl (extra large >= 1367px) class rules ///////////
 
@@ -163,10 +187,10 @@ h1, h2, h3, h4, h5, h6 {
 // Create grid for specific class (xl)
 .make-grid(@class) {
   .float-grid-columns(@class);
-  .loop-grid-columns(@grid-columns, @class, width);
-  .loop-grid-columns(@grid-columns, @class, pull);
-  .loop-grid-columns(@grid-columns, @class, push);
-  .loop-grid-columns(@grid-columns, @class, offset);
+  .loop-grid-columns(@global-grid-columns, @class, width);
+  .loop-grid-columns(@global-grid-columns, @class, pull);
+  .loop-grid-columns(@global-grid-columns, @class, push);
+  .loop-grid-columns(@global-grid-columns, @class, offset);
 }
 
 .float-grid-columns(@class) {
@@ -176,14 +200,14 @@ h1, h2, h3, h4, h5, h6 {
 	.col((@index + 1), @item);
   }
 
-  .col(@index, @list) when (@index =< @grid-columns) { // general
+  .col(@index, @list) when (@index =< @global-grid-columns) { // general
 	@item: ".col-@{class}-@{index}";
 	.col((@index + 1), ~"@{list}, @{item}"); // change name to .col-sm-1, .col-sm-2
   }
 
   // first 2 loops are making comma separated list of column names: .col-sm-1, .col-sm-2
   // this one makes the final class
-  .col(@index, @list) when (@index > @grid-columns) { // terminal
+  .col(@index, @list) when (@index > @global-grid-columns) { // terminal
 	@{list} {
 	  float: left;
 	}
@@ -202,12 +226,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
   .col-@{class}-@{index} {
-	width: percentage((@index / @grid-columns));
+	width: percentage((@index / @global-grid-columns));
   }
 }
 .calc-grid-column(@index, @class, @type) when (@type = push) and (@index > 0) {
   .col-@{class}-push-@{index} {
-	left: percentage((@index / @grid-columns));
+	left: percentage((@index / @global-grid-columns));
   }
 }
 .calc-grid-column(@index, @class, @type) when (@type = push) and (@index = 0) {
@@ -217,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .calc-grid-column(@index, @class, @type) when (@type = pull) and (@index > 0) {
   .col-@{class}-pull-@{index} {
-	right: percentage((@index / @grid-columns));
+	right: percentage((@index / @global-grid-columns));
   }
 }
 .calc-grid-column(@index, @class, @type) when (@type = pull) and (@index = 0) {
@@ -227,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .calc-grid-column(@index, @class, @type) when (@type = offset) {
   .col-@{class}-offset-@{index} {
-	margin-left: percentage((@index / @grid-columns));
+	margin-left: percentage((@index / @global-grid-columns));
   }
 }
 
@@ -242,11 +266,11 @@ h1, h2, h3, h4, h5, h6 {
 	@item: ~".col-xl-@{index}";
 	.col((@index + 1), @item);
   }
-  .col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+  .col(@index, @list) when (@index =< @global-grid-columns) { // general; "=<" isn't a typo
 	@item: ~".col-xl-@{index}";
 	.col((@index + 1), ~"@{list}, @{item}");
   }
-  .col(@index, @list) when (@index > @grid-columns) { // terminal
+  .col(@index, @list) when (@index > @global-grid-columns) { // terminal
 	@{list} {
 	  position: relative;
 	  // Prevent columns from collapsing when empty

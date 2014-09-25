@@ -1,0 +1,29 @@
+.footer-text() {
+	text-align: center;
+	font-size: @global-font-size;
+	color: #cccccc;
+}
+
+#footer {
+
+	& div {
+
+		& div {
+
+			width: 20 / @global-grid-columns * 100%;
+			margin-left: 2 / @global-grid-columns * 100%;
+
+			& small {
+				width: auto;
+				text-align: left;
+				margin-bottom: 0px;
+				float: left;
+			}
+
+			& div {
+				text-align: right;
+				float: right;
+			}
+		}
+	}
+}

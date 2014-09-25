@@ -1,360 +1,324 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Terms and conditions of use</title>
+		<meta name="description" content="Terms and conditions of use page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-		<!--<link rel="stylesheet" href="css/normalize.css">-->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/bootstrap-timepicker.css">
-		<link rel="stylesheet" href="css/polyglot-language-switcher.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body class="clearfix">
 		<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
+		<!--[if lt IE 9]>
+		<script>
+			document.createElement("header" );
+			document.createElement("footer" );
+			document.createElement("section");
+			document.createElement("aside");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("hgroup");
+			document.createElement("time");
+		</script>
+		<![endif]-->
+
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-		<script src="js/plugins.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/bootstrap-timepicker.js"></script>
-		<script src="js/jquery.polyglot.language.switcher.js"></script>
-		<script src="js/main.js"></script>
 
-		<div class="container-fluid" >
-			<div class="row">
-				<div id="header2" class="col-lg-12">
+		<script src="js/vendor/plugins.js"></script>
+		<script src="js/vendor/modernizr.custom.97613.js"></script>
+		<script src="js/vendor/bootstrap-datepicker.js"></script>
+		<script src="js/vendor/bootstrap-timepicker.js"></script>
 
-					<div class="row">
+		<script src="js/my-js/date-time-pickers.js"></script>
+		<script src="js/my-js/footer-positioner.js"></script>
+		<script src="js/my-js/menu-toggle.js"></script>
+		<script src="js/my-js/search-box.js"></script>
+		<script src="js/my-js/table-input.js"></script>
+		<script src="js/my-js/scroll-top.js"></script>
+		<script src="js/my-js/faq.js"></script>
 
-						<div class="main-nav">
+		<header id="header-small" class="row col-xl-24 clearfix">
+			<nav class="main-nav-wrapper clearfix">
 
-							<div class="col-lg-10 col-lg-offset-1 padding-left-right">
+				<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right">
+					<a href="index.html" class="pull-left logo-image"></a>
+					<span id="menu-button" class="visible-xs icon icon-justify"></span>
 
-								<div class="pull-left" style="padding-top: 8px;">
-									<img src="img/logo3.png">
-								</div>
+					<div class="col-xs-24 col-sm-7 col-md-9 col-lg-10 hidden-xs welcome">
 
-								<div class="col-lg-4 pull-right welcome">
-									<ul>
-										<li class="language-small">
-											<a href="#" class="">
-												<img class="flag-image" src="img/flags/gb.png"/>
-												<span class="flag-name">UK</span>
-											</a>
-										</li>
-										<li>/</li>
-										<li><a href="register.html">Register</a></li>
-										<li>/</li>
-										<li><a href="login.html">Login</a></li>
-										<li style="margin-right: 10px">Welcome <span>guest!</span></li>
-									</ul>
+						<ul class="col-xs-24 col-sm-24">
+							<li class="col-xs-24 col-sm-24"><p>Welcome <span>guest!</span></p></li>
 
-								</div>
+							<li class="col-xs-8 col-xs-offset-1" id="languageSwitcher">
+								<a href="#" id="languageSwitcherSelected">
+									<div class="gb flag-image-selected">
+										<span class="flag-name-selected">UK<span class="icon icon-chevron-down"></span></span>
+									</div>
+								</a>
+							</li>
 
-								<ul class="col-lg-6 mynavbar2 pull-left">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="rides.html">My rides</a></li>
-									<li><a href="myprofile.html">My profile</a></li>
-									<li><a href="account.html">My account</a></li>
-									<!--<li><a href="faq.html">FAQs</a></li>-->
-									<li><a href="faq.html">Support</a></li>
-									<!--<li>Support</li>-->
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
+							<li class="col-xs-7 col-xs-offset-1"><a href="register.html">Register</a></li>
+							<li class="col-xs-7"><a href="login.html">Login</a></li>
 
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="content" style="padding-bottom: 50px" class="clearfix">
-				<div class="col-lg-10 col-lg-offset-1 padding-left-right">
-					<div class="row">
-
-						<div class="col-lg-3 pull-left">
-							<div class="leftmenu">
-								<h2>Support</h2>
+							<li id="languageSwitcherAll" class="col-xs-24" style="display: none">
 								<ul>
-									<li><a href="#">About</a></li>
-									<li><a href="#">Privacy policy</a></li>
-									<li><a href="#">Terms and conditions</a></li>
-									<li><a href="contact.html">Contact us</a></li>
-									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="#" class="am">Armenia</a></li>
+									<li><a href="#" class="br">Brazil</a></li>
+									<li><a href="#" class="es">Espana</a></li>
+									<li><a href="#" class="id">Indonesia</a></li>
+									<li><a href="#" class="gb">United kingdom</a></li>
 								</ul>
-							</div>
-						</div>
+							</li>
+						</ul>
+					</div>
 
-						<div class="col-lg-9 pull-left no-padding-left-right">
+					<ul class="col-xs-24 col-sm-16 col-md-10 col-lg-11 main-navbar hidden-xs">
+						<li class="col-xs-24"><a href="index.html">Home</a></li>
+						<li class="col-xs-24"><a href="rides.html">My rides</a></li>
+						<li class="col-xs-24"><a href="myprofile.html">My profile</a></li>
+						<li class="col-xs-24"><a href="account.html">My account</a></li>
+						<li class="col-xs-24"><a href="faq.html">Support</a></li>
+						<li class="col-xs-24"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-							<div class="row">
-								<div class="" style="padding-left: 0px;">
-									<h1 class="text-big3">Frequently Asked Questions</h1>
-								</div>
-							</div>
+		<section id="content" class="row col-xl-24">
+			<div class="col-lg-20 col-lg-offset-2 col-xl-18 col-xl-offset-3 padding-left-right-big">
 
-							<div class="row">
-
-								<dl class="text-regular col-lg-6">
-									<dt id="dt1">Why Driver Collect?</dt>
-									<dd class="dt1">Driver Collect was set up to take the searching out of ride sharing.  Users enter their requirements and we do the searching in the background. If potential ride shares are available right away, we will add the top 5 (this number can vary) to your view list.  If no ride is immediately available, we will keep searching. If potential rides become available later, our process will pick that up and add these to your list.</dd>
-
-									<dt id="dt2">Is it safe?</dt>
-									<dd class="dt2">We think DriverCollect is as safe or safer than ordinary ride sharing because we maintain a record of the ride. Because we take a deposit by credit card, we have a link to the identity of all sharers to discourage abuse (Note: we do not have access or store credit card details).</dd>
-
-									<dt id="dt3">How does it work?</dt>
-									<dd class="dt3">Simply enter the details of the journey that you are interested in making. That's all. There is no searching beyond this point. If a matching ride can be found, then both parties will be put in touch so they can bid and eventually agree on the ride.</dd>
-
-									<dt id="dt4">How does the bidding work?</dt>
-									<dd class="dt4">Riders and drivers are matched if there is sufficient overlap of the requirements.  Then the driver and rider can bid up and down the price they are willing to agree at. Finally, one of the party can commit and the other party can agree.</dd>
-
-									<dt id="dt5">How does DriverCollect unique fuzzy matching work?</dt>
-									<dd class="dt5">Riders and drivers are matched if there is sufficient overlap of the requirements. </dd>
-									<dd class="dt5">For instance if you have a rider wanting to go from Crystal Palace to Cheltenham, and a driver going form Dartford to Gloucester, the system will match the two as there is sufficient overlap in the requirements. </dd>
-									<dd class="dt5">DriverCollect let's you benefit the potentially endless combination of localities and still have an efficient ride share.</dd>
-
-									<dt id="dt6">How much does it cost to use driver collect?</dt>
-									<dd class="dt6">As a rider, using Driver Collect is free (a deposit is required but it gets refunded when the ride is marked as successfully completed). </dd>
-									<dd class="dt6">As a driver, Driver Collect charges 12% (10% + VAT) of the agreed price of the ride. </dd>
-
-									</dl>
-
-								<dl class="text-regular col-lg-6">
-									<dt id="dt7">Why do you take a deposit?</dt>
-									<dd class="dt7">We take a deposit from both the rider and the driver, only when they agree on the ride.  Before agreeing, there is commitment. And before commitment, there is bidding on the price. The deposit is required to minimise the no-show and to ensure that participants are serious. After the ride is completed, both rider and driver can record the ride as successful and the deposit are refunded fully (for the rider) or partly (less the fee for the driver). </dd>
-
-									<dt id="dt8">How much is the deposit?</dt>
-									<dd class="dt8">The size of the deposit varies with the size of the deal. The minimum deposit is £2 and increases.</dd>
-									<dd class="dt8">For rides value from £0  to £5, the deposit is £2.</dd>
-									<dd class="dt8">For rides value from £5  to £10, the deposit is £3.</dd>
-									<dd class="dt8">For rides value from £10  to £15, the deposit is £4.</dd>
-									<dd class="dt8">For rides value from £15  to £20, the deposit is £5.</dd>
-
-									<dt id="dt9">Why is DriverCollect ideally suited for rural communities?</dt>
-									<dd class="dt9">We realise that it is doubly hard for rural communities to find ride sharers. Rural communities are facing the challenge of availability and cost of running a car, cost of fuel, low availability of public transport. The unique matching process of Driver Collect will find potential rides without having to do extensive searching.</dd>
-
-									<dt id="dt10">Why do i have to 'commit' to a deal before i can agree?</dt>
-									<dd class="dt10">We need one party to commit before the other party can agree. When you are happy with a ride offering, you can commit. Alternatively, the counterparty may be happy with the offering and commit first. Committing is the last step before the ride can be agreed.
-										Please note that a deal cannot be agreed if either side of the deal do not have enough fund on account.
-									</dd>
-
-									<dt id="dt11">How can i safely communicate with the counterparty?</dt>
-									<dd class="dt11">Driver Collect recommends that you use the mini-message system provided. This will relay short messages by email so you can coordinate the details of the ride.</dd>
-
-									<dt id="dt12">Will the counterparty get my details?</dt>
-									<dd class="dt12">Only if you supply them. But we provide an alternative so you don't have to. DriverCollect offers a mini-message service that lets users exchange information.</dd>
-
-								</dl>
+				<div class="col-md-5">
+					<nav class="leftmenu margin-vertical-big clearfix">
+						<header class="clearfix">
+							<span id="menu-button-left" class="visible-xs visible-sm icon icon-chevron-down"></span>
+							<h1 class="hidden-xs hidden-sm">Support</h1>
+						</header>
+						<ul class="clearfix">
+							<li><span class="icon icon-th"></span><a href="about.html">About</a></li>
+							<li><span class="icon icon-th"></span><a href="faq.html">FAQs</a></li>
+							<li><span class="icon icon-th"></span><a href="contact.html">Contact</a></li>
+							<li><span class="icon icon-th"></span><a href="tour.html">How it works</a></li>
+							<li><span class="icon icon-th"></span><a href="privacy.html">Privacy policy</a></li>
+							<li><span class="icon icon-th"></span><a href="terms.html">Terms and conditions</a></li>
+						</ul>
+					</nav>
+				</div>
 
 
-								<!--<ul class="text-regular">-->
-									<!--<li id="1">-->
-										<!--<strong>Why Driver Collect?</strong>-->
-										<!--<div>-->
-											<!--<p>Driver Collect was set up to take the searching out of ride sharing.  Users enter their requirements and we do the searching in the background. If potential ride shares are available right away, we will add the top 5 (this number can vary) to your view list.  If no ride is immediately available, we will keep searching. If potential rides become available later, our process will pick that up and add these to your list.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+				<article class="col-md-19 form-wrapper-box clearfix">
 
-									<!--<li id="2">-->
-										<!--<strong>Is it safe?</strong>-->
-										<!--<div>-->
-											<!--<p>We think DriverCollect is as safe or safer than ordinary ride sharing because we maintain a record of the ride. Because we take a deposit by credit card, we have a link to the identity of all sharers to discourage abuse (Note: we do not have access or store credit card details).</p>-->
-										<!--</div>-->
-									<!--</li>-->
+					<div class="col-xs-24 form-wrapper-box-content terms">
 
-									<!--<li id="3">-->
-										<!--<strong>How does it work?</strong>-->
-										<!--<div>-->
-											<!--<p>Simply enter the details of the journey that you are interested in making. That's all. There is no searching beyond this point. If a matching ride can be found, then both parties will be put in touch so they can bid and eventually agree on the ride.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+						<h1>Terms and conditions of use</h1>
 
-									<!--<li id="4">-->
-										<!--<strong>How does the bidding work?</strong>-->
-										<!--<div>-->
-											<!--<p>Riders and drivers are matched if there is sufficient overlap of the requirements.  Then the driver and rider can bid up and down the price they are willing to agree at. Finally, one of the party can commit and the other party can agree.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+						<article class="col-xs-24 clearfix terms">
+							<p><strong>THE FOLLOWING TERMS AND CONDITIONS OF USE AGREEMENT (hereafter "Terms") governs your use of our web site (hereafter "web site"). It is vitally important that you read the Terms carefully, as your use of the web site will automatically constitute your agreement to be legally bound by the terms and conditions set out herein. These Terms also govern your use or purchase of the products/services provided through or in connection with the web site (hereafter "services").  Each time you use our services, you acknowledge that you have read these Terms and agree to be legally bound by them.  If you do not agree to be bound by these Terms, you may not use the web site(s) or the services provided by Company through its web site(s).</strong></p>
+							<p>This Website is owned by <strong>forward plane ltd  (hereafter "Company") </strong>, a company registered in England and Wales (company number ), whose registered office is at 135 coleraine road, , london, london, 237, se3 7nt.</p>
+							<p>The following words used in these Terms shall have the following meanings:</p>
 
-									<!--<li id="5">-->
-										<!--<strong>How does DriverCollect unique fuzzy matching work?</strong>-->
-										<!--<div>-->
-											<!--<p>Riders and drivers are matched if there is sufficient overlap of the requirements. </p>-->
-											<!--<p>For instance if you have a rider wanting to go from Crystal Palace to Cheltenham, and a driver going form Dartford to Gloucester, the system will match the two as there is sufficient overlap in the requirements. </p>-->
-											<!--<p>DriverCollect let's you benefit the potentially endless combination of localities and still have an efficient ride share.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<ul>
+								<li><span class="icon icon-asterisk"></span><span><strong>"Personal Information"</strong> shall mean all data and/or information provided by and about User, including e-mail address (es), name, address, credit card, or other payment information, etc.</span></li>
+								<li><span class="icon icon-asterisk"></span><span><strong>"Company web site"</strong> shall mean all web sites on which <strong>Company</strong> provides products and/or services.</span></li>
+								<li><span class="icon icon-asterisk"></span><span><strong>"Company User"</strong> shall mean all Users of the Company web site(s) and services.</span></li>
+								<li><span class="icon icon-asterisk"></span><span><strong>"Company Products and Services"</strong> shall mean all products and/or services provided directly by Company.</span></li>
+								<li><span class="icon icon-asterisk"></span><span><strong>"3rd - Parties"</strong> include all advertisers, partners and affiliate vendors that are included on, or linked to, the Company web site(s).</span></li>
+							</ul>
+						</article>
 
-									<!--<li id="6">-->
-										<!--<strong>How much does it cost to use driver collect?</strong>-->
-										<!--<div>-->
-											<!--<p>As a rider, using Driver Collect is free (a deposit is required but it gets refunded when the ride is marked as successfully completed). </p>-->
-											<!--<p>As a driver, Driver Collect charges 12% (10% + VAT) of the agreed price of the ride. </p>-->
-										<!--</div>-->
-									<!--</li>-->
+						<article class="col-xs-24 clearfix terms">
+							<h1>Ordering goods from us</h1>
 
-									<!--<li id="7">-->
-										<!--<strong>Why do you take a deposit?</strong>-->
-										<!--<div>-->
-											<!--<p>We take a deposit from both the rider and the driver, only when they agree on the ride.  Before agreeing, there is commitment. And before commitment, there is bidding on the price. The deposit is required to minimise the no-show and to ensure that participants are serious. After the ride is completed, both rider and driver can record the ride as successful and the deposit are refunded fully (for the rider) or partly (less the fee for the driver). </p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<h2>Description and price of goods</h2>
+							<p>We have taken care to describe and show items as accurately as possible. Despite this, slight variations in items may occur. We provide you with product information on . If there is anything which you do not understand, or if you wish to obtain further information, please contact our Customer Services team on.</p>
+							<p>Product images are for illustrative purposes only and may differ from the actual product.</p>
+							<p>We make every effort to ensure that the pricing displayed on our website is correct. However, if an error in the pricing of a product is found we reserve the right to either cancel your order or contact you to arrange payment of any extra sum due or refund any over-payment made by you (as applicable). We reserve the right to alter all product pricing without notice.</p>
+							<p>All prices include VAT (where applicable) at the current rates. We reserve the right to express the price exclusive of VAT, but we shall show VAT separately and include it in the total price.</p>
+							<p>Where we charge separately for packing, carriage and insurance and other relevant charges, the appropriate rates are set out in our specified pricing structure shown elsewhere on this Website.</p>
 
-									<!--<li id="8">-->
-										<!--<strong>How much is the deposit?</strong>-->
-										<!--<div>-->
-											<!--<p>The size of the deposit varies with the size of the deal. The minimum deposit is £2 and increases.</p>-->
-											<!--<p>For rides value from £0  to £5, the deposit is £2.</p>-->
-											<!--<p>For rides value from £5  to £10, the deposit is £3.</p>-->
-											<!--<p>For rides value from £10  to £15, the deposit is £4.</p>-->
-											<!--<p>For rides value from £15  to £20, the deposit is £5.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<h2>Placing an order</h2>
+							<p>You are deemed to place an order with us by ordering via our online checkout process. As part of our checkout process you will be given the opportunity to check your order and to correct any errors. We will send you an order acknowledgement, detailing the products you have ordered.</p>
+							<p>The contract is subject to your right of cancellation (see below).</p>
+							<p>Any order placed by you for goods advertised on our website is an offer by you to purchase the goods selected in your order. No contract exists between you and us for the sale of any goods until we have received your order and accepted it (which we may do at our discretion).  Our acceptance of an order takes place when we despatch the order or send you confirmation by email even if your payment has been processed immediately.</p>
+							<p>We may refuse in our discretion to accept an order:</p>
 
-									<!--<li id="9">-->
-										<!--<strong>Why is DriverCollect ideally suited for rural communities?</strong>-->
-										<!--<div>-->
-											<!--<p>We realise that it is doubly hard for rural communities to find ride sharers. Rural communities are facing the challenge of availability and cost of running a car, cost of fuel, low availability of public transport. The unique matching process of Driver Collect will find potential rides without having to do extensive searching.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<ul>
+								<li><span class="ulicon">(a)</span><span>where we cannot obtain authorisation for your payment.</span></li>
+								<li><span class="ulicon">(b)</span><span>if there has been a pricing or product description error; or</span></li>
+								<li><span class="ulicon">(c)</span><span>if you do not meet any eligibility criteria set out in our terms and conditions.</span></li>
+								<li><span class="ulicon">(d)</span><span>where goods ordered by you are not available;</span></li>
+								<li><span class="ulicon">(e)</span><span> if we do not deliver to your area;</span></li>
+							</ul>
 
-									<!--<li id="10">-->
-										<!--<strong>Why do i have to 'commit' to a deal before i can agree?</strong>-->
-										<!--<div>-->
-											<!--<p>We need one party to commit before the other party can agree. When you are happy with a ride offering, you can commit. Alternatively, the counterparty may be happy with the offering and commit first. Committing is the last step before the ride can be agreed.-->
-												<!--<br>-->
-												<!--Please note that a deal cannot be agreed if either side of the deal do not have enough fund on account.-->
-											<!--</p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<p>Where we do not accept your order but have processed your payment, we will re-credit your account with any amount deducted by us from your debit or credit card as soon as possible, but in any event within 30 days of your order. We will not be obliged to pay any additional amount as compensation for disappointment.</p>
+							<p>You must observe and comply with all applicable regulations and legislation, including obtaining all necessary customs, import or other permits to purchase goods from our site. The importation or exportation of certain of our goods to you may be prohibited by certain national laws. We make no representation and accept no liability in respect of the export or import of the goods you purchase.</p>
 
-									<!--<li id="11">-->
-										<!--<strong>How can i safely communicate with the counterparty?</strong>-->
-										<!--<div>-->
-											<!--<p>Driver Collect recommends that you use the mini-message system provided. This will relay short messages by email so you can coordinate the details of the ride.</p>-->
-										<!--</div>-->
-									<!--</li>-->
+							<h2>Payment</h2>
+							<p>Payment can be made by any of the options advertised on our website. Payment shall be due before delivery. If payment fails your order will be cancelled. There will be no delivery until clear funds have been received.</p>
+							<p>Payment online: Our secure server software encrypts all your payment card details. The process scrambles all the information, allowing no unauthorised third party to intercept the data. Your browser will confirm that you are shopping in a secure environment by showing either a locked padlock icon or an image of a padlock next to the payment details in the relevant area of the Website.</p>
+							<p>To ensure that your credit, debit or charge card is not being used without your consent, we will validate name, address and other personal information supplied by you during the order process against appropriate third party databases.</p>
+							<p>By accepting these terms and conditions you consent to such checks being made. In performing these checks personal information provided by you may be disclosed to a registered Credit Reference Agency which may keep a record of that information. You can rest assured that this is done only to confirm your identity, that a credit check is not performed and that your credit rating will be unaffected. All information provided by you will be treated securely and strictly in accordance with the Data Protection Act 1998. During security checks we may ask for additional information or documentation to help support the data you supplied.</p>
+							<p>Please be aware that if you are using Paypal as your payment method we reserve the right to not ship to unconfirmed addresses.
 
-									<!--<li id="12">-->
-										<!--<strong>Will the counterparty get my details?</strong>-->
-										<!--<div>-->
-											<!--<p>Only if you supply them. But we provide an alternative so you don't have to. DriverCollect offers a mini-message service that lets users exchange information.</p>-->
-										<!--</div>-->
-									<!--</li>-->
-								<!--</ul>-->
+							<h2>Delivery</h2>
+							<p>We will deliver goods ordered by you as soon as possible to the address you give us for delivery, but in any event within days of your order. However we reserve the Right not to make deliveries outside the United Kingdom unless our ordering form provides that facility.</p>
+							<p>Upon receipt of your order you will be asked to sign for the goods received in good condition. If the package does not appear to be in good condition then please refuse the delivery. If you are unable to check the contents of your delivery at the point of delivery then please sign for the parcel as "UNCHECKED". Failure to do so may affect any warranty claims that you make thereafter.</p>
+							<p>If the goods we deliver are not what you ordered or are damaged or defective or the delivery is of an incorrect quantity, we shall have no liability to you unless you notify us in writing, at our contact address, of the problem within working days of the delivery of the goods in question.</p>
+							<p>If you do not receive goods ordered by you within days of the date on which you ordered them, we shall have no liability to you unless you notify us in writing at our contact address of the problem within days from the date on which you ordered the goods.</p>
 
-							</div>
-						</div>
+							<h2>Refund Policy</h2>
+							<p>If you are eligible for a refund, we will refund you back to the payment method you used when you originally paid for your order. Please note: It is your responsibility to notify us of any changes to your card details i.e. you no longer have that account. Refunds can take up to 30 days to process.</p>
+
+							<h2>Faulty Product, Damaged,  or Dead on Arrival</h2>
+							<p>Please note that any Products returned to us which you claim to be defective will be checked and verified by our technicians. Any returned Products that are not found to be defective will be returned to you and we shall charge you for the returned transport costs via your original payment method or hold the Product until full payment has been received by us for the return transport costs.</p>
+							<p>If you notify a problem to us under this condition, our only obligation will be, at your option:</p>
+
+							<ul>
+								<li><span class="ulicon">(a)</span><span>to make good any shortage or non-delivery;</span></li>
+								<li><span class="ulicon">(b)</span><span>to replace or repair any goods that are damaged or defective; or</span></li>
+								<li><span class="ulicon">(c)</span><span>to refund to you the amount paid by you for the goods in question in whatever way we choose.</span></li>
+							</ul>
+
+							<p>Save as precluded by law, we will not be liable to you for any indirect or consequential loss, damage or expenses (including loss of profits, business or goodwill) howsoever arising out of any problem you notify to us under this condition and we shall have no liability to pay any money to you by way of compensation other than to refund to you the amount paid by you for the goods in question as above.</p>
+
+							<h2>Limitation of Liability</h2>
+							<p>forward plane ltd will not be liable to you for any loss or damage in circumstances where:</p>
+
+							<ul>
+								<li><span class="ulicon">(d)</span><span>There is no breach of a legal duty owed to you by the Supplier or by its employees or agents;</span></li>
+								<li><span class="ulicon">(e)</span><span>Such loss or damage is not a reasonably foreseeable result of any such breach;</span></li>
+								<li><span class="ulicon">(f)</span><span>Any increase in loss or damage resulting from breach by you of any term of this contract.</span></li>
+							</ul>
+
+							<p>Notwithstanding the foregoing, nothing in these terms and conditions is intended to limit any rights you might have as a consumer under applicable local law or other statutory rights that may not be excluded nor in any way to exclude or limit our liability to you for any death or personal injury resulting from our negligence.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Links to and from other websites</h1>
+							<p>Links to third party websites on this Website are provided solely for your convenience. If you use these links, you leave this Website. We have not reviewed all of these third party websites and do not control and are not responsible for these websites or their content or availability. We therefore do not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them. If you decide to access any of the third party websites linked to this Website, you do so entirely at your own risk. </p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Licence and copyright</h1>
+							<p>The Company web site contains copyrighted material, trademarks and other proprietary information, including, but not limited to, text, software, photos, video, graphics, music and sound and the entire content of the web site is copyrighted as a collective work under UK and International copyright laws. Company owns a copyright in the selection, coordination, arrangement and enhancement of such content, as well as in the content original to it. User may not modify, publish, transmit, participate in the transfer or sale, create derivative works or in any way exploit, any of the content, in whole or in part.  Except as otherwise expressly permitted under copyright law or these Terms, no copying, redistribution, retransmission, publication or commercial or non-commercial exploitation of downloaded material will be permitted without the express written permission of Company and the copyright owner. Elements of the web site are protected by trade dress, trademark, unfair competition and other laws and may not be copied or imitated in whole or in part, by any means, including but not limited to, the use of framing or mirrors.</p>
+							<p>You are permitted to print and download extracts from this Website for your own private use on the following basis:</p>
+
+							<ul>
+								<li><span class="ulicon">(a)</span><span>no documents or related graphics on this Website are modified in any way;</span></li>
+								<li><span class="ulicon">(b)</span><span>no graphics on this Website are used separately from accompanying text; and</span></li>
+								<li><span class="ulicon">(c)</span><span>any of our copyright and trade mark notices and this permission notice appear in all copies.</span></li>
+							</ul>
+
+							<h2>Copyright Infringement</h2>
+							<p>In accordance with UK and International law, any notifications of claimed copyright infringement should be sent to us immediately. Such notification can be sent by email, to  or by letter to: forward plane ltd, 135 coleraine road, , london, london, 237, se3 7nt.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Disclaimer</h1>
+							<p>While Company uses reasonable efforts to include accurate and up-to-date information, Company specifically disclaims any and all responsibility or liability for the accuracy, content, completeness, legality, reliability, or operability or availability of information or material displayed in any and all Company web sites, either now operating or created in the future. Company disclaims any responsibility or liability for the deletion, failure to store, mis-delivery, or untimely delivery of any information or material. Company disclaims any responsibility or liability for any harm resulting from downloading or accessing any information or material on the Internet through the Company web site. </p>
+							<p>Company does not make any warranties or representations regarding any data, service and/or information provided or made available by any User on any of the Company web sites or on any external web sites linked to them. In particular, Company does not warrant or represent that said data, service and/or information is true or accurate, or that it fulfils or serves any particular purpose.</p>
+							<p>Without limiting the foregoing, under no circumstances shall Company be held liable for any delay or failure in performance resulting directly or indirectly from acts of nature, forces, or causes beyond its reasonable control, including, without limitation, Internet failures, computer equipment failures, telecommunication equipment failures, other equipment failures, electrical power failures, strikes, labour disputes, riots, insurrections, civil disturbances, shortages of labour or materials, fires, floods, storms, explosions, acts of God, war, governmental actions, orders of domestic or foreign courts or tribunals, non-performance of 3rd-parties, or loss of or fluctuations in heat, light, or air conditioning. </p>
+							<p>COMPANY WEB SITES AND ALL MATERIALS, INFORMATION, PRODUCTS AND SERVICES INCLUDED IN THE COMPANY WEB SITES, ARE PROVIDED "AS IS," WITH NO WARRANTIES EXPRESSED OR IMPLIED. COMPANY EXPRESSLY DISCLAIMS, TO THE FULLEST EXTENT PERMITTED BY LAW, ALL EXPRESS, IMPLIED AND STATUTORY WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS. COMPANY DISCLAIMS ANY WARRANTIES REGARDING THE SECURITY, RELIABILITY, TIMELINESS AND PERFORMANCE OF THE COMPANY WEB SITES. COMPANY DISCLAIMS, ANY WARRANTIES FOR ANY INFORMATION OR ADVICE OBTAINED THROUGH THE COMPANY WEB SITES. COMPANY DISCLAIMS ANY WARRANTIES FOR SERVICES OR PRODUCTS RECEIVED THROUGH OR ADVERTISED ON THE COMPANY WEB SITES OR RECEIVED THROUGH ANY LINKS PROVIDED BY THE COMPANY WEB SITES AS WELL AS FOR ANY INFORMATION OR ADVICE RECEIVED THROUGH ANY LINKS OR ANY USER CONTRIBUTIONS PROVIDED TO THE COMPANY WEB SITES.</p>
+							<p>USER UNDERSTANDS AND AGREES THAT THEY DOWNLOAD OR OTHERWISE OBTAIN MATERIAL OR DATA THROUGH THE USE OF THE COMPANY WEB SITES AT THEIR OWN DISCRETION AND RISK AND THAT THEY WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGES TO THEIR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF SUCH MATERIAL OR DATA. </p>
+							<p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSIONS MAY NOT APPLY IN ALL CASES. USER MAY ALSO HAVE OTHER RIGHTS THAT VARY FROM JURISDICTION TO JURISDICTION. </p>
+							<p>COMPANY AND ITS WEB SITES ARE NOT RESPONSIBLE OR LIABLE FOR CONTENT POSTED BY USERS, 3rd -PARTIES, ACTIONS OF ANY 3rd-PARTY OR FOR ANY DAMAGE TO, OR VIRUS THAT MAY INFECT, A USER'S COMPUTER EQUIPMENT OR OTHER PROPERTY.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Liability</h1>
+							<p>Company may modify, suspend, discontinue or restrict the use of any portion of the Company web site, including the availability of any portion of the content at any time, without notice or liability. </p>
+							<p>User acknowledges and agrees that it is virtually impossible to achieve continuous, uninterrupted availability of the Company or any other, web site.  While we endeavour to ensure that this Website is normally available 24 hours a day, we will not be liable if for any reason this Website is unavailable at any time or for any period.  Access to this Website may be suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond our control.  </p>
+							<p> Our liability (and that of our  officers, directors, employees, shareholders or agents) of any kind (including our own negligence) with respect to our website or service for any one event or series of related events is limited to the total fees which you have paid to us in the 12 months before the event(s) complained of.</p>
+							<p>In no event (including our own negligence) will we be liable for any:</p>
+
+							<ul>
+								<li><span class="ulicon">(a)</span><span>economic losses (including, without limit, loss of revenues, profits, contracts, business or anticipated savings);</span></li>
+								<li><span class="ulicon">(b)</span><span>loss of goodwill or reputation;</span></li>
+								<li><span class="ulicon">(c)</span><span>special, indirect or consequential losses; or</span></li>
+								<li><span class="ulicon">(c)</span><span>damage to or loss of data</span></li>
+							</ul>
+
+							<p>(even if we have been advised of the possibility of such losses).</p>
+							<p>Nothing in these terms and conditions shall exclude or limit our liability for (i) death or personal injury caused by negligence (as such term is defined by the Unfair Contract Terms Act 1977); (ii) fraud; (iii) misrepresentation as to a fundamental matter; or (iv) any liability which cannot be excluded or limited under applicable law.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Indemnity</h1>
+							<p>User agrees to indemnify, defend and hold harmless Company its web site(s) and each of its respective advertisers, partners, suppliers, licensors, officers, directors, shareholders, employees, representatives, contractors, agents and sub-licensees, from any and all claims (including but not limited to claims for defamation, trade disparagement, privacy and intellectual property infringement) and damages (including attorneys' fees and court costs) arising from or relating to any allegation regarding:</p>
+
+							<ul>
+								<li><span class="ulicon">1.</span><span>User use of the Company web site(s);</span></li>
+								<li><span class="ulicon">2.</span><span>Company's use of any User content or information, as long as such use is not inconsistent with these Terms;</span></li>
+								<li><span class="ulicon">3.</span><span>Information or material provided through User's IP address, even if not posted by User; or</span></li>
+								<li><span class="ulicon">4.</span><span>Any violation of these Terms by User.</span></li>
+							</ul>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Governing law and jurisdiction</h1>
+
+							<p>These terms and conditions shall be governed by and construed in accordance with English law. Disputes arising in connection with these terms and conditions shall be subject to the exclusive jurisdiction of the English courts where the claim is brought by you, save where you have legal rights to bring any claim in respect of such a dispute in any other jurisdiction. We nevertheless retain the right to bring proceedings against you for any threatened or actual breach of these terms and conditions in your country of residence, registration or business or any other relevant country.</p>
+							<p> We do not warrant that materials, services or information for sale on the Website are appropriate or available for use outside the United Kingdom. It is prohibited to access the Website from territories where its contents are illegal or unlawful. If you access this Website from locations outside the United Kingdom, you do so at your own risk and you are responsible for compliance with local laws.</p>
+							<p>If any provision of these Terms is, for any reason, invalid and/or unenforceable, as determined in an appropriate Court of proper jurisdiction, the remaining provisions shall continue to be valid and enforceable to the fullest extent permitted by law. User agrees to replace an invalid and/or unenforceable provision with a valid and/or enforceable provision that most closely approximates the intent and economic effect of the invalid and/or unenforceable provision and shall be interpreted most favourably, when possible, to the benefit of Company.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Miscellaneous</h1>
+
+							<p><strong>Section Titles</strong> :  The section titles used in these Terms are purely for convenience and carry with them no legal or contractual effect.</p>
+							<p><strong>Incident Reporting</strong> :  Any complaints regarding violations of these Terms by a User should be directed to Customer Service at. Where possible, include details that would assist Company in investigating and resolving the complaint (i.e. expanded headers and a copy of the offending transmission).</p>
+							<p><strong>Complaints Procedure</strong> :  We are very proud of our high standards of customer service however, in the event that we fail in meeting these standards, please do not hesitate to contact us at 135 coleraine road, , london, london, 237, se3 7nt.</p>
+						</article>
+
+						<article class="col-xs-24 clearfix terms">
+							<h1>Online acceptance</h1>
+
+							<p>You may not assign, sub-license or otherwise transfer any of your rights under these terms and conditions</p>
+							<p>If any provision of these terms and conditions is found by any court of competent jurisdiction to be invalid, the invalidity of that provision will not affect the validity of the remaining provisions which shall continue to have full force and effect. </p>
+							<p>No person other than the parties to these terms and conditions are intended to benefit from them pursuant to the Contracts (Rights of Third Parties) Act 1999. </p>
+							<p>These Terms represent the entire understanding between User and Company and supersedes any prior statements or representations. USER AGREES TO THE TERMS OF THIS ONLINE AGREEMENT, by using the web site, it's services, sign up, posting, downloading and uploading content, and understands that User is entering into a binding and legal agreement with Company. </p>
+							<p>User agrees to file any claim regarding any aspect of this web site or these Terms within six (6) months of the time in which the events giving rise to such alleged claim began, or User agrees to waive such claim. User also agrees that no claim subject to these Terms may be brought as a class action or in any other jurisdiction than English courts.</p>
+							<p>These <a href="http://www.e-termsandconditions.com/" style="color: #000030;">Terms and Conditions</a> were last updated, and became effective, on 15/08/2011.</p>
+
+							<br />
+							<p><strong>Contact Information</strong>:  Our contact details are as follows:
+								<br />
+								<br />
+								<strong>Company Name: forward plane ltd, 135 coleraine road, london, 237, se3 7nt.</strong>
+							</p>
+						</article>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<footer id="footer" class="background-gray col-xs-24">
+			<div class="row padding-left-right">
+				<div class="clearfix">
+					<small>Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved</small>
+					<div>
+						<a href="privacy.html">Privacy Policy</a>
+						<span>|</span>
+						<a href="terms.html">Terms and Conditions</a>
 					</div>
 				</div>
 			</div>
+		</footer>
 
-			<div id="footer">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 text-footer" style="margin-top: 256px">
-						Copyright © 2013-2014 Forward Plane Ltd. All Rights Reserved |
-						<a href="http://dev2.drivercollect.com/support/privacy">Privacy Policy</a> |
-						<a href="http://dev2.drivercollect.com/support/terms">Terms and Conditions</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
+		<span class="my-viewport" style="display: none"></span>
+		<div class="scroll-top" style="	display: none;"><span class="icon icon-chevron-up"></span></div>
 	</body>
 </html>
-
-<script type="text/javascript">
-
-
-jQuery(document).ready(function($) {
-
-	$('ul.text-regular li div').css({
-		display: 'none'
-	});
-
-	$('ul.text-regular li strong').on('click', function(e){
-
-		var id = $(this).parent()[0].id;
-		var is_visible = 'none';
-
-		$('ul.text-regular li#' + id + ' div').toggle(100);
-
-//		if (is_visible = 'block')
-//		{
-//			$('ul.text-regular li#' + id + ' strong').css({
-//				'padding': '10px 0px 10px 0px'
-//			});
-//		}
-//		else if (is_visible = 'none')
-//		{
-//			$('ul.text-regular li#' + id + ' strong').css({
-//				'padding': '0px 0px 0px 0px'
-//			});
-//		}
-
-//		console.log(is_visible);
-
-	});
-
-
-
-
-
-	$('dl.text-regular dd').css({
-		display: 'none'
-	});
-
-	$('dl.text-regular dt').on('click', function(e){
-
-		var id = $(this)[0].id;
-		var is_visible = 'none';
-
-//		$(this).css({
-//			'margin-top': '20px',
-//			'color': '#d92646'
-////			'margin-bottom': '10px'
-//		});
-
-		$(this).toggleClass('collapsed');
-
-		$('dl.text-regular dd.' + id).toggle(100);
-
-
-//		if (is_visible = 'block')
-//		{
-//			$('ul.text-regular li#' + id + ' strong').css({
-//				'padding': '10px 0px 10px 0px'
-//			});
-//		}
-//		else if (is_visible = 'none')
-//		{
-//			$('ul.text-regular li#' + id + ' strong').css({
-//				'padding': '0px 0px 0px 0px'
-//			});
-//		}
-
-//		console.log(is_visible);
-
-	});
-});
-
-
-</script>

@@ -1,0 +1,97 @@
+@main-h1: 32px;
+
+.form-wrapper-box {
+
+	& h1 {
+		font-size: @main-h1;
+	}
+
+	& .input-group-addon {
+		padding: @ss-elem-padding-vertical 12px;
+		border-top-left-radius: @global-border-radius;
+		border-bottom-left-radius: @global-border-radius;
+	}
+
+	& #map {
+		height: 300px;
+	}
+	& .form-wrapper-box-content {
+
+		&.privacy {
+
+			& .privacy {
+
+				@emem-padding: 10%;
+
+				& h1 {
+					font-size: @global-font-size + 14;
+					font-weight: 100;
+					width: 75%;
+				}
+
+				& h2 {
+					padding-left: @emem-padding;
+					font-size: @global-font-size + 6;
+				}
+
+				& p {
+					padding-left: @emem-padding;
+					font-size: @global-font-size;
+				}
+
+				& ul {
+					padding-left: 2 * @emem-padding;
+
+					& li {
+						& span {
+							width: 93%;
+						}
+					}
+				}
+			}
+		}
+
+		&.terms {
+			& .terms {
+				.privacy .privacy;
+			}
+		}
+
+		& div {
+
+			// profile page
+			&.profile {
+				@number-inputs: 1;
+				.width-calculator(@number-inputs);
+
+				margin-right: @input-margin;
+			}
+
+			// login page
+			&.login {
+				@number-inputs: 2;
+				@input-margin: 2%;
+				.width-calculator(@number-inputs, @input-margin);
+
+				&:first-of-type {
+					margin-right: @input-margin;
+				}
+			}
+		}
+	}
+
+	& .form-wrapper-box-footer {
+
+		& button, .like-button {
+			margin-right: 1%;
+			width: auto;
+			min-width: 100px;
+			padding: @input-padding 2*@input-padding;
+			margin-bottom: 0px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@slogan-big-text-size: 3.5em;
+@slogan-small-text-size: @slogan-big-text-size*0.6;
+
+h1.slogan-big {
+	margin-top: @slogan-big-margin-up;
+	margin-bottom: @slogan-big-margin-down;
+	.slogan-text-mixin();
+	font-size: @slogan-big-text-size;
+}
+
+.slogan-small {
+	display: block;
+	.slogan-text-mixin();
+	font-size: @slogan-small-text-size;
+}
