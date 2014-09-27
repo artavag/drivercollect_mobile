@@ -106,7 +106,7 @@ table.table {
 	.icon {
 		color: @global-star-color;
 		margin: 0px 0px 0px -2px;
-		font-size: 16px;
+		font-size: 17px;
 		padding: 0;
 	}
 
@@ -220,8 +220,21 @@ table.table-home {
 		.table-header();
 		color: #ffffff;
 
+		// this makes what clearfix class does
+		&:before {
+			content: " ";
+			display: table;
+		}
+
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+
 		& h1 {
 			float: left;
+			display: block;
 			font-weight: 300;
 			font-size: 25px;
 			text-align: left;
